@@ -1,0 +1,33 @@
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The distributions of bm, mom12m, and mve are centered around 0, as expected since they are standardized.
+- The range of values for each characteristic is relatively wide, with some firms having extreme values (greater than 1.5 or less than -1.5).
+- There is evidence of the value, momentum, and size effects in the market.
+
+BUY RULE:
+if (bm > 0.75 AND mom12m > 0.65 AND mve < 0.15) OR (bm > 1.15 AND mom12m > -0.25):
+    signal = BUY
+
+SELL RULE:
+if (bm < -0.65 AND mom12m < -0.75) OR (mve < -1.0 AND mom12m < 0.25):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule:
+    - The first condition `(bm > 0.75 AND mom12m > 0.65 AND mve < 0.15)` aims to identify value stocks with positive momentum and that are of smaller size. The thresholds are chosen to select stocks that are relatively cheap (high bm), have shown recent positive performance (high mom12m), and are not overly large (low mve). Smaller companies are more likely to outperform the market.
+    - The second condition `(bm > 1.15 AND mom12m > -0.25)` aims to identify deeply undervalued stocks, even if their momentum is slightly negative, but not excessively so. This could be a contrarian strategy, betting on a turnaround.
+
+- SELL Rule:
+    - The first condition `(bm < -0.65 AND mom12m < -0.75)` aims to identify overvalued stocks with negative momentum. These stocks are likely to underperform the market.
+    - The second condition `(mve < -1.0 AND mom12m < 0.25)` aims to identify smaller companies with poor or slightly negative momentum. Smaller companies with poor momentum may be riskier and more likely to underperform.
+
+- Expected Signal Distribution:
+    - I expect the HOLD signal to be the most frequent, as it is the default case. The BUY and SELL signals should be less frequent, representing the top and bottom performers based on the chosen factors. The exact distribution will depend on the specific market conditions in December 2019. I have tried to balance the rules to generate a reasonable number of buy and sell signals across the ~500 firms.
+===========================================
