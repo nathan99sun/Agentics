@@ -1,18 +1,20 @@
+```
 ===========================================
 SYSTEMATIC TRADING RULES
 ===========================================
 
 Data Exploration Summary:
-- The distributions of bm, mom12m, and mve are centered around 0, as expected since they are standardized.
-- The range of values for each characteristic is relatively wide, with some firms having extreme values (greater than 1.5 or less than -1.5).
-- There is evidence of the value, momentum, and size effects in the market.
+- The dataset contains standardized values (z-scores) for book-to-market ratio (bm), 12-month momentum (mom12m), and log market value of equity (mve) for S&P 500 firms as of December 31, 2019.
+- The average values for all characteristics are close to zero, as expected due to standardization.
+- Extreme values (e.g., |z| > 1.5) indicate significant deviations from the mean for each characteristic.
+- In December 2019, the market was trending upwards, so momentum strategies may be favored.
 
 BUY RULE:
-if (bm > 0.75 AND mom12m > 0.65 AND mve < 0.15) OR (bm > 1.15 AND mom12m > -0.25):
+if (bm < -0.85 OR mom12m > 0.85) AND mve > 0.15:
     signal = BUY
 
 SELL RULE:
-if (bm < -0.65 AND mom12m < -0.75) OR (mve < -1.0 AND mom12m < 0.25):
+if ((bm > 0.95 OR mom12m < -0.95) AND mve < 0.05):
     signal = SELL
 
 HOLD RULE:
@@ -20,14 +22,7 @@ else:
     signal = HOLD
 
 Rationale:
-- BUY Rule:
-    - The first condition `(bm > 0.75 AND mom12m > 0.65 AND mve < 0.15)` aims to identify value stocks with positive momentum and that are of smaller size. The thresholds are chosen to select stocks that are relatively cheap (high bm), have shown recent positive performance (high mom12m), and are not overly large (low mve). Smaller companies are more likely to outperform the market.
-    - The second condition `(bm > 1.15 AND mom12m > -0.25)` aims to identify deeply undervalued stocks, even if their momentum is slightly negative, but not excessively so. This could be a contrarian strategy, betting on a turnaround.
-
-- SELL Rule:
-    - The first condition `(bm < -0.65 AND mom12m < -0.75)` aims to identify overvalued stocks with negative momentum. These stocks are likely to underperform the market.
-    - The second condition `(mve < -1.0 AND mom12m < 0.25)` aims to identify smaller companies with poor or slightly negative momentum. Smaller companies with poor momentum may be riskier and more likely to underperform.
-
-- Expected Signal Distribution:
-    - I expect the HOLD signal to be the most frequent, as it is the default case. The BUY and SELL signals should be less frequent, representing the top and bottom performers based on the chosen factors. The exact distribution will depend on the specific market conditions in December 2019. I have tried to balance the rules to generate a reasonable number of buy and sell signals across the ~500 firms.
-===========================================
+- BUY Rule: This rule targets stocks that are either undervalued (low book-to-market ratio) or have strong recent performance (high momentum), and are of reasonable size. The thresholds are set to -0.85 and 0.85 respectively to capture a significant portion of the "value" and "momentum" universes. The size filter (mve > 0.15) is added to avoid very small, potentially illiquid stocks.
+- SELL Rule: This rule aims to sell stocks that are either overvalued (high book-to-market ratio) or have poor recent performance (low momentum), and are relatively small in size. The thresholds are set to 0.95 and -0.95 respectively. The size filter (mve < 0.05) is included to focus on selling smaller, potentially riskier stocks that exhibit these negative characteristics.
+- Expected signal distribution: We expect the HOLD signal to be the most frequent, as it represents the majority of stocks that do not meet the specific criteria for BUY or SELL. The BUY and SELL signals will be generated for a smaller subset of stocks exhibiting more extreme characteristics.
+```
