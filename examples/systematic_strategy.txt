@@ -1,20 +1,18 @@
-```
 ===========================================
 SYSTEMATIC TRADING RULES
 ===========================================
 
 Data Exploration Summary:
-- The dataset contains standardized values (z-scores) for book-to-market ratio (bm), 12-month momentum (mom12m), and log market value of equity (mve) for S&P 500 firms as of December 31, 2019.
-- The average values for all characteristics are close to zero, as expected due to standardization.
-- Extreme values (e.g., |z| > 1.5) indicate significant deviations from the mean for each characteristic.
-- In December 2019, the market was trending upwards, so momentum strategies may be favored.
+- The dataset contains standardized values (z-scores) for book-to-market (bm), 12-month momentum (mom12m), and log market value of equity (mve) for S&P 500 firms as of December 2019.
+- Extreme values were explored for each characteristic to understand the data distribution and identify potential thresholds.
+- Momentum values above an absolute value of 2.0 were rare, so a lower threshold of 1.5 was used for exploration.
 
 BUY RULE:
-if (bm < -0.85 OR mom12m > 0.85) AND mve > 0.15:
+if (bm > 0.85 AND mom12m > -0.4 AND mve > -0.75):
     signal = BUY
 
 SELL RULE:
-if ((bm > 0.95 OR mom12m < -0.95) AND mve < 0.05):
+if (bm < -0.75 AND mom12m < -0.55 AND mve < 0.0):
     signal = SELL
 
 HOLD RULE:
@@ -22,7 +20,15 @@ else:
     signal = HOLD
 
 Rationale:
-- BUY Rule: This rule targets stocks that are either undervalued (low book-to-market ratio) or have strong recent performance (high momentum), and are of reasonable size. The thresholds are set to -0.85 and 0.85 respectively to capture a significant portion of the "value" and "momentum" universes. The size filter (mve > 0.15) is added to avoid very small, potentially illiquid stocks.
-- SELL Rule: This rule aims to sell stocks that are either overvalued (high book-to-market ratio) or have poor recent performance (low momentum), and are relatively small in size. The thresholds are set to 0.95 and -0.95 respectively. The size filter (mve < 0.05) is included to focus on selling smaller, potentially riskier stocks that exhibit these negative characteristics.
-- Expected signal distribution: We expect the HOLD signal to be the most frequent, as it represents the majority of stocks that do not meet the specific criteria for BUY or SELL. The BUY and SELL signals will be generated for a smaller subset of stocks exhibiting more extreme characteristics.
+- BUY Rule:
+    - Economic Reasoning: This rule targets undervalued stocks (high book-to-market) with at least slightly positive momentum and filters out the smallest firms. The rationale is to identify companies that are fundamentally cheap and showing some signs of recovery or continued positive performance. By setting the bm threshold above 0.85, we are selecting for firms that are statistically more undervalued than the average firm. A momentum filter greater than -0.4 helps avoid firms with strong negative trends. A size filter greater than -0.75 aims to avoid extremely small companies.
+    - Expected Signal Distribution: This rule is expected to generate a moderate number of buy signals, focusing on fundamentally sound companies with some positive momentum.
+- SELL Rule:
+    - Economic Reasoning: This rule targets overvalued (low book-to-market), smaller companies with negative momentum. The rationale is to identify companies that are statistically overvalued and exhibiting poor performance. The bm threshold is set to less than -0.75, meaning firms that are considered relatively expensive. A momentum filter of less than -0.55 helps select firms with poor recent performance and the size filter less than 0.0 aims to select for small firms.
+    - Expected Signal Distribution: This rule is expected to generate a smaller number of sell signals, focusing on specific companies exhibiting strong negative characteristics.
+- HOLD Rule:
+    - Economic Reasoning: The HOLD rule applies to all other cases not meeting the BUY or SELL criteria. This provides a neutral stance on companies that do not present a clear investment opportunity based on the defined value and momentum factors.
+
+```
+===========================================
 ```
