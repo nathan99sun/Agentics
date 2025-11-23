@@ -1,0 +1,1807 @@
+symbol,company,year_month,signal,avg_sentiment_score,article_count,positive_count,negative_count,neutral_count
+A,Agilent Technologies,2021-05,sell,-0.7589,1,0,1,0
+A,Agilent Technologies,2024-04,hold,0.057,1,0,0,1
+AAL,American Airlines Group,2021-12,buy,0.8376,1,1,0,0
+AAL,American Airlines Group,2023-11,sell,-0.6133,1,0,1,0
+AAL,American Airlines Group,2024-01,buy,0.8832,1,1,0,0
+AAPL,Apple Inc.,2024-03,sell,-0.4149,6,0,4,2
+AAPL,Apple Inc.,2024-04,buy,0.1352,4,2,2,0
+ABBV,AbbVie,2020-05,sell,-0.1013,1,0,1,0
+ABNB,Airbnb,2023-04,hold,0.025,2,0,0,2
+ABNB,Airbnb,2023-05,sell,-0.4353,4,1,2,1
+ABNB,Airbnb,2023-06,sell,-0.2218,2,0,1,1
+ABNB,Airbnb,2023-10,buy,0.4615,2,1,0,1
+ABT,Abbott,2020-12,hold,0.0925,1,0,0,1
+ABT,Abbott,2021-03,sell,-0.8166,1,0,1,0
+ABT,Abbott,2021-07,sell,-0.7889,1,0,1,0
+ABT,Abbott,2021-08,buy,0.2107,3,1,1,1
+ABT,Abbott,2021-09,sell,-0.201,1,0,0,1
+ABT,Abbott,2021-10,sell,-0.3116,2,0,1,1
+ABT,Abbott,2021-11,sell,-0.7434,1,0,1,0
+ACN,Accenture,2020-03,sell,-0.9174,1,0,1,0
+ACN,Accenture,2020-09,buy,0.2186,1,1,0,0
+ACN,Accenture,2024-03,buy,0.9275,1,1,0,0
+ACN,Accenture,2024-04,buy,0.1423,1,0,0,1
+ADBE,Adobe Inc.,2023-06,buy,0.9052,1,1,0,0
+ADBE,Adobe Inc.,2023-07,buy,0.9362,1,1,0,0
+ADBE,Adobe Inc.,2023-08,sell,-0.941,1,0,1,0
+ADBE,Adobe Inc.,2023-09,buy,0.3721,3,2,1,0
+ADBE,Adobe Inc.,2023-10,buy,0.9034,1,1,0,0
+ADBE,Adobe Inc.,2023-11,buy,0.8295,2,2,0,0
+ADBE,Adobe Inc.,2024-04,sell,-0.8855,1,0,1,0
+ADI,Analog Devices,2023-08,sell,-0.8999,1,0,1,0
+ADI,Analog Devices,2024-01,buy,0.9177,1,1,0,0
+ADM,Archer-Daniels-Midland,2020-02,buy,0.9168,1,1,0,0
+ADM,Archer-Daniels-Midland,2020-04,sell,-0.8917,1,0,1,0
+ADM,Archer-Daniels-Midland,2022-03,hold,-0.0769,4,2,2,0
+ADM,Archer-Daniels-Midland,2022-04,buy,0.8079,2,2,0,0
+ADM,Archer-Daniels-Midland,2022-07,hold,0.0854,1,0,0,1
+ADP,Automatic Data Processing,2021-01,sell,-0.6067,1,0,1,0
+ADP,Automatic Data Processing,2022-01,sell,-0.9605,1,0,1,0
+ADSK,Autodesk,2021-01,buy,0.1268,1,0,0,1
+AEP,American Electric Power,2022-10,buy,0.1015,1,0,0,1
+AEP,American Electric Power,2023-02,hold,-0.0259,1,0,0,1
+AEP,American Electric Power,2023-06,buy,0.5491,1,1,0,0
+AEP,American Electric Power,2023-10,hold,0.0611,1,0,0,1
+AEP,American Electric Power,2023-11,buy,0.1136,1,0,0,1
+AEP,American Electric Power,2023-12,sell,-0.6951,1,0,1,0
+AEP,American Electric Power,2024-01,sell,-0.1909,4,1,3,0
+AFL,Aflac,2020-10,buy,0.2725,1,0,0,1
+AFL,Aflac,2021-02,buy,0.9292,1,1,0,0
+AFL,Aflac,2022-03,buy,0.9244,1,1,0,0
+AFL,Aflac,2023-05,sell,-0.1441,2,0,0,2
+AFL,Aflac,2023-06,buy,0.2424,1,0,0,1
+AFL,Aflac,2023-07,sell,-0.1695,1,0,1,0
+AFL,Aflac,2023-10,sell,-0.8817,1,0,1,0
+AIG,American International Group,2021-07,sell,-0.1695,1,0,0,1
+AIG,American International Group,2021-11,sell,-0.2937,1,0,0,1
+AIG,American International Group,2021-12,sell,-0.9266,1,0,1,0
+AIG,American International Group,2023-07,hold,0.0891,1,0,0,1
+AIG,American International Group,2023-09,sell,-0.6108,1,0,1,0
+AIG,American International Group,2023-10,sell,-0.937,1,0,1,0
+AIG,American International Group,2024-02,sell,-0.7075,1,0,1,0
+AIG,American International Group,2024-03,buy,0.8842,1,1,0,0
+AIZ,Assurant,2020-02,sell,-0.7633,1,0,1,0
+ALGN,Align Technology,2020-10,sell,-0.9385,1,0,1,0
+ALGN,Align Technology,2023-08,buy,0.4118,2,1,0,1
+ALGN,Align Technology,2023-09,sell,-0.4773,1,0,1,0
+ALGN,Align Technology,2023-10,sell,-0.9429,1,0,1,0
+ALGN,Align Technology,2023-11,sell,-0.2021,2,0,0,2
+AMAT,Applied Materials,2020-08,sell,-0.5936,1,0,1,0
+AMAT,Applied Materials,2021-02,sell,-0.9379,1,0,1,0
+AMAT,Applied Materials,2021-03,buy,0.6579,1,1,0,0
+AMAT,Applied Materials,2021-05,sell,-0.1271,1,0,0,1
+AMAT,Applied Materials,2024-02,hold,0.0181,3,1,1,1
+AMAT,Applied Materials,2024-03,buy,0.7624,1,1,0,0
+AMD,Advanced Micro Devices,2023-03,buy,0.9233,1,1,0,0
+AMD,Advanced Micro Devices,2024-02,sell,-0.1499,4,2,2,0
+AMD,Advanced Micro Devices,2024-03,sell,-0.196,5,2,3,0
+AMGN,Amgen,2020-08,hold,-0.083,2,1,1,0
+AMP,Ameriprise Financial,2022-03,hold,0.0867,1,0,0,1
+AMP,Ameriprise Financial,2022-09,sell,-0.2379,1,0,0,1
+AMP,Ameriprise Financial,2022-10,sell,-0.853,1,0,1,0
+AMP,Ameriprise Financial,2022-11,sell,-0.4377,1,0,1,0
+AMP,Ameriprise Financial,2023-02,buy,0.3794,1,1,0,0
+AMP,Ameriprise Financial,2023-04,hold,0.0225,2,0,0,2
+AMP,Ameriprise Financial,2023-06,sell,-0.3637,2,0,1,1
+AMT,American Tower,2020-10,sell,-0.9556,1,0,1,0
+AMT,American Tower,2023-10,sell,-0.9656,1,0,1,0
+AMT,American Tower,2024-02,hold,0.0064,1,0,0,1
+AMZN,Amazon,2024-03,hold,0.0006,8,2,3,3
+AMZN,Amazon,2024-04,buy,0.8978,2,2,0,0
+ANET,Arista Networks,2022-09,buy,0.5774,1,1,0,0
+ANET,Arista Networks,2023-10,buy,0.1723,2,1,1,0
+ANET,Arista Networks,2023-11,hold,-0.0233,1,0,0,1
+ANET,Arista Networks,2024-02,hold,0.0333,4,1,2,1
+AON,Aon,2021-12,hold,-0.002,1,0,0,1
+AON,Aon,2023-07,sell,-0.1275,1,0,0,1
+AON,Aon,2023-09,sell,-0.8697,1,0,1,0
+AOS,A. O. Smith,2024-02,sell,-0.3333,1,0,0,1
+AOS,A. O. Smith,2024-03,buy,0.4367,2,1,0,1
+APD,Air Products and Chemicals,2022-01,buy,0.7673,1,1,0,0
+APD,Air Products and Chemicals,2022-04,buy,0.7978,1,1,0,0
+APD,Air Products and Chemicals,2022-05,sell,-0.9454,1,0,1,0
+APD,Air Products and Chemicals,2022-09,buy,0.902,1,1,0,0
+APD,Air Products and Chemicals,2022-10,hold,0.0302,1,0,0,1
+APD,Air Products and Chemicals,2022-12,sell,-0.9098,1,0,1,0
+APD,Air Products and Chemicals,2023-01,buy,0.1362,1,1,0,0
+APTV,Aptiv,2020-02,sell,-0.9653,1,0,1,0
+APTV,Aptiv,2022-10,sell,-0.9331,1,0,1,0
+APTV,Aptiv,2022-11,sell,-0.1386,4,1,2,1
+APTV,Aptiv,2022-12,buy,0.1183,2,1,1,0
+APTV,Aptiv,2023-01,buy,0.4553,2,1,0,1
+ARE,Alexandria Real Estate Equities,2020-02,sell,-0.9218,1,0,1,0
+ARE,Alexandria Real Estate Equities,2020-04,sell,-0.5231,1,0,1,0
+ARE,Alexandria Real Estate Equities,2020-07,buy,0.1812,1,0,0,1
+ATO,Atmos Energy,2021-02,sell,-0.1288,1,0,0,1
+ATO,Atmos Energy,2024-04,hold,-0.0833,3,0,0,3
+AVB,AvalonBay Communities,2020-07,sell,-0.4716,1,0,1,0
+AVB,AvalonBay Communities,2020-10,sell,-0.9618,1,0,1,0
+AVB,AvalonBay Communities,2020-12,hold,0.0653,1,0,0,1
+AVB,AvalonBay Communities,2022-01,hold,-0.0362,1,0,0,1
+AVGO,Broadcom Inc.,2023-05,buy,0.7514,1,1,0,0
+AVGO,Broadcom Inc.,2023-06,buy,0.8131,2,2,0,0
+AVGO,Broadcom Inc.,2023-07,buy,0.8699,1,1,0,0
+AVGO,Broadcom Inc.,2023-08,sell,-0.926,1,0,1,0
+AVGO,Broadcom Inc.,2023-09,sell,-0.6839,4,0,3,1
+AVGO,Broadcom Inc.,2023-12,buy,0.91,1,1,0,0
+AWK,American Water Works,2022-05,buy,0.151,1,0,0,1
+AWK,American Water Works,2022-09,sell,-0.9302,1,0,1,0
+AWK,American Water Works,2023-02,hold,-0.006,1,0,0,1
+AWK,American Water Works,2024-02,sell,-0.6216,1,0,1,0
+AXON,Axon Enterprise,2022-10,sell,-0.8092,1,0,1,0
+AXON,Axon Enterprise,2022-11,sell,-0.4457,2,0,1,1
+AXON,Axon Enterprise,2022-12,sell,-0.1737,2,1,1,0
+AXP,American Express,2022-09,hold,0.0463,1,0,0,1
+AXP,American Express,2022-10,hold,0.0134,2,0,0,2
+AXP,American Express,2022-11,buy,0.1367,1,0,0,1
+AXP,American Express,2023-01,hold,0.05,1,0,0,1
+AXP,American Express,2023-09,sell,-0.8811,1,0,1,0
+AXP,American Express,2023-10,buy,0.4581,2,1,0,1
+AXP,American Express,2024-03,buy,0.1551,1,0,0,1
+AXP,American Express,2024-04,hold,-0.0076,1,0,0,1
+BA,Boeing,2024-03,sell,-0.5397,9,2,7,0
+BA,Boeing,2024-04,buy,0.9201,1,1,0,0
+BAC,Bank of America,2024-01,sell,-0.3878,2,1,1,0
+BAC,Bank of America,2024-02,sell,-0.5475,3,0,3,0
+BAC,Bank of America,2024-03,buy,0.343,2,1,0,1
+BAC,Bank of America,2024-04,sell,-0.1986,3,0,1,2
+BALL,Ball Corporation,2022-01,buy,0.4052,2,1,0,1
+BALL,Ball Corporation,2022-02,buy,0.1356,1,0,0,1
+BAX,Baxter International,2020-06,sell,-0.1202,1,0,0,1
+BAX,Baxter International,2021-01,buy,0.2979,1,0,0,1
+BBWI,"Bath & Body Works, Inc.",2022-10,sell,-0.9153,1,0,1,0
+BBWI,"Bath & Body Works, Inc.",2022-11,sell,-0.9474,1,0,1,0
+BBWI,"Bath & Body Works, Inc.",2022-12,sell,-0.4075,1,0,1,0
+BBWI,"Bath & Body Works, Inc.",2023-01,sell,-0.5387,3,1,2,0
+BBWI,"Bath & Body Works, Inc.",2023-02,sell,-0.5532,2,0,1,1
+BBWI,"Bath & Body Works, Inc.",2023-05,hold,-0.0192,2,1,1,0
+BBY,Best Buy,2024-02,sell,-0.5322,1,0,1,0
+BBY,Best Buy,2024-03,buy,0.8557,1,1,0,0
+BBY,Best Buy,2024-04,buy,0.2562,8,4,3,1
+BDX,Becton Dickinson,2020-07,sell,-0.8633,1,0,1,0
+BDX,Becton Dickinson,2020-09,buy,0.2465,1,0,0,1
+BDX,Becton Dickinson,2020-10,buy,0.4273,1,1,0,0
+BDX,Becton Dickinson,2021-12,buy,0.9314,1,1,0,0
+BDX,Becton Dickinson,2022-04,sell,-0.8532,1,0,1,0
+BDX,Becton Dickinson,2022-06,buy,0.9085,2,2,0,0
+BDX,Becton Dickinson,2022-07,buy,0.7613,1,1,0,0
+BDX,Becton Dickinson,2023-04,buy,0.9318,1,1,0,0
+BDX,Becton Dickinson,2023-05,buy,0.8413,1,1,0,0
+BEN,Franklin Templeton,2024-03,sell,-0.1867,10,1,4,5
+BF.B,Brown–Forman,2022-10,sell,-0.8367,1,0,1,0
+BF.B,Brown–Forman,2023-03,sell,-0.738,2,0,2,0
+BF.B,Brown–Forman,2023-06,sell,-0.1989,1,0,0,1
+BF.B,Brown–Forman,2023-08,buy,0.274,3,1,0,2
+BF.B,Brown–Forman,2023-09,buy,0.9236,1,1,0,0
+BG,Bunge Global SA,2021-10,sell,-0.158,1,0,0,1
+BG,Bunge Global SA,2021-11,sell,-0.7656,2,0,2,0
+BIIB,Biogen,2022-01,sell,-0.182,3,1,1,1
+BIIB,Biogen,2022-02,sell,-0.9401,2,0,2,0
+BIIB,Biogen,2022-05,hold,-0.0292,1,0,0,1
+BIIB,Biogen,2022-07,buy,0.8023,1,1,0,0
+BIIB,Biogen,2022-09,buy,0.803,1,1,0,0
+BIIB,Biogen,2022-11,sell,-0.9256,1,0,1,0
+BIIB,Biogen,2023-03,buy,0.1026,1,0,0,1
+BK,Bank of New York Mellon,2021-02,buy,0.9074,1,1,0,0
+BK,Bank of New York Mellon,2021-06,sell,-0.3638,1,0,1,0
+BK,Bank of New York Mellon,2021-10,buy,0.1732,1,0,0,1
+BK,Bank of New York Mellon,2022-02,sell,-0.9607,1,0,1,0
+BK,Bank of New York Mellon,2023-11,hold,0.0844,1,0,0,1
+BK,Bank of New York Mellon,2024-03,hold,0.0559,1,0,0,1
+BKNG,Booking Holdings,2023-08,sell,-0.7312,1,0,1,0
+BKR,Baker Hughes,2021-02,sell,-0.4018,1,0,1,0
+BLDR,Builders FirstSource,2024-01,sell,-0.1287,3,1,1,1
+BLDR,Builders FirstSource,2024-02,sell,-0.4707,2,0,1,1
+BLDR,Builders FirstSource,2024-03,sell,-0.2915,2,1,1,0
+BLDR,Builders FirstSource,2024-04,hold,0.0049,2,0,0,2
+BLK,BlackRock,2023-10,sell,-0.2684,1,0,1,0
+BLK,BlackRock,2023-11,buy,0.2547,5,1,1,3
+BLK,BlackRock,2023-12,buy,0.5402,3,3,0,0
+BLK,BlackRock,2024-01,hold,0.0923,1,0,0,1
+BMY,Bristol Myers Squibb,2020-11,buy,0.1189,1,0,0,1
+BMY,Bristol Myers Squibb,2021-04,sell,-0.9524,1,0,1,0
+BMY,Bristol Myers Squibb,2022-08,sell,-0.8438,1,0,1,0
+BMY,Bristol Myers Squibb,2023-12,buy,0.5512,3,2,0,1
+BMY,Bristol Myers Squibb,2024-02,hold,-0.0232,2,1,1,0
+BR,Broadridge Financial Solutions,2023-01,hold,-0.0303,1,0,0,1
+BR,Broadridge Financial Solutions,2023-02,sell,-0.245,2,0,1,1
+BR,Broadridge Financial Solutions,2024-04,hold,0.0376,2,0,0,2
+BRK.B,Berkshire Hathaway,2023-04,buy,0.2032,1,0,0,1
+BRK.B,Berkshire Hathaway,2023-05,sell,-0.1107,5,2,2,1
+BRK.B,Berkshire Hathaway,2023-06,buy,0.4325,2,1,0,1
+BRK.B,Berkshire Hathaway,2023-07,sell,-0.273,1,0,0,1
+BRK.B,Berkshire Hathaway,2023-08,hold,0.0353,1,0,0,1
+BRO,Brown & Brown,2023-12,buy,0.696,1,1,0,0
+BRO,Brown & Brown,2024-01,buy,0.4199,1,1,0,0
+BSX,Boston Scientific,2023-12,sell,-0.4133,1,0,1,0
+BSX,Boston Scientific,2024-01,sell,-0.3071,3,1,2,0
+BSX,Boston Scientific,2024-02,buy,0.7076,1,1,0,0
+BWA,BorgWarner,2020-06,sell,-0.9543,1,0,1,0
+BWA,BorgWarner,2022-10,sell,-0.7339,1,0,1,0
+BWA,BorgWarner,2022-11,sell,-0.7981,1,0,1,0
+BWA,BorgWarner,2023-01,buy,0.526,2,2,0,0
+BX,Blackstone,2021-08,buy,0.2577,1,0,0,1
+BX,Blackstone,2021-10,buy,0.2219,1,0,0,1
+BX,Blackstone,2022-01,sell,-0.903,1,0,1,0
+BX,Blackstone,2022-02,sell,-0.9577,1,0,1,0
+BX,Blackstone,2022-04,buy,0.8268,1,1,0,0
+BX,Blackstone,2022-06,sell,-0.5408,1,0,1,0
+BX,Blackstone,2022-10,sell,-0.8332,1,0,1,0
+BX,Blackstone,2022-11,sell,-0.6566,1,0,1,0
+BX,Blackstone,2023-01,hold,0.0886,1,0,0,1
+BX,Blackstone,2023-03,sell,-0.7008,1,0,1,0
+BXP,Boston Properties,2021-11,hold,0.0666,1,0,0,1
+BXP,Boston Properties,2022-07,hold,-0.0751,1,0,0,1
+BXP,Boston Properties,2022-09,hold,0.0846,1,0,0,1
+BXP,Boston Properties,2022-12,sell,-0.3384,1,0,1,0
+BXP,Boston Properties,2023-03,sell,-0.3973,4,1,3,0
+BXP,Boston Properties,2023-05,hold,0.0151,2,0,1,1
+C,Citigroup,2022-11,sell,-0.9268,1,0,1,0
+C,Citigroup,2023-01,sell,-0.7653,1,0,1,0
+C,Citigroup,2023-04,hold,-0.0742,2,1,1,0
+C,Citigroup,2023-05,sell,-0.6556,1,0,1,0
+C,Citigroup,2023-08,buy,0.893,1,1,0,0
+C,Citigroup,2023-09,sell,-0.9546,1,0,1,0
+C,Citigroup,2023-10,sell,-0.7502,2,0,2,0
+C,Citigroup,2024-04,buy,0.3752,1,1,0,0
+CAG,Conagra Brands,2020-03,buy,0.6384,1,1,0,0
+CAG,Conagra Brands,2020-09,sell,-0.644,1,0,1,0
+CAG,Conagra Brands,2021-02,buy,0.8298,1,1,0,0
+CAG,Conagra Brands,2021-05,hold,0.0468,1,0,0,1
+CAG,Conagra Brands,2021-07,sell,-0.9647,1,0,1,0
+CAG,Conagra Brands,2021-10,buy,0.9258,1,1,0,0
+CAG,Conagra Brands,2023-09,sell,-0.8287,1,0,1,0
+CAG,Conagra Brands,2023-10,sell,-0.961,1,0,1,0
+CAH,Cardinal Health,2022-10,sell,-0.3265,1,0,0,1
+CAH,Cardinal Health,2023-09,sell,-0.2529,1,0,0,1
+CARR,Carrier Global,2022-02,sell,-0.6597,1,0,1,0
+CARR,Carrier Global,2022-06,sell,-0.8533,1,0,1,0
+CARR,Carrier Global,2023-11,sell,-0.9443,1,0,1,0
+CARR,Carrier Global,2023-12,hold,0.0162,3,1,1,1
+CARR,Carrier Global,2024-01,buy,0.3016,4,2,1,1
+CAT,Caterpillar Inc.,2022-07,sell,-0.8368,1,0,1,0
+CAT,Caterpillar Inc.,2022-10,hold,-0.0225,1,0,1,0
+CAT,Caterpillar Inc.,2023-01,sell,-0.9012,1,0,1,0
+CAT,Caterpillar Inc.,2023-02,sell,-0.7628,3,0,3,0
+CAT,Caterpillar Inc.,2023-03,sell,-0.9235,1,0,1,0
+CAT,Caterpillar Inc.,2023-05,sell,-0.9278,1,0,1,0
+CAT,Caterpillar Inc.,2024-04,sell,-0.9021,2,0,2,0
+CB,Chubb Limited,2023-12,hold,0.0452,1,0,0,1
+CBOE,Cboe Global Markets,2020-03,sell,-0.4008,1,0,0,1
+CBOE,Cboe Global Markets,2020-05,buy,0.3512,1,0,0,1
+CBOE,Cboe Global Markets,2020-09,sell,-0.7506,1,0,1,0
+CBOE,Cboe Global Markets,2020-12,sell,-0.5057,1,0,1,0
+CBOE,Cboe Global Markets,2021-07,buy,0.1192,1,0,0,1
+CBOE,Cboe Global Markets,2021-08,sell,-0.5217,1,0,1,0
+CBOE,Cboe Global Markets,2022-05,hold,-0.0342,1,0,0,1
+CBOE,Cboe Global Markets,2023-06,hold,-0.0302,1,0,0,1
+CBOE,Cboe Global Markets,2023-10,sell,-0.8056,1,0,1,0
+CCI,Crown Castle,2021-01,buy,0.1541,1,0,0,1
+CCI,Crown Castle,2022-07,sell,-0.878,1,0,1,0
+CCI,Crown Castle,2022-09,hold,-0.027,2,0,0,2
+CCI,Crown Castle,2023-01,hold,0.0148,1,0,0,1
+CCI,Crown Castle,2023-03,buy,0.1023,1,0,0,1
+CCI,Crown Castle,2023-06,sell,-0.3708,2,0,1,1
+CCI,Crown Castle,2023-09,hold,0.0032,1,0,0,1
+CCL,Carnival,2022-04,sell,-0.9393,1,0,1,0
+CCL,Carnival,2022-05,buy,0.1963,1,0,0,1
+CCL,Carnival,2022-09,sell,-0.9671,1,0,1,0
+CCL,Carnival,2022-11,sell,-0.9667,1,0,1,0
+CCL,Carnival,2023-03,hold,-0.0077,2,1,1,0
+CCL,Carnival,2023-05,buy,0.8535,1,1,0,0
+CCL,Carnival,2023-06,sell,-0.365,3,1,2,0
+CDNS,Cadence Design Systems,2020-08,sell,-0.234,1,0,0,1
+CDNS,Cadence Design Systems,2021-01,hold,-0.0684,1,0,0,1
+CDNS,Cadence Design Systems,2021-08,sell,-0.5243,1,0,1,0
+CDNS,Cadence Design Systems,2023-11,buy,0.4288,1,1,0,0
+CDW,CDW,2020-07,hold,0.0545,1,0,0,1
+CDW,CDW,2021-07,hold,-0.0007,1,0,0,1
+CDW,CDW,2021-10,sell,-0.4002,3,0,3,0
+CDW,CDW,2021-11,hold,-0.0112,1,0,0,1
+CDW,CDW,2021-12,buy,0.8619,1,1,0,0
+CE,Celanese,2022-01,sell,-0.4265,2,0,1,1
+CE,Celanese,2022-02,sell,-0.6877,2,0,1,1
+CEG,Constellation Energy,2024-04,sell,-0.7408,2,0,2,0
+CF,CF Industries,2022-04,sell,-0.2135,2,1,1,0
+CF,CF Industries,2023-01,sell,-0.7212,1,0,1,0
+CF,CF Industries,2023-07,sell,-0.1695,1,0,1,0
+CF,CF Industries,2023-08,buy,0.665,1,1,0,0
+CF,CF Industries,2023-09,buy,0.7212,2,2,0,0
+CF,CF Industries,2023-10,hold,0.0893,2,1,1,0
+CF,CF Industries,2024-03,hold,0.0559,1,0,0,1
+CFG,Citizens Financial Group,2022-04,buy,0.1398,1,0,0,1
+CFG,Citizens Financial Group,2022-05,sell,-0.6228,1,0,1,0
+CFG,Citizens Financial Group,2022-09,buy,0.2886,1,0,0,1
+CFG,Citizens Financial Group,2022-10,sell,-0.5388,1,0,1,0
+CFG,Citizens Financial Group,2022-11,buy,0.9123,1,1,0,0
+CFG,Citizens Financial Group,2023-01,sell,-0.7743,1,0,1,0
+CFG,Citizens Financial Group,2024-02,buy,0.8523,1,1,0,0
+CHD,Church & Dwight,2020-04,sell,-0.4578,1,0,1,0
+CHD,Church & Dwight,2020-08,sell,-0.1854,1,0,0,1
+CHD,Church & Dwight,2020-11,sell,-0.7237,1,0,1,0
+CHTR,Charter Communications,2023-09,buy,0.1839,2,1,1,0
+CHTR,Charter Communications,2023-12,buy,0.511,3,2,0,1
+CI,Cigna,2021-08,sell,-0.6041,1,0,1,0
+CL,Colgate-Palmolive,2023-01,sell,-0.813,1,0,1,0
+CL,Colgate-Palmolive,2023-04,hold,0.058,2,1,1,0
+CL,Colgate-Palmolive,2023-05,buy,0.2083,1,0,0,1
+CL,Colgate-Palmolive,2023-08,sell,-0.7613,1,0,1,0
+CLX,Clorox,2020-05,buy,0.9332,1,1,0,0
+CLX,Clorox,2020-06,buy,0.8744,1,1,0,0
+CLX,Clorox,2020-08,buy,0.5543,2,1,0,1
+CLX,Clorox,2020-11,buy,0.4922,2,2,0,0
+CLX,Clorox,2021-05,sell,-0.9636,1,0,1,0
+CLX,Clorox,2021-08,buy,0.8733,1,1,0,0
+CLX,Clorox,2021-11,buy,0.8542,1,1,0,0
+CLX,Clorox,2022-02,buy,0.9131,1,1,0,0
+CMA,Comerica,2023-03,sell,-0.7244,1,0,1,0
+CMA,Comerica,2023-05,sell,-0.9587,1,0,1,0
+CMA,Comerica,2023-06,buy,0.6762,2,2,0,0
+CMA,Comerica,2023-11,sell,-0.7662,1,0,1,0
+CMA,Comerica,2023-12,hold,-0.015,2,1,1,0
+CMA,Comerica,2024-01,sell,-0.1989,3,1,2,0
+CMCSA,Comcast,2020-11,hold,0.0817,1,0,0,1
+CMCSA,Comcast,2021-07,buy,0.8197,1,1,0,0
+CMCSA,Comcast,2021-08,buy,0.1996,1,0,0,1
+CMCSA,Comcast,2021-10,sell,-0.5981,3,0,2,1
+CMCSA,Comcast,2021-12,sell,-0.9663,1,0,1,0
+CMCSA,Comcast,2022-01,sell,-0.6862,1,0,1,0
+CMCSA,Comcast,2024-04,sell,-0.9351,2,0,2,0
+CME,CME Group,2023-09,sell,-0.5648,1,0,1,0
+CME,CME Group,2023-11,hold,0.0346,1,0,0,1
+CMG,Chipotle Mexican Grill,2022-10,buy,0.7806,1,1,0,0
+CMG,Chipotle Mexican Grill,2023-01,buy,0.5789,1,1,0,0
+CMG,Chipotle Mexican Grill,2023-02,buy,0.7975,2,2,0,0
+CMG,Chipotle Mexican Grill,2023-04,hold,-0.0788,2,1,1,0
+CMG,Chipotle Mexican Grill,2023-09,buy,0.7836,1,1,0,0
+CMG,Chipotle Mexican Grill,2023-12,buy,0.696,1,1,0,0
+CMG,Chipotle Mexican Grill,2024-01,buy,0.8391,1,1,0,0
+CMS,CMS Energy,2024-03,sell,-0.1281,2,1,1,0
+CNC,Centene Corporation,2023-08,hold,0.0349,1,0,0,1
+COF,Capital One,2022-03,hold,0.0573,1,0,0,1
+COF,Capital One,2022-05,hold,0.0583,2,0,0,2
+COF,Capital One,2022-08,hold,0.0313,1,0,0,1
+COF,Capital One,2022-10,hold,0.052,2,0,0,2
+COF,Capital One,2022-11,hold,0.018,1,0,0,1
+COF,Capital One,2023-06,hold,0.0422,1,0,0,1
+COF,Capital One,2024-04,sell,-0.1777,2,0,1,1
+COO,CooperCompanies,2023-06,sell,-0.401,1,0,0,1
+COST,Costco,2023-09,buy,0.1322,1,0,0,1
+COST,Costco,2023-10,buy,0.2182,2,1,1,0
+COST,Costco,2023-11,buy,0.2549,3,1,0,2
+COST,Costco,2023-12,sell,-0.8205,2,0,2,0
+COST,Costco,2024-01,hold,-0.0514,2,1,1,0
+CPRT,Copart,2020-01,buy,0.7475,1,1,0,0
+CPRT,Copart,2020-02,sell,-0.9637,1,0,1,0
+CPRT,Copart,2020-03,sell,-0.9418,1,0,1,0
+CPRT,Copart,2020-05,hold,-0.0064,1,0,0,1
+CPT,Camden Property Trust,2024-04,sell,-0.6065,1,0,1,0
+CRL,Charles River Laboratories,2023-05,sell,-0.8991,2,0,2,0
+CRM,Salesforce,2023-10,sell,-0.7627,1,0,1,0
+CRM,Salesforce,2023-11,buy,0.3768,6,3,1,2
+CRM,Salesforce,2023-12,sell,-0.9397,1,0,1,0
+CRM,Salesforce,2024-01,buy,0.7979,2,2,0,0
+CSCO,Cisco,2022-11,buy,0.7947,1,1,0,0
+CSCO,Cisco,2023-02,buy,0.1508,3,2,1,0
+CSCO,Cisco,2023-07,buy,0.9284,1,1,0,0
+CSCO,Cisco,2023-08,sell,-0.9501,2,0,2,0
+CSCO,Cisco,2023-09,sell,-0.9671,1,0,1,0
+CSCO,Cisco,2024-04,buy,0.925,2,2,0,0
+CSGP,CoStar Group,2020-10,buy,0.4272,1,0,0,1
+CSGP,CoStar Group,2020-12,sell,-0.9477,1,0,1,0
+CSGP,CoStar Group,2021-01,hold,0.0913,2,1,1,0
+CSX,CSX,2020-01,sell,-0.9121,1,0,1,0
+CSX,CSX,2021-04,sell,-0.9538,1,0,1,0
+CSX,CSX,2021-11,sell,-0.2099,1,0,0,1
+CTAS,Cintas,2023-08,hold,0.033,1,0,0,1
+CTAS,Cintas,2023-09,sell,-0.3592,4,0,2,2
+CTAS,Cintas,2023-10,sell,-0.3305,2,1,1,0
+CTAS,Cintas,2023-11,hold,-0.0119,2,1,1,0
+CTAS,Cintas,2023-12,sell,-0.3023,1,0,1,0
+CTLT,Catalent,2023-04,buy,0.9284,1,1,0,0
+CTLT,Catalent,2023-05,sell,-0.9174,3,0,3,0
+CTLT,Catalent,2023-06,buy,0.2584,1,1,0,0
+CTLT,Catalent,2023-07,hold,0.0027,2,1,1,0
+CTLT,Catalent,2023-08,sell,-0.5383,3,1,2,0
+CTRA,Coterra,2024-01,buy,0.8692,2,2,0,0
+CTRA,Coterra,2024-03,buy,0.3745,3,2,0,1
+CTRA,Coterra,2024-04,hold,0.0451,5,2,2,1
+CTSH,Cognizant,2022-07,sell,-0.4585,2,0,1,1
+CTSH,Cognizant,2023-09,hold,0.0422,4,1,1,2
+CTSH,Cognizant,2023-10,hold,-0.037,2,1,1,0
+CTVA,Corteva,2020-10,buy,0.5562,1,1,0,0
+CTVA,Corteva,2020-11,hold,0.0832,1,0,0,1
+CTVA,Corteva,2022-11,sell,-0.8019,1,0,1,0
+CTVA,Corteva,2023-07,buy,0.1247,3,1,1,1
+CTVA,Corteva,2023-09,buy,0.9028,1,1,0,0
+CTVA,Corteva,2023-10,buy,0.782,1,1,0,0
+CTVA,Corteva,2023-11,hold,-0.0668,2,1,1,0
+CVS,CVS Health,2020-11,buy,0.2407,1,0,0,1
+CVS,CVS Health,2022-08,hold,0.0484,1,0,0,1
+CVS,CVS Health,2023-01,hold,0.0024,2,1,1,0
+CVS,CVS Health,2023-08,buy,0.3383,1,0,0,1
+CVS,CVS Health,2023-10,sell,-0.6785,2,0,2,0
+CVS,CVS Health,2024-03,hold,0.0633,3,0,0,3
+CZR,Caesars Entertainment,2020-09,hold,0.0236,2,1,1,0
+CZR,Caesars Entertainment,2021-08,sell,-0.84,1,0,1,0
+CZR,Caesars Entertainment,2022-08,sell,-0.9642,1,0,1,0
+CZR,Caesars Entertainment,2023-11,buy,0.169,2,1,1,0
+CZR,Caesars Entertainment,2024-01,buy,0.5621,1,1,0,0
+CZR,Caesars Entertainment,2024-02,sell,-0.2549,2,0,1,1
+D,Dominion Energy,2023-04,sell,-0.9398,1,0,1,0
+D,Dominion Energy,2023-07,sell,-0.547,2,0,1,1
+D,Dominion Energy,2023-09,sell,-0.9269,2,0,2,0
+DAL,Delta Air Lines,2022-01,sell,-0.6979,1,0,1,0
+DAL,Delta Air Lines,2022-10,sell,-0.8416,1,0,1,0
+DAL,Delta Air Lines,2022-12,buy,0.911,1,1,0,0
+DAL,Delta Air Lines,2023-01,sell,-0.6522,1,0,1,0
+DAL,Delta Air Lines,2023-04,sell,-0.4842,1,0,1,0
+DAL,Delta Air Lines,2023-05,sell,-0.5181,1,0,1,0
+DAL,Delta Air Lines,2023-11,sell,-0.6786,1,0,1,0
+DAL,Delta Air Lines,2023-12,buy,0.3031,2,1,1,0
+DAL,Delta Air Lines,2024-01,sell,-0.9486,1,0,1,0
+DE,John Deere,2023-05,buy,0.3795,1,0,0,1
+DECK,Deckers Brands,2022-11,buy,0.5268,1,1,0,0
+DECK,Deckers Brands,2023-06,sell,-0.6982,1,0,1,0
+DECK,Deckers Brands,2024-04,buy,0.8417,1,1,0,0
+DFS,Discover Financial,2020-02,hold,0.0332,1,0,0,1
+DFS,Discover Financial,2020-04,sell,-0.9652,1,0,1,0
+DFS,Discover Financial,2021-01,hold,0.0717,1,0,0,1
+DFS,Discover Financial,2021-02,hold,-0.0134,1,0,0,1
+DFS,Discover Financial,2021-09,hold,-0.0256,1,0,0,1
+DFS,Discover Financial,2023-11,sell,-0.7694,1,0,1,0
+DFS,Discover Financial,2023-12,buy,0.7406,1,1,0,0
+DFS,Discover Financial,2024-02,sell,-0.9221,1,0,1,0
+DG,Dollar General,2021-09,hold,0.0581,1,0,0,1
+DG,Dollar General,2021-12,sell,-0.8288,1,0,1,0
+DG,Dollar General,2022-03,sell,-0.9433,1,0,1,0
+DG,Dollar General,2023-06,sell,-0.9632,2,0,2,0
+DG,Dollar General,2023-08,hold,0.0943,2,1,1,0
+DG,Dollar General,2024-01,sell,-0.8855,1,0,1,0
+DG,Dollar General,2024-03,sell,-0.9447,1,0,1,0
+DG,Dollar General,2024-04,sell,-0.3126,1,0,0,1
+DGX,Quest Diagnostics,2020-07,buy,0.3721,1,1,0,0
+DGX,Quest Diagnostics,2021-10,buy,0.8975,1,1,0,0
+DGX,Quest Diagnostics,2022-02,hold,0.0862,1,0,0,1
+DGX,Quest Diagnostics,2022-11,sell,-0.9044,1,0,1,0
+DGX,Quest Diagnostics,2023-02,buy,0.1666,1,0,0,1
+DGX,Quest Diagnostics,2023-05,buy,0.8344,1,1,0,0
+DHI,DR Horton,2020-11,sell,-0.9583,1,0,1,0
+DHI,DR Horton,2020-12,buy,0.6327,2,1,0,1
+DHI,DR Horton,2021-07,sell,-0.888,1,0,1,0
+DHI,DR Horton,2021-11,sell,-0.534,1,0,1,0
+DHI,DR Horton,2022-04,hold,-0.092,1,0,0,1
+DHI,DR Horton,2022-06,sell,-0.4289,1,0,1,0
+DHI,DR Horton,2022-11,sell,-0.8034,1,0,1,0
+DHR,Danaher Corporation,2020-07,hold,0.0624,1,0,0,1
+DHR,Danaher Corporation,2022-07,sell,-0.6245,1,0,1,0
+DHR,Danaher Corporation,2022-10,sell,-0.1145,2,0,1,1
+DHR,Danaher Corporation,2023-06,sell,-0.9368,1,0,1,0
+DHR,Danaher Corporation,2023-08,hold,0.0194,2,0,0,2
+DHR,Danaher Corporation,2024-02,hold,-0.0135,3,0,0,3
+DIS,Walt Disney,2022-09,sell,-0.3237,1,0,0,1
+DIS,Walt Disney,2022-11,sell,-0.9592,1,0,1,0
+DIS,Walt Disney,2023-10,sell,-0.2082,2,0,1,1
+DIS,Walt Disney,2023-11,buy,0.2349,6,3,2,1
+DLR,Digital Realty,2020-04,sell,-0.9515,1,0,1,0
+DLR,Digital Realty,2020-05,hold,0.0316,1,0,0,1
+DLR,Digital Realty,2021-02,hold,0.0227,1,0,0,1
+DLR,Digital Realty,2021-11,buy,0.8302,1,1,0,0
+DLTR,Dollar Tree,2021-06,sell,-0.9642,1,0,1,0
+DLTR,Dollar Tree,2021-08,sell,-0.9636,2,0,2,0
+DLTR,Dollar Tree,2021-11,buy,0.1878,4,2,1,1
+DLTR,Dollar Tree,2022-03,sell,-0.5229,1,0,1,0
+DLTR,Dollar Tree,2022-08,sell,-0.9114,1,0,1,0
+DLTR,Dollar Tree,2023-12,sell,-0.9614,1,0,1,0
+DOW,Dow Inc.,2023-12,hold,-0.0677,3,1,2,0
+DOW,Dow Inc.,2024-01,sell,-0.6887,3,0,3,0
+DOW,Dow Inc.,2024-02,sell,-0.7608,1,0,1,0
+DOW,Dow Inc.,2024-03,sell,-0.4927,3,1,2,0
+DPZ,Domino's,2022-01,buy,0.2788,1,1,0,0
+DPZ,Domino's,2022-03,sell,-0.9099,2,0,2,0
+DPZ,Domino's,2022-07,sell,-0.9379,1,0,1,0
+DPZ,Domino's,2022-08,sell,-0.8532,1,0,1,0
+DPZ,Domino's,2022-10,buy,0.9322,1,1,0,0
+DPZ,Domino's,2022-11,buy,0.4564,1,1,0,0
+DPZ,Domino's,2023-01,sell,-0.3909,1,0,1,0
+DPZ,Domino's,2024-03,buy,0.8836,1,1,0,0
+DPZ,Domino's,2024-04,sell,-0.7859,1,0,1,0
+DRI,Darden Restaurants,2022-03,sell,-0.9525,1,0,1,0
+DRI,Darden Restaurants,2022-06,hold,0.0276,1,1,0,0
+DRI,Darden Restaurants,2023-01,sell,-0.3327,1,0,1,0
+DTE,DTE Energy,2020-05,buy,0.6895,1,1,0,0
+DTE,DTE Energy,2021-02,sell,-0.1288,1,0,0,1
+DTE,DTE Energy,2024-04,hold,-0.0833,3,0,0,3
+DUK,Duke Energy,2021-04,hold,-0.0022,1,0,0,1
+DUK,Duke Energy,2022-04,buy,0.8493,1,1,0,0
+DVA,DaVita Inc.,2023-08,buy,0.9362,1,1,0,0
+DVA,DaVita Inc.,2023-11,sell,-0.9487,1,0,1,0
+DVA,DaVita Inc.,2024-02,hold,-0.0106,2,0,1,1
+DVA,DaVita Inc.,2024-03,hold,-0.039,4,1,0,3
+DVN,Devon Energy,2020-09,buy,0.9109,1,1,0,0
+DVN,Devon Energy,2021-06,buy,0.9206,1,1,0,0
+DVN,Devon Energy,2021-07,sell,-0.9576,1,0,1,0
+DVN,Devon Energy,2021-12,sell,-0.9309,1,0,1,0
+DVN,Devon Energy,2022-10,hold,-0.0448,1,0,0,1
+DVN,Devon Energy,2022-12,sell,-0.641,1,0,1,0
+DVN,Devon Energy,2023-02,buy,0.1991,1,1,0,0
+DVN,Devon Energy,2023-04,sell,-0.7841,1,0,1,0
+DVN,Devon Energy,2024-01,sell,-0.5771,1,0,1,0
+DVN,Devon Energy,2024-03,buy,0.464,1,1,0,0
+DXCM,Dexcom,2020-10,buy,0.1735,1,0,0,1
+DXCM,Dexcom,2024-03,hold,0.0249,1,0,0,1
+EA,Electronic Arts,2020-05,sell,-0.1906,2,1,1,0
+EBAY,eBay,2020-04,buy,0.1171,1,0,0,1
+EBAY,eBay,2020-11,sell,-0.6516,1,0,1,0
+EBAY,eBay,2021-04,sell,-0.9172,1,0,1,0
+EBAY,eBay,2021-07,sell,-0.4529,2,0,1,1
+EBAY,eBay,2021-10,buy,0.8786,1,1,0,0
+EBAY,eBay,2022-08,sell,-0.9434,1,0,1,0
+EBAY,eBay,2024-04,sell,-0.4363,3,0,3,0
+ECL,Ecolab,2021-07,buy,0.1744,1,0,0,1
+ECL,Ecolab,2021-09,buy,0.9144,1,1,0,0
+ECL,Ecolab,2021-11,buy,0.8841,1,1,0,0
+ECL,Ecolab,2021-12,buy,0.1238,1,0,0,1
+ECL,Ecolab,2022-01,sell,-0.6604,1,0,1,0
+ECL,Ecolab,2022-02,sell,-0.4351,2,0,1,1
+ECL,Ecolab,2022-04,buy,0.7337,1,1,0,0
+ED,Consolidated Edison,2020-05,hold,0.0321,1,0,0,1
+EFX,Equifax,2021-07,buy,0.2429,1,0,0,1
+EG,Everest Re,2022-01,sell,-0.9149,1,0,1,0
+EG,Everest Re,2022-07,buy,0.7491,1,1,0,0
+EG,Everest Re,2022-09,hold,-0.0858,1,0,0,1
+EG,Everest Re,2022-12,hold,0.019,1,0,0,1
+EG,Everest Re,2024-01,buy,0.1123,3,1,1,1
+EG,Everest Re,2024-02,buy,0.2795,3,2,1,0
+EIX,Edison International,2021-01,buy,0.1069,1,1,0,0
+EIX,Edison International,2021-02,buy,0.1385,1,0,0,1
+EL,Estée Lauder Companies (The),2021-02,sell,-0.9296,1,0,1,0
+EL,Estée Lauder Companies (The),2022-05,sell,-0.9571,1,0,1,0
+EL,Estée Lauder Companies (The),2022-11,buy,0.3938,1,1,0,0
+EL,Estée Lauder Companies (The),2023-02,sell,-0.768,1,0,1,0
+EL,Estée Lauder Companies (The),2023-03,buy,0.849,1,1,0,0
+EL,Estée Lauder Companies (The),2024-02,buy,0.2736,4,2,1,1
+ELV,Elevance Health,2023-04,hold,0.0003,1,0,0,1
+ELV,Elevance Health,2023-06,hold,0.0177,2,0,0,2
+ELV,Elevance Health,2023-08,sell,-0.2219,4,1,2,1
+ELV,Elevance Health,2023-09,hold,-0.0407,1,0,0,1
+ELV,Elevance Health,2024-04,sell,-0.8411,2,0,2,0
+EMR,Emerson Electric,2021-03,buy,0.6688,1,1,0,0
+EMR,Emerson Electric,2023-08,buy,0.6567,2,2,0,0
+EMR,Emerson Electric,2023-10,buy,0.8702,2,2,0,0
+EMR,Emerson Electric,2023-11,sell,-0.7221,2,0,2,0
+EMR,Emerson Electric,2023-12,buy,0.6397,1,1,0,0
+EMR,Emerson Electric,2024-01,buy,0.9177,1,1,0,0
+ENPH,Enphase,2020-12,buy,0.9012,1,1,0,0
+ENPH,Enphase,2021-02,sell,-0.7768,1,0,1,0
+ENPH,Enphase,2021-04,sell,-0.9556,1,0,1,0
+ENPH,Enphase,2021-09,hold,0.0532,1,0,0,1
+ENPH,Enphase,2021-10,buy,0.6423,2,2,0,0
+ENPH,Enphase,2022-01,sell,-0.7512,1,0,1,0
+ENPH,Enphase,2024-03,buy,0.3458,1,1,0,0
+ENPH,Enphase,2024-04,buy,0.9096,1,1,0,0
+EOG,EOG Resources,2020-05,hold,0.0706,1,0,0,1
+EOG,EOG Resources,2023-11,buy,0.9317,1,1,0,0
+EOG,EOG Resources,2024-02,buy,0.1466,2,0,0,2
+EOG,EOG Resources,2024-04,sell,-0.2323,2,0,1,1
+EPAM,EPAM Systems,2024-04,sell,-0.1965,3,0,1,2
+EQIX,Equinix,2020-12,buy,0.9105,1,1,0,0
+EQIX,Equinix,2021-02,sell,-0.9381,1,0,1,0
+EQIX,Equinix,2021-09,hold,0.0393,1,0,0,1
+EQIX,Equinix,2023-03,buy,0.9288,1,1,0,0
+EQIX,Equinix,2023-04,sell,-0.9208,1,0,1,0
+EQIX,Equinix,2023-06,buy,0.3324,3,2,1,0
+EQIX,Equinix,2023-07,buy,0.5643,1,1,0,0
+EQR,Equity Residential,2020-03,hold,-0.0359,1,0,0,1
+EQR,Equity Residential,2020-11,sell,-0.861,1,0,1,0
+EQR,Equity Residential,2021-02,buy,0.5619,1,1,0,0
+EQT,EQT,2021-07,sell,-0.5863,1,0,1,0
+EQT,EQT,2024-02,hold,0.0455,1,0,0,1
+EQT,EQT,2024-03,hold,0.0539,2,1,1,0
+ETN,Eaton Corporation,2023-12,sell,-0.5271,1,0,1,0
+ETN,Eaton Corporation,2024-01,buy,0.3312,1,1,0,0
+ETR,Entergy,2022-07,sell,-0.2238,1,0,0,1
+ETR,Entergy,2022-10,sell,-0.4194,1,0,1,0
+ETR,Entergy,2023-02,sell,-0.8207,2,0,2,0
+ETSY,Etsy,2022-02,buy,0.6543,1,1,0,0
+ETSY,Etsy,2022-04,buy,0.2482,1,1,0,0
+ETSY,Etsy,2022-05,sell,-0.9563,1,0,1,0
+ETSY,Etsy,2022-06,buy,0.3993,2,1,0,1
+ETSY,Etsy,2022-07,buy,0.9372,1,1,0,0
+ETSY,Etsy,2022-09,hold,0.0093,1,0,0,1
+ETSY,Etsy,2022-10,sell,-0.7241,1,0,1,0
+ETSY,Etsy,2022-12,buy,0.9031,1,1,0,0
+ETSY,Etsy,2023-05,sell,-0.9587,1,0,1,0
+EW,Edwards Lifesciences,2022-02,sell,-0.9167,1,0,1,0
+EW,Edwards Lifesciences,2022-06,sell,-0.4344,2,0,1,1
+EW,Edwards Lifesciences,2022-10,sell,-0.952,1,0,1,0
+EW,Edwards Lifesciences,2022-11,sell,-0.473,2,0,1,1
+EW,Edwards Lifesciences,2023-07,sell,-0.7239,1,0,1,0
+EW,Edwards Lifesciences,2023-09,buy,0.4179,2,1,0,1
+EXC,Exelon,2021-11,hold,-0.0122,1,0,0,1
+EXC,Exelon,2022-08,hold,0.0632,1,0,0,1
+EXC,Exelon,2023-02,buy,0.6793,1,1,0,0
+EXC,Exelon,2023-10,buy,0.1757,1,0,0,1
+EXC,Exelon,2023-11,hold,-0.053,3,1,1,1
+EXC,Exelon,2023-12,hold,-0.0252,2,1,1,0
+EXC,Exelon,2024-01,sell,-0.4088,1,0,1,0
+EXPD,Expeditors International,2022-04,hold,-0.0746,1,0,0,1
+EXPE,Expedia Group,2020-12,buy,0.2244,1,0,0,1
+EXPE,Expedia Group,2023-08,hold,0.0427,1,0,0,1
+EXR,Extra Space Storage,2022-09,hold,0.03,1,0,0,1
+EXR,Extra Space Storage,2023-02,hold,-0.0538,1,0,0,1
+EXR,Extra Space Storage,2023-05,sell,-0.3491,1,0,0,1
+F,Ford Motor Company,2023-07,hold,0.0297,3,1,1,1
+F,Ford Motor Company,2023-09,sell,-0.8207,1,0,1,0
+F,Ford Motor Company,2023-11,sell,-0.4905,3,1,2,0
+F,Ford Motor Company,2023-12,hold,0.008,3,2,1,0
+FANG,Diamondback Energy,2021-10,buy,0.9315,1,1,0,0
+FANG,Diamondback Energy,2021-12,sell,-0.6,2,0,2,0
+FANG,Diamondback Energy,2022-06,sell,-0.7831,1,0,1,0
+FANG,Diamondback Energy,2022-08,sell,-0.7301,1,0,1,0
+FANG,Diamondback Energy,2023-11,buy,0.9317,1,1,0,0
+FANG,Diamondback Energy,2024-01,buy,0.2052,1,0,0,1
+FAST,Fastenal,2020-08,sell,-0.6406,1,0,1,0
+FAST,Fastenal,2021-06,sell,-0.9555,1,0,1,0
+FAST,Fastenal,2022-12,sell,-0.5503,1,0,1,0
+FAST,Fastenal,2023-01,sell,-0.2873,1,0,1,0
+FAST,Fastenal,2023-04,sell,-0.3905,2,0,1,1
+FCX,Freeport-McMoRan,2024-02,buy,0.1742,1,0,0,1
+FDS,FactSet,2024-03,hold,0.0261,2,1,1,0
+FDS,FactSet,2024-04,sell,-0.2032,8,2,5,1
+FDX,FedEx,2023-02,sell,-0.9027,1,0,1,0
+FDX,FedEx,2023-03,sell,-0.9524,1,0,1,0
+FDX,FedEx,2023-06,buy,0.442,2,1,1,0
+FDX,FedEx,2023-08,hold,-0.0083,1,0,1,0
+FDX,FedEx,2023-09,buy,0.8433,3,3,0,0
+FDX,FedEx,2023-10,buy,0.9087,2,2,0,0
+FE,FirstEnergy,2021-02,hold,0.0895,2,1,1,0
+FE,FirstEnergy,2021-03,sell,-0.1039,5,2,3,0
+FE,FirstEnergy,2021-05,hold,0.0519,1,0,0,1
+FFIV,"F5, Inc.",2023-04,sell,-0.9547,1,0,1,0
+FFIV,"F5, Inc.",2023-08,hold,0.0194,1,0,0,1
+FFIV,"F5, Inc.",2023-10,sell,-0.219,4,2,2,0
+FFIV,"F5, Inc.",2024-02,hold,0.0333,2,0,0,2
+FI,Fiserv,2022-02,buy,0.9362,1,1,0,0
+FI,Fiserv,2022-04,buy,0.5235,1,1,0,0
+FI,Fiserv,2023-05,hold,-0.0683,2,1,1,0
+FI,Fiserv,2023-08,hold,-0.038,5,1,1,3
+FIS,Fidelity National Information Services,2020-02,buy,0.4753,1,0,0,1
+FIS,Fidelity National Information Services,2020-08,buy,0.753,1,1,0,0
+FITB,Fifth Third Bank,2020-01,sell,-0.4155,1,0,0,1
+FITB,Fifth Third Bank,2021-03,buy,0.8778,1,1,0,0
+FITB,Fifth Third Bank,2021-10,sell,-0.9502,1,0,1,0
+FITB,Fifth Third Bank,2022-01,sell,-0.3976,1,0,1,0
+FITB,Fifth Third Bank,2023-08,sell,-0.7398,2,0,2,0
+FITB,Fifth Third Bank,2023-09,sell,-0.9176,1,0,1,0
+FMC,FMC Corporation,2021-11,hold,-0.0046,1,0,0,1
+FMC,FMC Corporation,2022-03,sell,-0.4107,1,0,0,1
+FMC,FMC Corporation,2023-02,hold,-0.0354,1,0,0,1
+FMC,FMC Corporation,2023-03,sell,-0.791,1,0,1,0
+FMC,FMC Corporation,2023-12,hold,-0.0075,1,0,0,1
+FMC,FMC Corporation,2024-01,hold,0.0972,2,0,0,2
+FRT,Federal Realty,2024-03,sell,-0.9017,1,0,1,0
+FSLR,First Solar,2022-04,sell,-0.9636,1,0,1,0
+FSLR,First Solar,2022-05,sell,-0.2614,1,0,1,0
+FSLR,First Solar,2023-07,buy,0.5612,2,2,0,0
+FSLR,First Solar,2023-11,sell,-0.9629,1,0,1,0
+FSLR,First Solar,2023-12,buy,0.2552,3,2,1,0
+FSLR,First Solar,2024-03,buy,0.1802,1,1,0,0
+FSLR,First Solar,2024-04,buy,0.4147,1,1,0,0
+FTNT,Fortinet,2023-05,buy,0.9382,1,1,0,0
+FTNT,Fortinet,2023-08,buy,0.1223,1,1,0,0
+FTNT,Fortinet,2023-11,sell,-0.9346,2,0,2,0
+FTNT,Fortinet,2024-01,buy,0.8592,1,1,0,0
+FTNT,Fortinet,2024-02,buy,0.8473,1,1,0,0
+GD,General Dynamics,2023-12,buy,0.9213,2,2,0,0
+GE,GE Aerospace,2020-01,buy,0.9279,1,1,0,0
+GE,GE Aerospace,2020-05,sell,-0.9629,1,0,1,0
+GE,GE Aerospace,2021-01,sell,-0.8114,1,0,1,0
+GE,GE Aerospace,2021-03,sell,-0.5497,1,0,1,0
+GE,GE Aerospace,2021-06,buy,0.4013,2,1,0,1
+GE,GE Aerospace,2021-07,buy,0.923,1,1,0,0
+GE,GE Aerospace,2022-06,sell,-0.1051,1,0,0,1
+GE,GE Aerospace,2024-03,buy,0.5752,1,1,0,0
+GEHC,GE HealthCare,2022-01,buy,0.768,1,1,0,0
+GEHC,GE HealthCare,2022-07,sell,-0.3565,2,1,1,0
+GEHC,GE HealthCare,2024-03,buy,0.5025,2,1,0,1
+GEHC,GE HealthCare,2024-04,sell,-0.291,5,1,3,1
+GEN,Gen Digital,2021-12,hold,0.005,1,0,0,1
+GEN,Gen Digital,2022-06,hold,-0.0023,1,0,0,1
+GEN,Gen Digital,2022-09,sell,-0.2056,3,0,0,3
+GEN,Gen Digital,2022-10,sell,-0.2819,2,0,1,1
+GEN,Gen Digital,2022-11,sell,-0.2406,1,0,0,1
+GEN,Gen Digital,2023-01,buy,0.7931,1,1,0,0
+GEN,Gen Digital,2024-04,buy,0.9066,1,1,0,0
+GEV,GE Vernova,2021-02,sell,-0.9215,1,0,1,0
+GEV,GE Vernova,2021-03,sell,-0.5623,1,0,1,0
+GEV,GE Vernova,2024-03,buy,0.5295,5,4,0,1
+GEV,GE Vernova,2024-04,buy,0.9253,2,2,0,0
+GILD,Gilead Sciences,2020-05,sell,-0.2868,2,0,1,1
+GILD,Gilead Sciences,2020-06,buy,0.2545,1,0,0,1
+GILD,Gilead Sciences,2020-07,buy,0.1359,1,0,0,1
+GILD,Gilead Sciences,2020-09,buy,0.1555,1,0,0,1
+GILD,Gilead Sciences,2020-10,buy,0.1959,1,1,0,0
+GILD,Gilead Sciences,2020-11,buy,0.1442,1,0,0,1
+GILD,Gilead Sciences,2021-04,sell,-0.7219,1,0,1,0
+GIS,General Mills,2021-09,sell,-0.9206,2,0,2,0
+GL,Globe Life,2022-09,hold,-0.01,1,0,0,1
+GL,Globe Life,2023-01,hold,-0.0046,1,0,0,1
+GL,Globe Life,2023-04,hold,-0.0511,2,0,0,2
+GL,Globe Life,2023-05,sell,-0.8134,1,0,1,0
+GL,Globe Life,2023-06,sell,-0.4342,3,0,1,2
+GL,Globe Life,2023-07,hold,0.0982,1,0,0,1
+GLW,Corning Inc.,2020-06,hold,0.0928,1,0,0,1
+GM,General Motors,2023-04,sell,-0.921,1,0,1,0
+GM,General Motors,2023-05,sell,-0.9519,1,0,1,0
+GM,General Motors,2023-06,buy,0.7972,1,1,0,0
+GM,General Motors,2023-07,buy,0.2142,2,1,1,0
+GM,General Motors,2024-03,hold,-0.0764,1,0,1,0
+GM,General Motors,2024-04,buy,0.5854,4,3,1,0
+GNRC,Generac,2020-08,sell,-0.1189,1,0,0,1
+GNRC,Generac,2021-02,sell,-0.9083,1,0,1,0
+GOOGL,Alphabet Inc. (Class A),2020-01,hold,-0.077,1,0,0,1
+GOOGL,Alphabet Inc. (Class A),2021-02,buy,0.1608,1,0,0,1
+GPC,Genuine Parts Company,2023-05,hold,0.0876,1,0,0,1
+GPC,Genuine Parts Company,2023-07,sell,-0.6144,1,0,1,0
+GPN,Global Payments,2023-03,sell,-0.7945,1,0,1,0
+GPN,Global Payments,2023-05,sell,-0.7762,1,0,1,0
+GPN,Global Payments,2023-06,buy,0.5208,2,1,0,1
+GPN,Global Payments,2024-02,hold,0.0222,3,1,1,1
+GPN,Global Payments,2024-03,sell,-0.1161,1,0,0,1
+GS,Goldman Sachs,2024-01,buy,0.788,1,1,0,0
+GS,Goldman Sachs,2024-02,buy,0.7633,1,1,0,0
+GS,Goldman Sachs,2024-03,hold,0.0823,7,3,2,2
+GS,Goldman Sachs,2024-04,sell,-0.5548,1,0,1,0
+GWW,W. W. Grainger,2022-01,buy,0.6527,2,2,0,0
+GWW,W. W. Grainger,2022-03,sell,-0.9584,1,0,1,0
+GWW,W. W. Grainger,2022-06,buy,0.9052,1,1,0,0
+HAL,Halliburton,2020-01,buy,0.2547,1,1,0,0
+HAL,Halliburton,2020-04,sell,-0.9632,1,0,1,0
+HAL,Halliburton,2020-07,sell,-0.9542,1,0,1,0
+HAL,Halliburton,2020-10,buy,0.4549,1,1,0,0
+HAL,Halliburton,2022-10,buy,0.9299,1,1,0,0
+HAS,Hasbro,2021-02,sell,-0.554,3,0,2,1
+HAS,Hasbro,2021-04,buy,0.7638,1,1,0,0
+HAS,Hasbro,2021-06,buy,0.8353,1,1,0,0
+HAS,Hasbro,2021-10,buy,0.923,1,1,0,0
+HAS,Hasbro,2022-02,sell,-0.8534,2,0,2,0
+HAS,Hasbro,2022-10,sell,-0.114,1,0,1,0
+HAS,Hasbro,2022-11,sell,-0.9605,1,0,1,0
+HBAN,Huntington Bancshares,2023-03,sell,-0.8533,1,0,1,0
+HBAN,Huntington Bancshares,2023-05,sell,-0.6568,3,0,2,1
+HBAN,Huntington Bancshares,2023-09,buy,0.9058,1,1,0,0
+HBAN,Huntington Bancshares,2024-04,sell,-0.8869,2,0,2,0
+HCA,HCA Healthcare,2021-06,hold,0.0589,1,0,0,1
+HCA,HCA Healthcare,2022-07,sell,-0.9404,1,0,1,0
+HCA,HCA Healthcare,2022-11,hold,0.0215,1,0,0,1
+HCA,HCA Healthcare,2023-02,hold,0.0265,2,0,0,2
+HCA,HCA Healthcare,2023-03,buy,0.8529,1,1,0,0
+HCA,HCA Healthcare,2023-05,hold,-0.0394,1,0,0,1
+HIG,Hartford (The),2020-09,buy,0.15,2,0,0,2
+HIG,Hartford (The),2022-09,sell,-0.4558,1,0,1,0
+HIG,Hartford (The),2022-12,hold,0.0218,1,0,0,1
+HIG,Hartford (The),2023-01,sell,-0.1913,2,0,1,1
+HIG,Hartford (The),2023-10,hold,0.0679,1,0,0,1
+HIG,Hartford (The),2023-12,sell,-0.2205,1,0,0,1
+HII,Huntington Ingalls Industries,2020-05,buy,0.1114,1,0,0,1
+HII,Huntington Ingalls Industries,2023-02,buy,0.549,1,1,0,0
+HII,Huntington Ingalls Industries,2024-03,sell,-0.9635,1,0,1,0
+HLT,Hilton Worldwide,2023-02,buy,0.9158,1,1,0,0
+HOLX,Hologic,2021-10,buy,0.5126,1,1,0,0
+HOLX,Hologic,2022-11,sell,-0.7105,1,0,1,0
+HOLX,Hologic,2023-01,buy,0.5909,3,2,0,1
+HOLX,Hologic,2023-02,sell,-0.3105,1,0,1,0
+HOLX,Hologic,2023-04,sell,-0.9208,1,0,1,0
+HOLX,Hologic,2023-05,buy,0.1106,1,0,0,1
+HOLX,Hologic,2023-06,hold,0.0826,1,0,0,1
+HOLX,Hologic,2023-07,sell,-0.1695,1,0,1,0
+HON,Honeywell,2021-12,sell,-0.9479,1,0,1,0
+HON,Honeywell,2022-01,buy,0.6686,1,1,0,0
+HON,Honeywell,2022-02,buy,0.8455,1,1,0,0
+HON,Honeywell,2022-03,hold,0.0678,2,1,1,0
+HON,Honeywell,2022-04,buy,0.9199,1,1,0,0
+HON,Honeywell,2022-07,buy,0.8815,1,1,0,0
+HON,Honeywell,2023-03,buy,0.8309,1,1,0,0
+HON,Honeywell,2023-04,buy,0.9318,1,1,0,0
+HON,Honeywell,2024-04,sell,-0.9174,1,0,1,0
+HPE,Hewlett Packard Enterprise,2022-03,sell,-0.1756,1,0,1,0
+HPE,Hewlett Packard Enterprise,2023-11,buy,0.8555,2,2,0,0
+HPQ,HP Inc.,2022-03,sell,-0.8085,1,0,1,0
+HPQ,HP Inc.,2022-04,buy,0.3384,5,2,1,2
+HPQ,HP Inc.,2022-05,sell,-0.9186,1,0,1,0
+HPQ,HP Inc.,2022-07,sell,-0.9523,1,0,1,0
+HPQ,HP Inc.,2022-08,sell,-0.9603,1,0,1,0
+HPQ,HP Inc.,2022-11,sell,-0.9462,1,0,1,0
+HRL,Hormel Foods,2020-05,sell,-0.9584,1,0,1,0
+HRL,Hormel Foods,2023-10,sell,-0.9545,1,0,1,0
+HRL,Hormel Foods,2023-11,sell,-0.953,1,0,1,0
+HSIC,Henry Schein,2020-03,buy,0.1584,1,0,0,1
+HST,Host Hotels & Resorts,2023-08,hold,0.0201,1,0,0,1
+HST,Host Hotels & Resorts,2023-09,sell,-0.1058,2,0,0,2
+HST,Host Hotels & Resorts,2023-10,hold,0.0006,1,0,0,1
+HSY,Hershey's,2020-03,buy,0.6623,1,1,0,0
+HSY,Hershey's,2020-04,sell,-0.7316,1,0,1,0
+HSY,Hershey's,2020-09,buy,0.9391,1,1,0,0
+HSY,Hershey's,2020-10,sell,-0.921,1,0,1,0
+HSY,Hershey's,2021-04,buy,0.6213,1,1,0,0
+HSY,Hershey's,2021-06,buy,0.9286,1,1,0,0
+HUM,Humana,2022-04,buy,0.9173,1,1,0,0
+HUM,Humana,2022-06,buy,0.4619,1,1,0,0
+HUM,Humana,2022-07,buy,0.2835,1,1,0,0
+HUM,Humana,2022-09,buy,0.1597,3,2,1,0
+HUM,Humana,2022-12,sell,-0.234,1,0,1,0
+HUM,Humana,2023-01,sell,-0.9012,1,0,1,0
+HUM,Humana,2023-04,sell,-0.9243,1,0,1,0
+HUM,Humana,2024-04,buy,0.9195,1,1,0,0
+HWM,Howmet Aerospace,2022-10,sell,-0.9132,2,0,2,0
+HWM,Howmet Aerospace,2023-09,sell,-0.4835,2,0,1,1
+HWM,Howmet Aerospace,2023-11,sell,-0.924,1,0,1,0
+IBM,IBM,2023-04,sell,-0.1582,2,0,1,1
+IBM,IBM,2023-05,buy,0.1443,1,0,0,1
+IBM,IBM,2023-06,buy,0.495,1,1,0,0
+IBM,IBM,2023-07,buy,0.9186,1,1,0,0
+IBM,IBM,2023-08,buy,0.1081,2,0,0,2
+IBM,IBM,2023-10,buy,0.45,2,1,0,1
+IBM,IBM,2023-12,buy,0.7222,1,1,0,0
+ICE,Intercontinental Exchange,2023-07,sell,-0.9116,1,0,1,0
+ICE,Intercontinental Exchange,2023-08,sell,-0.5055,1,0,1,0
+IDXX,Idexx Laboratories,2020-04,hold,0.067,1,0,0,1
+IFF,International Flavors & Fragrances,2020-11,sell,-0.6781,1,0,1,0
+IFF,International Flavors & Fragrances,2021-04,buy,0.4292,1,1,0,0
+IFF,International Flavors & Fragrances,2022-01,buy,0.8875,1,1,0,0
+IFF,International Flavors & Fragrances,2022-03,buy,0.7287,1,1,0,0
+IFF,International Flavors & Fragrances,2022-05,sell,-0.4018,1,0,1,0
+ILMN,Illumina,2020-09,sell,-0.8541,2,0,2,0
+ILMN,Illumina,2021-04,buy,0.1279,2,1,1,0
+ILMN,Illumina,2021-12,sell,-0.2008,1,0,0,1
+ILMN,Illumina,2022-01,buy,0.8864,1,1,0,0
+INCY,Incyte,2022-06,sell,-0.9319,1,0,1,0
+INCY,Incyte,2022-08,buy,0.2003,1,0,0,1
+INCY,Incyte,2022-11,hold,0.0209,1,0,0,1
+INTC,Intel,2023-12,buy,0.7541,1,1,0,0
+INTC,Intel,2024-01,sell,-0.962,4,0,4,0
+INTC,Intel,2024-02,buy,0.5357,3,2,0,1
+INTC,Intel,2024-03,hold,0.0433,2,1,1,0
+INTU,Intuit,2020-02,buy,0.1543,1,0,0,1
+INTU,Intuit,2020-08,buy,0.6236,2,1,0,1
+INTU,Intuit,2021-02,sell,-0.9571,1,0,1,0
+INTU,Intuit,2021-09,hold,-0.0869,2,0,1,1
+INTU,Intuit,2021-10,hold,0.0444,1,0,0,1
+INTU,Intuit,2022-06,hold,0.0032,1,0,0,1
+INTU,Intuit,2022-08,hold,0.0043,1,0,0,1
+INVH,Invitation Homes,2023-07,hold,0.0072,1,0,0,1
+INVH,Invitation Homes,2023-12,hold,0.077,1,0,0,1
+INVH,Invitation Homes,2024-02,hold,0.0794,1,0,0,1
+INVH,Invitation Homes,2024-03,sell,-0.58,3,0,3,0
+IP,International Paper,2021-02,sell,-0.535,1,0,1,0
+IP,International Paper,2022-04,sell,-0.9312,1,0,1,0
+IPG,Interpublic Group of Companies (The),2022-08,sell,-0.8808,1,0,1,0
+IPG,Interpublic Group of Companies (The),2022-10,buy,0.3565,2,1,0,1
+IPG,Interpublic Group of Companies (The),2024-02,hold,0.0517,3,0,0,3
+IPG,Interpublic Group of Companies (The),2024-03,hold,0.0269,1,0,0,1
+IR,Ingersoll Rand,2020-05,sell,-0.9151,1,0,1,0
+IR,Ingersoll Rand,2022-01,buy,0.5059,1,1,0,0
+IR,Ingersoll Rand,2022-11,buy,0.9327,1,1,0,0
+IR,Ingersoll Rand,2023-03,sell,-0.3037,1,0,1,0
+IR,Ingersoll Rand,2023-05,buy,0.8138,1,1,0,0
+IR,Ingersoll Rand,2023-06,buy,0.7958,1,1,0,0
+IR,Ingersoll Rand,2023-10,buy,0.165,4,1,1,2
+IRM,Iron Mountain,2020-03,sell,-0.6779,1,0,1,0
+IRM,Iron Mountain,2021-03,hold,0.0038,1,1,0,0
+IRM,Iron Mountain,2021-08,buy,0.264,2,0,0,2
+ISRG,Intuitive Surgical,2023-10,sell,-0.1152,1,0,0,1
+ISRG,Intuitive Surgical,2023-11,sell,-0.8988,1,0,1,0
+ISRG,Intuitive Surgical,2024-01,buy,0.606,2,1,0,1
+IT,Gartner,2022-09,hold,0.0738,1,0,0,1
+IT,Gartner,2023-06,buy,0.8757,1,1,0,0
+IT,Gartner,2023-10,sell,-0.4636,2,0,1,1
+IT,Gartner,2023-11,buy,0.1462,1,0,0,1
+IT,Gartner,2024-01,hold,-0.0863,3,1,1,1
+IT,Gartner,2024-02,buy,0.3613,2,1,0,1
+ITW,Illinois Tool Works,2020-09,buy,0.1289,1,0,0,1
+IVZ,Invesco,2020-10,buy,0.2591,1,0,0,1
+IVZ,Invesco,2021-01,buy,0.424,1,0,0,1
+IVZ,Invesco,2021-08,sell,-0.3466,2,0,1,1
+IVZ,Invesco,2021-10,buy,0.679,1,1,0,0
+IVZ,Invesco,2021-11,buy,0.8015,1,1,0,0
+IVZ,Invesco,2021-12,hold,-0.0861,1,0,1,0
+JBHT,J.B. Hunt,2023-04,sell,-0.4729,1,0,1,0
+JBHT,J.B. Hunt,2023-10,sell,-0.9639,2,0,2,0
+JBHT,J.B. Hunt,2023-12,buy,0.9345,1,1,0,0
+JBHT,J.B. Hunt,2024-01,hold,-0.0812,5,2,3,0
+JBHT,J.B. Hunt,2024-02,buy,0.2557,1,0,0,1
+JBL,Jabil,2023-12,hold,-0.0204,2,1,1,0
+JBL,Jabil,2024-01,buy,0.6102,3,2,0,1
+JBL,Jabil,2024-02,buy,0.1468,1,0,0,1
+JBL,Jabil,2024-03,sell,-0.298,3,0,2,1
+JCI,Johnson Controls,2020-08,buy,0.4082,1,1,0,0
+JCI,Johnson Controls,2021-01,sell,-0.2725,3,1,2,0
+JCI,Johnson Controls,2021-02,buy,0.8912,1,1,0,0
+JCI,Johnson Controls,2021-03,buy,0.2112,1,0,0,1
+JCI,Johnson Controls,2021-04,sell,-0.2833,2,1,1,0
+JCI,Johnson Controls,2024-01,buy,0.926,1,1,0,0
+JKHY,Jack Henry & Associates,2020-11,sell,-0.7087,1,0,1,0
+JKHY,Jack Henry & Associates,2021-02,sell,-0.9311,1,0,1,0
+JKHY,Jack Henry & Associates,2021-09,sell,-0.8759,1,0,1,0
+JNJ,Johnson & Johnson,2023-10,sell,-0.1882,4,0,1,3
+JNJ,Johnson & Johnson,2023-11,sell,-0.1628,2,0,0,2
+JNJ,Johnson & Johnson,2023-12,buy,0.6715,1,1,0,0
+JNJ,Johnson & Johnson,2024-01,sell,-0.6482,2,0,2,0
+JNJ,Johnson & Johnson,2024-02,sell,-0.8677,1,0,1,0
+JNPR,Juniper Networks,2020-01,sell,-0.9636,1,0,1,0
+JNPR,Juniper Networks,2023-10,buy,0.4898,1,1,0,0
+JPM,JPMorgan Chase,2023-07,sell,-0.1419,4,1,3,0
+JPM,JPMorgan Chase,2023-08,sell,-0.932,1,0,1,0
+JPM,JPMorgan Chase,2023-09,buy,0.1216,1,0,0,1
+JPM,JPMorgan Chase,2024-01,sell,-0.6284,2,0,2,0
+JPM,JPMorgan Chase,2024-03,buy,0.9352,1,1,0,0
+JPM,JPMorgan Chase,2024-04,buy,0.4523,1,1,0,0
+KDP,Keurig Dr Pepper,2022-10,buy,0.242,1,1,0,0
+KDP,Keurig Dr Pepper,2022-12,buy,0.1419,1,0,0,1
+KDP,Keurig Dr Pepper,2023-07,hold,0.005,4,2,2,0
+KDP,Keurig Dr Pepper,2023-08,sell,-0.1483,3,1,1,1
+KEY,KeyCorp,2023-03,sell,-0.8852,1,0,1,0
+KEY,KeyCorp,2023-11,sell,-0.5855,2,0,1,1
+KEY,KeyCorp,2023-12,buy,0.7002,2,2,0,0
+KEY,KeyCorp,2024-01,hold,-0.0164,2,1,1,0
+KEY,KeyCorp,2024-02,buy,0.7012,2,2,0,0
+KEYS,Keysight,2022-08,buy,0.8243,1,1,0,0
+KEYS,Keysight,2022-11,sell,-0.628,2,0,2,0
+KEYS,Keysight,2022-12,sell,-0.1428,1,0,1,0
+KEYS,Keysight,2023-02,hold,0.0309,2,1,1,0
+KMB,Kimberly-Clark,2020-04,buy,0.1526,1,1,0,0
+KMX,CarMax,2021-04,hold,0.0294,1,0,0,1
+KMX,CarMax,2021-05,buy,0.8514,1,1,0,0
+KMX,CarMax,2021-06,buy,0.931,1,1,0,0
+KMX,CarMax,2021-09,sell,-0.3438,2,1,1,0
+KMX,CarMax,2022-04,sell,-0.5528,1,0,1,0
+KMX,CarMax,2022-09,sell,-0.9625,1,0,1,0
+KMX,CarMax,2024-04,buy,0.4075,3,2,1,0
+KO,Coca-Cola Company (The),2021-03,sell,-0.6958,1,0,1,0
+KO,Coca-Cola Company (The),2021-04,buy,0.9183,1,1,0,0
+KO,Coca-Cola Company (The),2021-07,buy,0.9314,1,1,0,0
+KO,Coca-Cola Company (The),2022-10,buy,0.8428,2,2,0,0
+KO,Coca-Cola Company (The),2023-12,sell,-0.3187,2,0,1,1
+KO,Coca-Cola Company (The),2024-01,buy,0.1584,1,0,0,1
+KR,Kroger,2021-09,sell,-0.9417,1,0,1,0
+KR,Kroger,2021-11,buy,0.2794,1,0,0,1
+KR,Kroger,2021-12,buy,0.9142,1,1,0,0
+KR,Kroger,2022-01,sell,-0.9538,1,0,1,0
+KR,Kroger,2022-03,hold,-0.02,3,1,1,1
+KR,Kroger,2022-04,buy,0.9349,1,1,0,0
+KR,Kroger,2022-10,sell,-0.4956,1,0,1,0
+KR,Kroger,2023-03,hold,0.0735,1,1,0,0
+KVUE,Kenvue,2023-05,buy,0.9244,1,1,0,0
+KVUE,Kenvue,2023-09,buy,0.6754,4,3,0,1
+KVUE,Kenvue,2023-10,buy,0.8864,1,1,0,0
+KVUE,Kenvue,2023-11,buy,0.3043,2,1,0,1
+KVUE,Kenvue,2023-12,buy,0.12,1,0,0,1
+KVUE,Kenvue,2024-01,hold,0.0327,1,0,0,1
+L,Loews Corporation,2020-12,hold,0.0253,1,0,0,1
+L,Loews Corporation,2021-03,hold,-0.0004,1,0,0,1
+L,Loews Corporation,2023-06,hold,-0.0056,3,0,0,3
+L,Loews Corporation,2023-07,sell,-0.2312,1,0,0,1
+L,Loews Corporation,2023-08,hold,0.0279,1,0,0,1
+L,Loews Corporation,2023-10,hold,0.0297,1,0,0,1
+LDOS,Leidos,2022-02,sell,-0.8865,1,0,1,0
+LDOS,Leidos,2022-04,sell,-0.946,1,0,1,0
+LDOS,Leidos,2022-05,sell,-0.5328,1,0,1,0
+LDOS,Leidos,2022-07,hold,0.0406,1,1,0,0
+LEN,Lennar,2020-01,sell,-0.7409,1,0,1,0
+LEN,Lennar,2020-06,buy,0.2243,1,0,0,1
+LEN,Lennar,2020-09,buy,0.8226,1,1,0,0
+LEN,Lennar,2020-12,buy,0.777,2,2,0,0
+LEN,Lennar,2021-03,sell,-0.2364,2,0,1,1
+LEN,Lennar,2021-06,hold,-0.0055,2,1,1,0
+LH,LabCorp,2020-03,hold,-0.037,2,0,0,2
+LH,LabCorp,2020-04,hold,0.0477,1,0,0,1
+LH,LabCorp,2020-05,hold,0.0762,1,0,0,1
+LH,LabCorp,2020-07,sell,-0.2456,2,1,1,0
+LH,LabCorp,2020-08,sell,-0.936,1,0,1,0
+LH,LabCorp,2022-07,hold,-0.0419,1,0,0,1
+LH,LabCorp,2022-11,hold,0.0419,1,0,0,1
+LHX,L3Harris,2023-09,sell,-0.3475,1,0,1,0
+LHX,L3Harris,2023-10,buy,0.9336,1,1,0,0
+LHX,L3Harris,2023-12,buy,0.5825,3,2,1,0
+LHX,L3Harris,2024-01,buy,0.5029,5,4,1,0
+LLY,Eli Lilly and Company,2023-10,buy,0.7505,1,1,0,0
+LLY,Eli Lilly and Company,2023-12,buy,0.4773,3,2,0,1
+LLY,Eli Lilly and Company,2024-01,sell,-0.2881,3,1,2,0
+LLY,Eli Lilly and Company,2024-02,buy,0.9207,1,1,0,0
+LLY,Eli Lilly and Company,2024-03,buy,0.9336,1,1,0,0
+LLY,Eli Lilly and Company,2024-04,buy,0.8207,1,1,0,0
+LMT,Lockheed Martin,2020-02,sell,-0.8448,1,0,1,0
+LMT,Lockheed Martin,2020-03,sell,-0.4212,2,0,1,1
+LMT,Lockheed Martin,2020-04,hold,0.065,1,0,0,1
+LMT,Lockheed Martin,2022-01,sell,-0.963,1,0,1,0
+LMT,Lockheed Martin,2022-05,buy,0.6575,1,1,0,0
+LMT,Lockheed Martin,2022-10,sell,-0.1932,2,0,2,0
+LOW,Lowe's,2022-05,sell,-0.9205,1,0,1,0
+LOW,Lowe's,2022-08,sell,-0.9379,2,0,2,0
+LOW,Lowe's,2022-09,sell,-0.6887,1,0,1,0
+LOW,Lowe's,2022-10,sell,-0.1515,2,1,1,0
+LOW,Lowe's,2022-11,buy,0.3908,1,1,0,0
+LOW,Lowe's,2023-03,sell,-0.968,1,0,1,0
+LOW,Lowe's,2023-05,sell,-0.9646,1,0,1,0
+LOW,Lowe's,2023-06,buy,0.1494,1,0,0,1
+LRCX,Lam Research,2022-10,sell,-0.6648,1,0,1,0
+LRCX,Lam Research,2024-01,buy,0.621,2,1,0,1
+LUV,Southwest Airlines,2022-12,sell,-0.952,1,0,1,0
+LUV,Southwest Airlines,2023-07,sell,-0.9417,2,0,2,0
+LUV,Southwest Airlines,2023-12,sell,-0.9111,1,0,1,0
+LUV,Southwest Airlines,2024-01,sell,-0.5353,5,1,3,1
+LUV,Southwest Airlines,2024-04,sell,-0.9603,1,0,1,0
+LVS,Las Vegas Sands,2021-03,hold,0.0424,1,1,0,0
+LVS,Las Vegas Sands,2021-07,sell,-0.9639,1,0,1,0
+LVS,Las Vegas Sands,2021-09,sell,-0.7812,1,0,1,0
+LVS,Las Vegas Sands,2021-12,sell,-0.5788,1,0,1,0
+LVS,Las Vegas Sands,2022-07,sell,-0.9319,2,0,2,0
+LVS,Las Vegas Sands,2024-01,sell,-0.5255,3,0,2,1
+LW,Lamb Weston,2020-09,buy,0.5932,1,1,0,0
+LW,Lamb Weston,2021-02,buy,0.1369,1,0,0,1
+LW,Lamb Weston,2021-04,buy,0.8534,1,1,0,0
+LW,Lamb Weston,2021-05,buy,0.7536,1,1,0,0
+LW,Lamb Weston,2021-06,buy,0.612,1,1,0,0
+LW,Lamb Weston,2024-03,buy,0.8738,1,1,0,0
+LYB,LyondellBasell,2022-01,sell,-0.4265,2,0,1,1
+LYB,LyondellBasell,2022-04,sell,-0.325,2,0,1,1
+LYB,LyondellBasell,2022-05,sell,-0.8388,1,0,1,0
+LYB,LyondellBasell,2022-06,sell,-0.3034,1,0,1,0
+LYV,Live Nation Entertainment,2020-05,sell,-0.6734,1,0,1,0
+LYV,Live Nation Entertainment,2022-11,hold,-0.0043,1,0,0,1
+LYV,Live Nation Entertainment,2024-02,buy,0.9137,1,1,0,0
+MA,Mastercard,2022-01,buy,0.5973,2,1,0,1
+MA,Mastercard,2022-05,sell,-0.2748,2,0,1,1
+MA,Mastercard,2022-08,sell,-0.8081,1,0,1,0
+MA,Mastercard,2022-10,hold,0.0443,2,0,0,2
+MA,Mastercard,2023-01,buy,0.9101,1,1,0,0
+MA,Mastercard,2023-02,buy,0.2449,1,0,0,1
+MA,Mastercard,2023-08,hold,0.0551,1,0,0,1
+MAR,Marriott International,2020-02,sell,-0.9255,1,0,1,0
+MAR,Marriott International,2020-03,sell,-0.9481,1,0,1,0
+MAR,Marriott International,2020-05,sell,-0.7459,1,0,1,0
+MAR,Marriott International,2020-06,sell,-0.8587,1,0,1,0
+MAR,Marriott International,2020-08,sell,-0.9455,1,0,1,0
+MAS,Masco,2022-04,sell,-0.8392,1,0,1,0
+MCD,McDonald's,2023-09,hold,0.0565,2,0,0,2
+MCD,McDonald's,2023-10,sell,-0.2023,4,0,1,3
+MCD,McDonald's,2023-11,sell,-0.4319,3,0,2,1
+MCD,McDonald's,2023-12,hold,-0.0839,1,0,0,1
+MCHP,Microchip Technology,2022-11,buy,0.9327,1,1,0,0
+MCHP,Microchip Technology,2023-04,hold,-0.0324,1,0,0,1
+MCHP,Microchip Technology,2023-05,hold,0.0988,1,0,0,1
+MCHP,Microchip Technology,2023-06,buy,0.9173,1,1,0,0
+MCHP,Microchip Technology,2023-07,hold,0.0869,1,0,0,1
+MCHP,Microchip Technology,2023-09,sell,-0.3997,1,0,1,0
+MCHP,Microchip Technology,2024-04,buy,0.9167,1,1,0,0
+MCK,McKesson,2023-12,hold,-0.0254,1,0,0,1
+MCK,McKesson,2024-02,sell,-0.5399,6,1,4,1
+MDLZ,Mondelez International,2023-11,sell,-0.7865,1,0,1,0
+MDT,Medtronic,2020-04,sell,-0.8949,1,0,1,0
+MDT,Medtronic,2020-08,hold,-0.0343,2,1,1,0
+MDT,Medtronic,2020-10,sell,-0.8133,1,0,1,0
+MDT,Medtronic,2021-08,sell,-0.9,1,0,1,0
+MET,MetLife,2024-04,sell,-0.8325,1,0,1,0
+META,Meta Platforms,2023-09,buy,0.9191,1,1,0,0
+META,Meta Platforms,2023-10,sell,-0.5423,1,0,1,0
+META,Meta Platforms,2024-02,buy,0.2222,3,0,0,3
+META,Meta Platforms,2024-04,buy,0.3247,5,2,1,2
+MGM,MGM Resorts,2020-02,sell,-0.9027,2,0,2,0
+MGM,MGM Resorts,2020-06,sell,-0.8898,1,0,1,0
+MGM,MGM Resorts,2023-11,sell,-0.9461,1,0,1,0
+MKC,McCormick & Company,2020-01,buy,0.1892,1,0,0,1
+MKC,McCormick & Company,2020-02,buy,0.1448,2,0,0,2
+MKC,McCormick & Company,2020-04,sell,-0.7833,1,0,1,0
+MKC,McCormick & Company,2020-05,buy,0.3446,1,1,0,0
+MKC,McCormick & Company,2020-06,sell,-0.931,1,0,1,0
+MKC,McCormick & Company,2020-09,buy,0.5736,1,1,0,0
+MKC,McCormick & Company,2020-11,buy,0.9247,1,1,0,0
+MKC,McCormick & Company,2021-09,buy,0.2711,1,1,0,0
+MKTX,MarketAxess,2020-01,buy,0.2412,1,0,0,1
+MKTX,MarketAxess,2020-05,buy,0.5777,1,1,0,0
+MKTX,MarketAxess,2021-04,buy,0.8272,1,1,0,0
+MKTX,MarketAxess,2021-10,sell,-0.8844,1,0,1,0
+MKTX,MarketAxess,2022-01,buy,0.6888,1,1,0,0
+MLM,Martin Marietta Materials,2020-10,sell,-0.4993,1,0,1,0
+MLM,Martin Marietta Materials,2020-11,hold,0.0769,1,0,0,1
+MLM,Martin Marietta Materials,2021-05,buy,0.8305,2,2,0,0
+MLM,Martin Marietta Materials,2021-06,buy,0.2455,1,0,0,1
+MLM,Martin Marietta Materials,2021-11,buy,0.5689,2,1,0,1
+MMC,Marsh McLennan,2020-03,sell,-0.914,1,0,1,0
+MMC,Marsh McLennan,2021-01,sell,-0.6347,1,0,1,0
+MMC,Marsh McLennan,2021-05,sell,-0.2901,1,0,0,1
+MMM,3M,2021-12,buy,0.6025,1,1,0,0
+MMM,3M,2022-01,sell,-0.9122,1,0,1,0
+MMM,3M,2022-02,sell,-0.9529,1,0,1,0
+MMM,3M,2022-07,sell,-0.958,1,0,1,0
+MMM,3M,2022-08,hold,-0.0335,1,0,0,1
+MMM,3M,2023-01,sell,-0.9015,3,0,3,0
+MMM,3M,2023-03,sell,-0.968,1,0,1,0
+MMM,3M,2023-06,sell,-0.9434,1,0,1,0
+MNST,Monster Beverage,2020-12,buy,0.8056,1,1,0,0
+MNST,Monster Beverage,2021-07,buy,0.7431,1,1,0,0
+MNST,Monster Beverage,2023-11,sell,-0.34,2,0,1,1
+MNST,Monster Beverage,2023-12,buy,0.9063,1,1,0,0
+MO,Altria,2020-01,buy,0.8048,1,1,0,0
+MO,Altria,2020-02,sell,-0.901,2,0,2,0
+MOS,Mosaic Company (The),2021-08,hold,0.0343,1,0,0,1
+MOS,Mosaic Company (The),2022-02,buy,0.9133,1,1,0,0
+MOS,Mosaic Company (The),2022-03,buy,0.9089,1,1,0,0
+MOS,Mosaic Company (The),2022-04,buy,0.4897,1,1,0,0
+MOS,Mosaic Company (The),2022-12,sell,-0.2176,1,0,0,1
+MOS,Mosaic Company (The),2024-03,hold,-0.0644,1,0,0,1
+MPWR,Monolithic Power Systems,2023-03,buy,0.5688,1,1,0,0
+MPWR,Monolithic Power Systems,2023-05,sell,-0.7786,1,0,1,0
+MPWR,Monolithic Power Systems,2023-07,sell,-0.1482,3,1,2,0
+MPWR,Monolithic Power Systems,2023-08,sell,-0.9538,1,0,1,0
+MPWR,Monolithic Power Systems,2023-10,sell,-0.9531,1,0,1,0
+MPWR,Monolithic Power Systems,2024-01,sell,-0.4664,2,0,1,1
+MPWR,Monolithic Power Systems,2024-02,hold,0.0334,1,1,0,0
+MRK,Merck & Co.,2021-12,buy,0.5883,2,1,0,1
+MRK,Merck & Co.,2022-02,buy,0.7849,1,1,0,0
+MRK,Merck & Co.,2022-03,buy,0.5085,1,1,0,0
+MRK,Merck & Co.,2022-04,sell,-0.1097,1,0,1,0
+MRK,Merck & Co.,2022-09,buy,0.91,1,1,0,0
+MRK,Merck & Co.,2022-10,buy,0.7014,2,2,0,0
+MRK,Merck & Co.,2022-12,buy,0.1497,1,0,0,1
+MRK,Merck & Co.,2023-01,buy,0.8859,1,1,0,0
+MRNA,Moderna,2023-03,buy,0.6362,1,1,0,0
+MRNA,Moderna,2023-04,hold,-0.0457,4,0,1,3
+MRNA,Moderna,2023-05,sell,-0.4419,2,0,1,1
+MRNA,Moderna,2023-06,sell,-0.9562,1,0,1,0
+MRNA,Moderna,2023-08,sell,-0.388,2,1,1,0
+MRO,Marathon Oil,2023-04,sell,-0.646,2,0,2,0
+MRO,Marathon Oil,2023-05,sell,-0.8551,1,0,1,0
+MS,Morgan Stanley,2024-02,sell,-0.1275,3,0,1,2
+MS,Morgan Stanley,2024-03,buy,0.5983,4,3,0,1
+MS,Morgan Stanley,2024-04,buy,0.8888,3,3,0,0
+MSCI,MSCI,2020-12,sell,-0.4835,2,0,1,1
+MSCI,MSCI,2024-03,sell,-0.1032,1,0,1,0
+MSCI,MSCI,2024-04,sell,-0.8984,1,0,1,0
+MSFT,Microsoft,2024-02,buy,0.4295,6,3,0,3
+MSFT,Microsoft,2024-03,buy,0.421,4,3,1,0
+MTB,M&T Bank,2023-07,sell,-0.6314,1,0,1,0
+MTB,M&T Bank,2023-08,hold,0.0379,1,0,0,1
+MTB,M&T Bank,2023-09,buy,0.2781,1,0,0,1
+MTB,M&T Bank,2023-10,buy,0.2764,2,0,0,2
+MTB,M&T Bank,2023-12,buy,0.9268,1,1,0,0
+MTB,M&T Bank,2024-02,hold,-0.0126,3,0,0,3
+MTB,M&T Bank,2024-03,hold,0.0015,1,0,0,1
+MTCH,Match Group,2020-06,buy,0.2139,1,0,0,1
+MTCH,Match Group,2020-11,hold,0.0287,2,1,1,0
+MTCH,Match Group,2020-12,buy,0.1528,1,0,0,1
+MTCH,Match Group,2021-05,buy,0.5951,1,1,0,0
+MTCH,Match Group,2021-09,buy,0.4813,1,1,0,0
+MTCH,Match Group,2023-03,buy,0.7734,1,1,0,0
+MTCH,Match Group,2023-08,sell,-0.9214,1,0,1,0
+MU,Micron Technology,2021-12,sell,-0.2799,1,0,1,0
+MU,Micron Technology,2022-08,sell,-0.9512,1,0,1,0
+MU,Micron Technology,2022-10,sell,-0.7847,1,0,1,0
+MU,Micron Technology,2022-12,sell,-0.9423,1,0,1,0
+MU,Micron Technology,2023-09,sell,-0.9627,1,0,1,0
+MU,Micron Technology,2024-03,buy,0.5499,5,4,1,0
+NCLH,Norwegian Cruise Line Holdings,2021-06,buy,0.9373,1,1,0,0
+NCLH,Norwegian Cruise Line Holdings,2021-10,sell,-0.9592,1,0,1,0
+NCLH,Norwegian Cruise Line Holdings,2022-04,buy,0.6026,1,1,0,0
+NCLH,Norwegian Cruise Line Holdings,2023-02,sell,-0.9631,1,0,1,0
+NCLH,Norwegian Cruise Line Holdings,2023-06,buy,0.6892,1,1,0,0
+NDAQ,"Nasdaq, Inc.",2023-11,sell,-0.6514,1,0,1,0
+NDAQ,"Nasdaq, Inc.",2023-12,sell,-0.1899,3,1,2,0
+NDAQ,"Nasdaq, Inc.",2024-01,sell,-0.5741,2,0,2,0
+NDAQ,"Nasdaq, Inc.",2024-02,buy,0.9054,1,1,0,0
+NDAQ,"Nasdaq, Inc.",2024-03,sell,-0.3476,3,1,2,0
+NEE,NextEra Energy,2023-04,sell,-0.7368,1,0,1,0
+NEE,NextEra Energy,2023-07,hold,0.0585,1,0,0,1
+NEE,NextEra Energy,2023-09,hold,-0.0564,2,1,1,0
+NEE,NextEra Energy,2023-10,sell,-0.9326,1,0,1,0
+NEE,NextEra Energy,2023-12,sell,-0.4113,2,0,1,1
+NEE,NextEra Energy,2024-04,sell,-0.9202,1,0,1,0
+NFLX,Netflix,2024-03,buy,0.5168,10,7,2,1
+NKE,"Nike, Inc.",2023-12,sell,-0.3678,5,1,3,1
+NKE,"Nike, Inc.",2024-01,hold,0.0309,1,0,0,1
+NKE,"Nike, Inc.",2024-02,buy,0.2383,4,2,1,1
+NOC,Northrop Grumman,2024-01,hold,0.0483,2,0,0,2
+NOC,Northrop Grumman,2024-02,buy,0.2306,1,0,0,1
+NOW,ServiceNow,2020-07,sell,-0.8867,1,0,1,0
+NOW,ServiceNow,2020-12,buy,0.8901,1,1,0,0
+NOW,ServiceNow,2021-06,sell,-0.6828,1,0,1,0
+NOW,ServiceNow,2022-01,buy,0.1769,1,1,0,0
+NOW,ServiceNow,2022-06,sell,-0.2324,1,0,0,1
+NOW,ServiceNow,2024-04,hold,0.0461,3,1,2,0
+NTAP,NetApp,2022-11,sell,-0.892,1,0,1,0
+NTAP,NetApp,2023-04,buy,0.9049,1,1,0,0
+NTAP,NetApp,2024-02,buy,0.6393,1,1,0,0
+NTRS,Northern Trust,2021-03,sell,-0.7729,1,0,1,0
+NTRS,Northern Trust,2023-12,sell,-0.8133,1,0,1,0
+NTRS,Northern Trust,2024-01,buy,0.7463,1,1,0,0
+NUE,Nucor,2020-04,sell,-0.9649,1,0,1,0
+NUE,Nucor,2020-10,hold,-0.0924,1,0,1,0
+NUE,Nucor,2021-09,sell,-0.9624,1,0,1,0
+NUE,Nucor,2021-11,hold,0.0883,1,0,0,1
+NUE,Nucor,2022-03,sell,-0.6577,1,0,1,0
+NVDA,Nvidia,2024-03,buy,0.2772,4,2,1,1
+NVDA,Nvidia,2024-04,buy,0.4584,6,4,2,0
+NVR,"NVR, Inc.",2020-03,sell,-0.9286,1,0,1,0
+NVR,"NVR, Inc.",2020-09,hold,0.0734,1,0,0,1
+NVR,"NVR, Inc.",2023-01,hold,0.01,1,0,0,1
+NVR,"NVR, Inc.",2023-07,buy,0.9206,1,1,0,0
+NVR,"NVR, Inc.",2023-09,hold,-0.0569,1,0,0,1
+NVR,"NVR, Inc.",2023-10,hold,-0.0292,2,0,0,2
+NVR,"NVR, Inc.",2023-11,hold,0.0124,1,0,0,1
+NWSA,News Corp (Class A),2020-11,sell,-0.1335,1,0,1,0
+NWSA,News Corp (Class A),2021-05,buy,0.1531,1,0,0,1
+NWSA,News Corp (Class A),2021-06,hold,-0.0572,1,0,0,1
+NWSA,News Corp (Class A),2021-09,sell,-0.8669,1,0,1,0
+NWSA,News Corp (Class A),2023-09,sell,-0.5229,1,0,1,0
+NWSA,News Corp (Class A),2023-11,sell,-0.9659,1,0,1,0
+NWSA,News Corp (Class A),2023-12,buy,0.2417,1,1,0,0
+NWSA,News Corp (Class A),2024-01,buy,0.6018,2,1,0,1
+NXPI,NXP Semiconductors,2020-03,sell,-0.7864,1,0,1,0
+NXPI,NXP Semiconductors,2024-02,sell,-0.8351,1,0,1,0
+NXPI,NXP Semiconductors,2024-03,buy,0.9236,1,1,0,0
+O,Realty Income,2020-04,hold,0.0462,1,0,0,1
+O,Realty Income,2020-12,sell,-0.6307,1,0,1,0
+O,Realty Income,2021-10,sell,-0.1153,1,0,0,1
+O,Realty Income,2021-12,buy,0.1238,1,0,0,1
+O,Realty Income,2022-01,buy,0.1702,1,0,0,1
+O,Realty Income,2022-03,sell,-0.4188,1,0,0,1
+O,Realty Income,2022-04,hold,0.088,1,0,0,1
+ODFL,Old Dominion,2020-05,sell,-0.955,1,0,1,0
+ODFL,Old Dominion,2020-09,buy,0.9135,1,1,0,0
+ODFL,Old Dominion,2020-12,buy,0.8975,1,1,0,0
+ODFL,Old Dominion,2021-03,buy,0.657,2,1,0,1
+ODFL,Old Dominion,2021-07,buy,0.855,1,1,0,0
+OKE,ONEOK,2020-03,sell,-0.4635,2,0,1,1
+OKE,ONEOK,2020-04,sell,-0.9658,1,0,1,0
+ON,ON Semiconductor,2023-10,sell,-0.1536,2,1,1,0
+ON,ON Semiconductor,2023-11,buy,0.9044,1,1,0,0
+ON,ON Semiconductor,2024-01,sell,-0.1301,3,1,2,0
+ON,ON Semiconductor,2024-02,hold,0.0024,2,0,1,1
+ON,ON Semiconductor,2024-04,sell,-0.5134,2,0,1,1
+ORLY,O'Reilly Auto Parts,2022-06,sell,-0.961,1,0,1,0
+ORLY,O'Reilly Auto Parts,2022-11,sell,-0.8019,1,0,1,0
+ORLY,O'Reilly Auto Parts,2022-12,sell,-0.7505,1,0,1,0
+ORLY,O'Reilly Auto Parts,2023-03,hold,0.0295,2,0,0,2
+OTIS,Otis Worldwide,2022-04,sell,-0.6396,1,0,1,0
+OTIS,Otis Worldwide,2022-10,sell,-0.9507,1,0,1,0
+OTIS,Otis Worldwide,2023-01,buy,0.7364,1,1,0,0
+OTIS,Otis Worldwide,2023-02,sell,-0.7738,1,0,1,0
+OTIS,Otis Worldwide,2023-07,sell,-0.7822,1,0,1,0
+OTIS,Otis Worldwide,2023-08,sell,-0.1496,1,0,0,1
+OTIS,Otis Worldwide,2023-09,hold,-0.0668,1,0,0,1
+OTIS,Otis Worldwide,2023-10,hold,-0.0327,2,1,1,0
+OTIS,Otis Worldwide,2024-02,hold,0.0756,1,0,0,1
+OXY,Occidental Petroleum,2021-08,buy,0.913,1,1,0,0
+OXY,Occidental Petroleum,2021-09,sell,-0.9661,1,0,1,0
+OXY,Occidental Petroleum,2021-10,buy,0.9348,1,1,0,0
+OXY,Occidental Petroleum,2022-01,hold,-0.0336,1,0,0,1
+OXY,Occidental Petroleum,2022-03,buy,0.5973,2,2,0,0
+OXY,Occidental Petroleum,2023-05,buy,0.2033,1,0,0,1
+OXY,Occidental Petroleum,2023-06,buy,0.1376,1,0,0,1
+OXY,Occidental Petroleum,2024-01,buy,0.198,1,1,0,0
+OXY,Occidental Petroleum,2024-03,hold,0.0267,1,0,0,1
+PANW,Palo Alto Networks,2023-05,buy,0.9299,1,1,0,0
+PANW,Palo Alto Networks,2023-07,buy,0.7391,1,1,0,0
+PANW,Palo Alto Networks,2023-08,sell,-0.138,2,1,1,0
+PANW,Palo Alto Networks,2023-09,buy,0.49,1,1,0,0
+PANW,Palo Alto Networks,2023-11,sell,-0.9558,2,0,2,0
+PANW,Palo Alto Networks,2023-12,buy,0.9261,1,1,0,0
+PANW,Palo Alto Networks,2024-01,buy,0.8495,1,1,0,0
+PANW,Palo Alto Networks,2024-02,hold,0.0329,1,1,0,0
+PARA,Paramount Global,2022-10,buy,0.1336,1,0,0,1
+PARA,Paramount Global,2022-11,sell,-0.3254,3,1,2,0
+PARA,Paramount Global,2023-02,sell,-0.7873,1,0,1,0
+PARA,Paramount Global,2023-05,sell,-0.9603,1,0,1,0
+PARA,Paramount Global,2023-11,sell,-0.267,3,1,2,0
+PARA,Paramount Global,2023-12,buy,0.7868,1,1,0,0
+PAYC,Paycom,2021-08,buy,0.1531,1,0,0,1
+PAYC,Paycom,2021-09,buy,0.9154,1,1,0,0
+PAYC,Paycom,2022-01,buy,0.1769,1,1,0,0
+PAYC,Paycom,2022-03,buy,0.7297,1,1,0,0
+PAYX,Paychex,2020-08,sell,-0.9143,1,0,1,0
+PCAR,Paccar,2021-10,buy,0.3286,1,0,0,1
+PCAR,Paccar,2022-01,sell,-0.9637,1,0,1,0
+PCG,PG&E Corporation,2024-01,sell,-0.6615,1,0,1,0
+PCG,PG&E Corporation,2024-02,sell,-0.7586,1,0,1,0
+PCG,PG&E Corporation,2024-03,buy,0.115,2,1,0,1
+PEG,Public Service Enterprise Group,2023-11,sell,-0.6373,1,0,1,0
+PEP,PepsiCo,2022-02,sell,-0.9174,1,0,1,0
+PEP,PepsiCo,2022-07,sell,-0.717,1,0,1,0
+PEP,PepsiCo,2022-10,sell,-0.163,3,1,2,0
+PEP,PepsiCo,2022-12,sell,-0.3899,2,0,1,1
+PEP,PepsiCo,2023-02,sell,-0.922,1,0,1,0
+PEP,PepsiCo,2023-04,sell,-0.8996,1,0,1,0
+PEP,PepsiCo,2023-07,sell,-0.4808,1,0,1,0
+PFE,Pfizer,2023-06,hold,-0.0345,1,0,0,1
+PFE,Pfizer,2023-07,buy,0.3243,2,1,0,1
+PFE,Pfizer,2023-08,sell,-0.5138,3,0,2,1
+PFE,Pfizer,2023-09,buy,0.679,2,1,0,1
+PFE,Pfizer,2023-10,sell,-0.7143,2,0,2,0
+PFG,Principal Financial Group,2021-12,hold,0.0369,1,0,0,1
+PFG,Principal Financial Group,2022-01,sell,-0.2206,1,0,0,1
+PFG,Principal Financial Group,2022-08,sell,-0.9512,1,0,1,0
+PFG,Principal Financial Group,2022-11,sell,-0.8961,1,0,1,0
+PFG,Principal Financial Group,2022-12,hold,0.0274,1,0,0,1
+PFG,Principal Financial Group,2024-01,sell,-0.3765,3,0,1,2
+PG,Procter & Gamble,2021-10,buy,0.1267,2,1,1,0
+PG,Procter & Gamble,2022-01,buy,0.9228,1,1,0,0
+PG,Procter & Gamble,2022-03,sell,-0.7794,1,0,1,0
+PG,Procter & Gamble,2022-07,sell,-0.399,2,0,1,1
+PG,Procter & Gamble,2022-09,buy,0.2461,1,0,0,1
+PG,Procter & Gamble,2022-10,buy,0.7491,2,2,0,0
+PG,Procter & Gamble,2024-04,buy,0.7607,1,1,0,0
+PGR,Progressive Corporation,2024-03,hold,-0.0336,2,0,0,2
+PH,Parker Hannifin,2021-04,buy,0.6275,1,1,0,0
+PH,Parker Hannifin,2021-08,hold,-0.0266,2,1,1,0
+PH,Parker Hannifin,2021-09,hold,-0.0207,2,1,1,0
+PH,Parker Hannifin,2021-10,buy,0.6755,1,1,0,0
+PH,Parker Hannifin,2021-11,buy,0.7434,1,1,0,0
+PH,Parker Hannifin,2022-03,buy,0.3075,1,0,0,1
+PHM,PulteGroup,2020-01,buy,0.7739,1,1,0,0
+PHM,PulteGroup,2022-12,sell,-0.9243,1,0,1,0
+PHM,PulteGroup,2023-10,sell,-0.3559,8,3,4,1
+PKG,Packaging Corporation of America,2020-03,sell,-0.4155,3,0,2,1
+PKG,Packaging Corporation of America,2020-08,sell,-0.1659,1,0,0,1
+PKG,Packaging Corporation of America,2021-08,sell,-0.8862,1,0,1,0
+PKG,Packaging Corporation of America,2021-10,buy,0.7944,1,1,0,0
+PLD,Prologis,2024-02,buy,0.4786,2,2,0,0
+PLD,Prologis,2024-03,sell,-0.2954,1,0,1,0
+PM,Philip Morris International,2020-03,buy,0.2662,1,0,0,1
+PM,Philip Morris International,2023-11,sell,-0.1344,1,0,0,1
+PNC,PNC Financial Services,2020-12,buy,0.4613,1,0,0,1
+PNC,PNC Financial Services,2023-10,sell,-0.5457,1,0,1,0
+PNR,Pentair,2021-08,buy,0.9297,1,1,0,0
+PNR,Pentair,2021-10,buy,0.8104,1,1,0,0
+PNR,Pentair,2022-01,hold,0.0073,1,0,0,1
+PNW,Pinnacle West,2022-04,sell,-0.9146,1,0,1,0
+PODD,Insulet,2022-05,sell,-0.9357,3,0,3,0
+PODD,Insulet,2022-10,hold,0.0345,1,0,0,1
+PODD,Insulet,2023-01,hold,-0.0722,1,0,0,1
+PODD,Insulet,2023-03,sell,-0.2301,3,1,2,0
+POOL,Pool Corporation,2020-08,sell,-0.1119,1,0,0,1
+POOL,Pool Corporation,2021-01,hold,0.0524,1,0,0,1
+POOL,Pool Corporation,2021-03,sell,-0.3037,1,0,0,1
+POOL,Pool Corporation,2021-04,hold,0.078,1,0,0,1
+POOL,Pool Corporation,2021-05,sell,-0.9265,1,0,1,0
+POOL,Pool Corporation,2022-12,sell,-0.7404,1,0,1,0
+PPG,PPG Industries,2021-04,buy,0.2077,1,1,0,0
+PPG,PPG Industries,2022-03,hold,-0.0302,1,0,0,1
+PPG,PPG Industries,2022-06,sell,-0.382,1,0,1,0
+PPG,PPG Industries,2022-09,hold,0.0855,1,0,0,1
+PPG,PPG Industries,2022-11,sell,-0.9387,1,0,1,0
+PRU,Prudential Financial,2023-07,sell,-0.1543,1,0,0,1
+PSA,Public Storage,2023-08,sell,-0.1928,2,0,0,2
+PSA,Public Storage,2023-09,hold,0.073,1,0,0,1
+PSA,Public Storage,2023-10,buy,0.2659,2,1,0,1
+PSA,Public Storage,2023-11,hold,-0.0566,1,0,0,1
+PSA,Public Storage,2024-04,sell,-0.9647,1,0,1,0
+PSX,Phillips 66,2023-08,buy,0.9324,1,1,0,0
+PSX,Phillips 66,2023-11,buy,0.6476,1,1,0,0
+PSX,Phillips 66,2023-12,sell,-0.9213,1,0,1,0
+PSX,Phillips 66,2024-04,sell,-0.9202,1,0,1,0
+PTC,PTC,2021-05,buy,0.1532,1,0,0,1
+PWR,Quanta Services,2020-01,hold,0.0298,1,0,0,1
+PWR,Quanta Services,2020-11,hold,0.0428,1,0,0,1
+PWR,Quanta Services,2021-08,buy,0.8096,1,1,0,0
+PWR,Quanta Services,2022-03,hold,0.0901,1,0,0,1
+PWR,Quanta Services,2022-08,buy,0.7855,1,1,0,0
+PWR,Quanta Services,2024-04,sell,-0.2482,1,0,1,0
+PXD,Pioneer Natural Resources,2021-04,hold,-0.0144,1,0,0,1
+PXD,Pioneer Natural Resources,2021-06,hold,0.07,1,0,0,1
+PXD,Pioneer Natural Resources,2023-02,sell,-0.8737,1,0,1,0
+PXD,Pioneer Natural Resources,2023-03,buy,0.928,1,1,0,0
+PXD,Pioneer Natural Resources,2023-04,sell,-0.1856,2,1,1,0
+PXD,Pioneer Natural Resources,2023-07,hold,0.0667,1,0,0,1
+PXD,Pioneer Natural Resources,2023-12,buy,0.7368,1,1,0,0
+PXD,Pioneer Natural Resources,2024-01,buy,0.9124,1,1,0,0
+PYPL,PayPal,2023-01,sell,-0.9022,1,0,1,0
+PYPL,PayPal,2023-02,sell,-0.5315,3,0,2,1
+PYPL,PayPal,2023-05,hold,-0.0691,1,0,0,1
+PYPL,PayPal,2023-08,sell,-0.2315,3,1,2,0
+PYPL,PayPal,2023-09,sell,-0.7276,2,0,2,0
+QCOM,Qualcomm,2023-05,sell,-0.9686,1,0,1,0
+QCOM,Qualcomm,2023-07,buy,0.3204,1,0,0,1
+QCOM,Qualcomm,2023-08,sell,-0.9583,4,0,4,0
+QCOM,Qualcomm,2023-09,sell,-0.8595,2,0,2,0
+QCOM,Qualcomm,2023-11,buy,0.4627,2,1,0,1
+QRVO,Qorvo,2021-05,hold,-0.0222,1,0,0,1
+QRVO,Qorvo,2022-07,sell,-0.9187,2,0,2,0
+QRVO,Qorvo,2023-07,sell,-0.1695,1,0,1,0
+QRVO,Qorvo,2023-08,sell,-0.9527,1,0,1,0
+RCL,Royal Caribbean Group,2020-09,buy,0.6561,1,1,0,0
+RCL,Royal Caribbean Group,2022-09,sell,-0.5669,1,0,1,0
+RCL,Royal Caribbean Group,2022-10,sell,-0.9431,1,0,1,0
+RCL,Royal Caribbean Group,2022-12,sell,-0.9459,1,0,1,0
+RCL,Royal Caribbean Group,2024-01,buy,0.4601,1,1,0,0
+REGN,Regeneron,2020-03,buy,0.1776,3,0,0,3
+REGN,Regeneron,2020-06,hold,0.0769,1,0,0,1
+REGN,Regeneron,2020-10,buy,0.2203,2,1,0,1
+REGN,Regeneron,2020-11,buy,0.9306,1,1,0,0
+REGN,Regeneron,2020-12,sell,-0.7267,1,0,1,0
+REGN,Regeneron,2021-01,buy,0.5564,1,1,0,0
+REGN,Regeneron,2021-11,buy,0.8739,1,1,0,0
+RF,Regions Financial Corporation,2021-01,buy,0.5627,1,1,0,0
+RF,Regions Financial Corporation,2022-02,sell,-0.6895,1,0,1,0
+RHI,Robert Half,2023-01,sell,-0.586,2,0,1,1
+RHI,Robert Half,2023-02,sell,-0.1788,2,0,0,2
+RHI,Robert Half,2023-06,buy,0.8757,1,1,0,0
+RHI,Robert Half,2023-07,sell,-0.6208,1,0,1,0
+RHI,Robert Half,2023-10,sell,-0.6162,2,0,2,0
+RJF,Raymond James,2022-07,sell,-0.7992,1,0,1,0
+RJF,Raymond James,2023-08,buy,0.7236,2,2,0,0
+RJF,Raymond James,2023-09,hold,-0.0661,1,0,1,0
+RJF,Raymond James,2023-10,sell,-0.8115,1,0,1,0
+RJF,Raymond James,2024-03,buy,0.9233,1,1,0,0
+RJF,Raymond James,2024-04,buy,0.602,4,3,1,0
+RL,Ralph Lauren Corporation,2021-04,sell,-0.6208,1,0,1,0
+RMD,ResMed,2021-05,buy,0.2491,1,0,0,1
+RMD,ResMed,2022-10,sell,-0.952,1,0,1,0
+RMD,ResMed,2023-04,hold,-0.046,2,1,1,0
+RMD,ResMed,2023-05,buy,0.8705,1,1,0,0
+RMD,ResMed,2023-08,sell,-0.3475,3,1,2,0
+ROK,Rockwell Automation,2023-02,buy,0.8698,1,1,0,0
+ROK,Rockwell Automation,2023-06,buy,0.904,1,1,0,0
+ROK,Rockwell Automation,2023-08,buy,0.3465,2,1,1,0
+ROK,Rockwell Automation,2023-12,sell,-0.172,2,1,1,0
+ROK,Rockwell Automation,2024-01,buy,0.8829,1,1,0,0
+ROL,"Rollins, Inc.",2021-11,hold,0.0219,1,0,0,1
+ROL,"Rollins, Inc.",2022-04,sell,-0.6512,1,0,1,0
+ROL,"Rollins, Inc.",2022-09,sell,-0.7522,1,0,1,0
+ROL,"Rollins, Inc.",2023-06,hold,0.0674,1,0,0,1
+ROL,"Rollins, Inc.",2023-08,hold,0.04,1,0,0,1
+ROST,Ross Stores,2021-05,buy,0.2577,2,1,1,0
+ROST,Ross Stores,2023-11,buy,0.2598,2,1,1,0
+ROST,Ross Stores,2024-02,sell,-0.8277,1,0,1,0
+RSG,Republic Services,2023-03,sell,-0.1165,4,2,2,0
+RSG,Republic Services,2023-04,sell,-0.8996,1,0,1,0
+RSG,Republic Services,2023-07,sell,-0.4778,1,0,1,0
+RSG,Republic Services,2023-10,buy,0.8068,1,1,0,0
+SBUX,Starbucks,2023-11,buy,0.7467,7,7,0,0
+SBUX,Starbucks,2023-12,sell,-0.6584,1,0,1,0
+SBUX,Starbucks,2024-01,buy,0.4815,2,1,0,1
+SCHW,Charles Schwab Corporation,2021-04,sell,-0.4726,1,0,1,0
+SCHW,Charles Schwab Corporation,2021-09,sell,-0.9404,1,0,1,0
+SHW,Sherwin-Williams,2023-07,sell,-0.1089,1,0,0,1
+SHW,Sherwin-Williams,2023-11,buy,0.8285,1,1,0,0
+SHW,Sherwin-Williams,2023-12,buy,0.1149,1,0,0,1
+SHW,Sherwin-Williams,2024-01,buy,0.8829,1,1,0,0
+SJM,J.M. Smucker Company (The),2020-04,sell,-0.2063,2,1,1,0
+SJM,J.M. Smucker Company (The),2021-04,buy,0.7776,2,2,0,0
+SJM,J.M. Smucker Company (The),2023-10,hold,0.0307,1,0,0,1
+SJM,J.M. Smucker Company (The),2023-12,hold,0.0452,1,0,0,1
+SLB,Schlumberger,2024-04,sell,-0.6469,1,0,1,0
+SNA,Snap-on,2023-07,sell,-0.9509,1,0,1,0
+SNA,Snap-on,2023-10,sell,-0.395,1,0,0,1
+SNA,Snap-on,2023-11,buy,0.9023,1,1,0,0
+SNA,Snap-on,2023-12,buy,0.1141,5,3,2,0
+SNA,Snap-on,2024-01,sell,-0.5837,2,0,2,0
+SNPS,Synopsys,2022-05,buy,0.1548,1,1,0,0
+SNPS,Synopsys,2023-08,hold,0.0539,5,2,2,1
+SNPS,Synopsys,2023-09,sell,-0.4158,2,0,1,1
+SNPS,Synopsys,2023-11,buy,0.3657,2,1,1,0
+SO,Southern Company,2021-03,buy,0.6198,1,1,0,0
+SO,Southern Company,2023-03,sell,-0.7023,1,0,1,0
+SO,Southern Company,2023-04,sell,-0.9144,1,0,1,0
+SO,Southern Company,2023-08,hold,-0.0298,2,1,1,0
+SO,Southern Company,2024-03,sell,-0.596,5,0,4,1
+SPG,Simon Property Group,2020-08,sell,-0.7209,2,0,2,0
+SPG,Simon Property Group,2020-11,sell,-0.4562,2,0,1,1
+SPG,Simon Property Group,2020-12,sell,-0.6868,1,0,1,0
+SPG,Simon Property Group,2023-07,buy,0.8773,1,1,0,0
+SPG,Simon Property Group,2023-08,hold,-0.0651,1,0,0,1
+SPG,Simon Property Group,2023-11,buy,0.1073,1,0,0,1
+SPGI,S&P Global,2024-04,sell,-0.2418,10,1,4,5
+SRE,Sempra Energy,2022-09,sell,-0.8211,1,0,1,0
+SRE,Sempra Energy,2023-05,hold,0.0413,1,0,0,1
+SRE,Sempra Energy,2023-10,hold,-0.0413,1,0,0,1
+STLD,Steel Dynamics,2021-08,buy,0.7029,1,1,0,0
+STLD,Steel Dynamics,2021-11,hold,0.0883,1,0,0,1
+STLD,Steel Dynamics,2022-05,buy,0.1137,1,0,0,1
+STLD,Steel Dynamics,2022-08,sell,-0.9371,1,0,1,0
+STLD,Steel Dynamics,2023-01,buy,0.8797,1,1,0,0
+STLD,Steel Dynamics,2023-03,buy,0.6842,1,1,0,0
+STT,State Street Corporation,2021-01,sell,-0.1595,1,0,0,1
+STT,State Street Corporation,2021-03,buy,0.3343,1,0,0,1
+STT,State Street Corporation,2021-06,sell,-0.4034,1,0,1,0
+STT,State Street Corporation,2021-07,hold,-0.0986,1,0,0,1
+STT,State Street Corporation,2021-12,hold,0.0973,1,0,0,1
+STT,State Street Corporation,2022-01,hold,-0.0129,1,0,1,0
+STT,State Street Corporation,2022-04,sell,-0.5556,1,0,1,0
+STT,State Street Corporation,2022-05,buy,0.1249,1,0,0,1
+STT,State Street Corporation,2023-11,sell,-0.9519,1,0,1,0
+STX,Seagate Technology,2024-04,buy,0.8768,1,1,0,0
+STZ,Constellation Brands,2022-06,buy,0.7788,1,1,0,0
+STZ,Constellation Brands,2022-10,buy,0.9351,1,1,0,0
+STZ,Constellation Brands,2023-01,sell,-0.9663,1,0,1,0
+STZ,Constellation Brands,2023-03,buy,0.1778,1,0,0,1
+STZ,Constellation Brands,2023-04,sell,-0.1653,1,0,1,0
+STZ,Constellation Brands,2023-05,sell,-0.7658,1,0,1,0
+STZ,Constellation Brands,2023-07,buy,0.1836,2,0,0,2
+STZ,Constellation Brands,2023-11,buy,0.9223,1,1,0,0
+STZ,Constellation Brands,2024-04,buy,0.4523,1,1,0,0
+SWK,Stanley Black & Decker,2020-09,buy,0.2488,1,0,0,1
+SWK,Stanley Black & Decker,2022-11,buy,0.8831,1,1,0,0
+SWK,Stanley Black & Decker,2024-01,hold,0.0136,2,1,1,0
+SWK,Stanley Black & Decker,2024-02,sell,-0.4153,4,0,2,2
+SWKS,Skyworks Solutions,2020-07,buy,0.9211,1,1,0,0
+SWKS,Skyworks Solutions,2023-12,sell,-0.9055,1,0,1,0
+SYF,Synchrony Financial,2020-07,hold,0.0021,1,0,0,1
+SYF,Synchrony Financial,2020-08,sell,-0.5023,1,0,1,0
+SYF,Synchrony Financial,2021-06,hold,0.0362,1,0,0,1
+SYF,Synchrony Financial,2021-12,buy,0.5768,1,1,0,0
+SYF,Synchrony Financial,2022-04,buy,0.7955,1,1,0,0
+SYF,Synchrony Financial,2022-08,buy,0.2623,1,0,0,1
+SYF,Synchrony Financial,2022-09,sell,-0.9344,1,0,1,0
+SYF,Synchrony Financial,2022-11,buy,0.9201,1,1,0,0
+SYY,Sysco,2020-02,sell,-0.8329,1,0,1,0
+SYY,Sysco,2020-03,hold,-0.0276,2,1,1,0
+SYY,Sysco,2021-07,buy,0.9195,1,1,0,0
+SYY,Sysco,2021-10,buy,0.6648,1,1,0,0
+SYY,Sysco,2023-07,sell,-0.1695,1,0,1,0
+SYY,Sysco,2023-10,sell,-0.9583,1,0,1,0
+SYY,Sysco,2024-01,sell,-0.3134,2,1,1,0
+SYY,Sysco,2024-02,hold,0.0653,1,0,0,1
+TAP,Molson Coors Beverage Company,2020-01,sell,-0.159,1,0,0,1
+TAP,Molson Coors Beverage Company,2020-10,buy,0.9314,1,1,0,0
+TAP,Molson Coors Beverage Company,2021-05,sell,-0.9088,1,0,1,0
+TAP,Molson Coors Beverage Company,2023-06,buy,0.8527,1,1,0,0
+TDG,TransDigm Group,2020-08,sell,-0.3604,1,0,0,1
+TDG,TransDigm Group,2021-01,sell,-0.1087,1,0,0,1
+TDG,TransDigm Group,2021-03,sell,-0.804,1,0,1,0
+TDG,TransDigm Group,2021-04,hold,-0.032,1,0,0,1
+TDG,TransDigm Group,2022-01,buy,0.1508,1,0,0,1
+TECH,Bio-Techne,2020-01,hold,-0.0393,1,0,0,1
+TECH,Bio-Techne,2020-02,sell,-0.172,1,0,0,1
+TECH,Bio-Techne,2020-03,sell,-0.2891,1,0,0,1
+TECH,Bio-Techne,2020-06,hold,-0.0522,1,0,0,1
+TER,Teradyne,2020-09,sell,-0.9517,1,0,1,0
+TER,Teradyne,2022-06,hold,0.0033,1,0,0,1
+TER,Teradyne,2022-09,sell,-0.4403,1,0,1,0
+TER,Teradyne,2022-10,buy,0.4084,1,0,0,1
+TER,Teradyne,2023-02,sell,-0.1027,3,1,1,1
+TER,Teradyne,2023-04,sell,-0.2134,1,0,1,0
+TFC,Truist,2022-07,buy,0.887,1,1,0,0
+TFC,Truist,2022-09,buy,0.7143,1,1,0,0
+TFC,Truist,2022-12,sell,-0.3074,1,0,1,0
+TFC,Truist,2023-01,sell,-0.8936,1,0,1,0
+TFC,Truist,2023-04,sell,-0.9109,1,0,1,0
+TFC,Truist,2023-08,buy,0.9321,1,1,0,0
+TGT,Target Corporation,2020-06,buy,0.8149,1,1,0,0
+TGT,Target Corporation,2020-08,buy,0.9019,1,1,0,0
+TGT,Target Corporation,2021-01,sell,-0.6971,1,0,1,0
+TGT,Target Corporation,2021-03,buy,0.601,2,2,0,0
+TGT,Target Corporation,2021-06,sell,-0.7161,1,0,1,0
+TGT,Target Corporation,2023-08,buy,0.8721,1,1,0,0
+TGT,Target Corporation,2023-12,buy,0.919,1,1,0,0
+TGT,Target Corporation,2024-04,buy,0.7687,1,1,0,0
+TJX,TJX Companies,2022-10,buy,0.2605,1,1,0,0
+TJX,TJX Companies,2022-11,hold,0.0098,2,1,1,0
+TJX,TJX Companies,2023-01,sell,-0.9381,1,0,1,0
+TJX,TJX Companies,2023-02,buy,0.7747,1,1,0,0
+TJX,TJX Companies,2023-05,sell,-0.3282,2,0,2,0
+TJX,TJX Companies,2023-06,buy,0.8523,2,2,0,0
+TJX,TJX Companies,2024-01,hold,0.0475,1,0,0,1
+TMO,Thermo Fisher Scientific,2021-05,hold,0.0352,1,0,0,1
+TMO,Thermo Fisher Scientific,2021-12,buy,0.3501,1,0,0,1
+TMO,Thermo Fisher Scientific,2022-04,buy,0.4416,1,1,0,0
+TMO,Thermo Fisher Scientific,2022-05,sell,-0.6231,2,0,2,0
+TMO,Thermo Fisher Scientific,2022-07,buy,0.4217,2,1,1,0
+TMO,Thermo Fisher Scientific,2022-08,buy,0.3381,1,0,0,1
+TMO,Thermo Fisher Scientific,2024-04,sell,-0.9174,1,0,1,0
+TMUS,T-Mobile US,2020-02,hold,0.0208,1,0,0,1
+TPR,"Tapestry, Inc.",2020-02,hold,-0.0839,2,1,1,0
+TPR,"Tapestry, Inc.",2020-04,sell,-0.961,1,0,1,0
+TPR,"Tapestry, Inc.",2020-09,buy,0.9296,1,1,0,0
+TPR,"Tapestry, Inc.",2020-11,buy,0.4174,1,1,0,0
+TRGP,Targa Resources,2024-04,sell,-0.2323,2,0,1,1
+TROW,T. Rowe Price,2020-02,sell,-0.7594,1,0,1,0
+TROW,T. Rowe Price,2020-07,buy,0.3451,1,0,0,1
+TROW,T. Rowe Price,2021-01,buy,0.1829,2,0,0,2
+TROW,T. Rowe Price,2022-08,buy,0.1794,1,0,0,1
+TRV,Travelers Companies (The),2022-03,hold,-0.0111,1,0,0,1
+TRV,Travelers Companies (The),2022-06,sell,-0.9154,1,0,1,0
+TRV,Travelers Companies (The),2022-09,buy,0.3745,1,0,0,1
+TRV,Travelers Companies (The),2022-11,hold,0.0154,1,0,0,1
+TRV,Travelers Companies (The),2023-04,hold,0.0555,1,0,0,1
+TRV,Travelers Companies (The),2023-12,hold,-0.0965,4,1,1,2
+TRV,Travelers Companies (The),2024-01,sell,-0.9598,1,0,1,0
+TSCO,Tractor Supply,2023-09,sell,-0.6703,1,0,1,0
+TSCO,Tractor Supply,2023-10,buy,0.4105,1,0,0,1
+TSCO,Tractor Supply,2023-12,sell,-0.9419,2,0,2,0
+TSLA,"Tesla, Inc.",2024-04,sell,-0.2586,10,3,6,1
+TSN,Tyson Foods,2021-08,buy,0.4262,2,1,0,1
+TSN,Tyson Foods,2021-09,sell,-0.9316,1,0,1,0
+TSN,Tyson Foods,2021-12,sell,-0.8512,1,0,1,0
+TSN,Tyson Foods,2022-05,buy,0.3837,1,1,0,0
+TSN,Tyson Foods,2023-07,buy,0.3322,1,0,0,1
+TTWO,Take-Two Interactive,2020-08,hold,-0.0371,1,0,1,0
+TTWO,Take-Two Interactive,2021-02,sell,-0.3829,1,0,1,0
+TTWO,Take-Two Interactive,2021-06,sell,-0.9426,1,0,1,0
+TTWO,Take-Two Interactive,2021-08,sell,-0.7621,1,0,1,0
+TTWO,Take-Two Interactive,2022-09,sell,-0.9309,1,0,1,0
+TTWO,Take-Two Interactive,2023-01,sell,-0.9318,1,0,1,0
+TTWO,Take-Two Interactive,2023-12,buy,0.8974,1,1,0,0
+TTWO,Take-Two Interactive,2024-03,sell,-0.9655,1,0,1,0
+TXN,Texas Instruments,2020-01,sell,-0.9502,1,0,1,0
+TXN,Texas Instruments,2024-01,sell,-0.3365,3,1,2,0
+TXT,Textron,2023-07,sell,-0.9627,1,0,1,0
+TXT,Textron,2024-02,buy,0.1391,1,0,0,1
+TXT,Textron,2024-03,hold,-0.0084,4,2,2,0
+TYL,Tyler Technologies,2020-06,buy,0.304,1,0,0,1
+TYL,Tyler Technologies,2020-07,buy,0.1266,1,0,0,1
+TYL,Tyler Technologies,2021-07,sell,-0.3745,1,0,0,1
+UBER,Uber,2023-08,sell,-0.4252,2,0,1,1
+UBER,Uber,2023-09,hold,0.0353,1,0,0,1
+UBER,Uber,2023-10,hold,0.0494,2,0,0,2
+UBER,Uber,2023-11,sell,-0.3819,4,0,2,2
+UBER,Uber,2024-01,buy,0.8396,1,1,0,0
+UDR,"UDR, Inc.",2022-05,sell,-0.4757,1,0,1,0
+UDR,"UDR, Inc.",2023-02,sell,-0.6648,1,0,1,0
+UDR,"UDR, Inc.",2023-09,hold,0.0003,2,0,0,2
+UDR,"UDR, Inc.",2023-10,hold,0.0212,1,0,0,1
+UHS,Universal Health Services,2020-09,sell,-0.1347,2,1,1,0
+UHS,Universal Health Services,2020-12,sell,-0.6307,1,0,1,0
+UHS,Universal Health Services,2021-04,buy,0.7942,1,1,0,0
+UHS,Universal Health Services,2022-06,sell,-0.9662,1,0,1,0
+UHS,Universal Health Services,2022-09,hold,-0.0082,1,0,0,1
+ULTA,Ulta Beauty,2020-09,sell,-0.9294,1,0,1,0
+ULTA,Ulta Beauty,2020-11,buy,0.8644,2,2,0,0
+ULTA,Ulta Beauty,2021-02,buy,0.1625,1,0,0,1
+ULTA,Ulta Beauty,2021-03,sell,-0.855,2,0,2,0
+ULTA,Ulta Beauty,2021-05,hold,-0.0814,2,1,1,0
+ULTA,Ulta Beauty,2021-08,buy,0.7504,1,1,0,0
+ULTA,Ulta Beauty,2021-09,hold,-0.0652,1,0,0,1
+UNH,UnitedHealth Group,2022-12,buy,0.1689,1,0,0,1
+UNH,UnitedHealth Group,2023-04,sell,-0.9562,1,0,1,0
+UNH,UnitedHealth Group,2024-01,buy,0.1813,2,1,1,0
+UNH,UnitedHealth Group,2024-02,sell,-0.5489,3,0,2,1
+UNP,Union Pacific Corporation,2020-02,sell,-0.9578,1,0,1,0
+UNP,Union Pacific Corporation,2020-09,sell,-0.6696,1,0,1,0
+UPS,United Parcel Service,2022-01,buy,0.1726,1,0,0,1
+UPS,United Parcel Service,2022-07,sell,-0.9407,1,0,1,0
+UPS,United Parcel Service,2023-01,sell,-0.4283,1,0,1,0
+UPS,United Parcel Service,2023-03,sell,-0.7373,2,0,2,0
+UPS,United Parcel Service,2023-04,buy,0.1938,1,1,0,0
+URI,United Rentals,2021-08,buy,0.1483,1,0,0,1
+URI,United Rentals,2022-03,hold,0.0624,1,0,0,1
+URI,United Rentals,2022-04,buy,0.1462,1,0,0,1
+URI,United Rentals,2022-06,hold,0.08,1,0,0,1
+URI,United Rentals,2022-11,hold,0.06,1,0,0,1
+URI,United Rentals,2024-01,buy,0.9027,1,1,0,0
+USB,U.S. Bank,2024-02,sell,-0.9584,1,0,1,0
+USB,U.S. Bank,2024-03,buy,0.4347,2,1,0,1
+USB,U.S. Bank,2024-04,buy,0.6659,7,7,0,0
+V,Visa Inc.,2022-08,sell,-0.7756,2,0,2,0
+V,Visa Inc.,2022-10,hold,0.0283,1,0,0,1
+V,Visa Inc.,2022-11,hold,0.0175,1,0,0,1
+V,Visa Inc.,2022-12,sell,-0.9521,1,0,1,0
+V,Visa Inc.,2023-01,hold,0.0827,2,1,1,0
+V,Visa Inc.,2023-03,sell,-0.7945,1,0,1,0
+V,Visa Inc.,2023-07,buy,0.9104,1,1,0,0
+V,Visa Inc.,2024-04,hold,0.0493,1,0,0,1
+VICI,Vici Properties,2020-02,hold,-0.0233,1,0,0,1
+VICI,Vici Properties,2020-05,hold,0.0181,1,0,0,1
+VICI,Vici Properties,2024-04,hold,0.0101,1,0,0,1
+VLO,Valero Energy,2023-06,sell,-0.5915,1,0,1,0
+VLO,Valero Energy,2023-09,hold,-0.0531,1,0,0,1
+VRSK,Verisk,2021-03,hold,0.0472,1,0,0,1
+VRSK,Verisk,2021-07,sell,-0.9501,1,0,1,0
+VRSK,Verisk,2021-12,hold,0.0642,1,0,0,1
+VRSK,Verisk,2023-03,buy,0.6666,1,1,0,0
+VRSK,Verisk,2023-05,sell,-0.243,5,1,3,1
+VRSN,Verisign,2021-03,sell,-0.9279,1,0,1,0
+VRTX,Vertex Pharmaceuticals,2020-02,buy,0.3645,1,0,0,1
+VTR,Ventas,2022-11,hold,0.0154,1,0,0,1
+VTR,Ventas,2023-03,sell,-0.9502,1,0,1,0
+VTR,Ventas,2023-04,hold,0.0203,1,0,0,1
+VTR,Ventas,2023-05,sell,-0.8991,2,0,2,0
+VTR,Ventas,2023-06,buy,0.3093,1,0,0,1
+VTR,Ventas,2023-07,hold,0.0128,1,0,0,1
+VTR,Ventas,2023-08,hold,0.0165,1,0,0,1
+VTR,Ventas,2023-09,buy,0.6691,1,1,0,0
+VTRS,Viatris,2020-12,hold,-0.0788,1,0,0,1
+VTRS,Viatris,2021-04,hold,0.0524,1,0,0,1
+VTRS,Viatris,2021-05,buy,0.5019,2,1,0,1
+VTRS,Viatris,2021-07,sell,-0.2223,1,0,0,1
+VTRS,Viatris,2021-08,buy,0.4321,2,1,0,1
+VTRS,Viatris,2021-12,sell,-0.1893,1,0,0,1
+VZ,Verizon,2021-08,buy,0.2109,1,0,0,1
+VZ,Verizon,2022-01,sell,-0.2432,1,0,0,1
+VZ,Verizon,2022-04,sell,-0.9501,1,0,1,0
+VZ,Verizon,2022-06,sell,-0.2821,1,0,0,1
+VZ,Verizon,2022-07,buy,0.8726,1,1,0,0
+VZ,Verizon,2022-08,buy,0.8832,1,1,0,0
+VZ,Verizon,2022-10,sell,-0.9588,1,0,1,0
+VZ,Verizon,2023-01,sell,-0.7646,1,0,1,0
+VZ,Verizon,2024-04,sell,-0.9188,2,0,2,0
+WAT,Waters Corporation,2020-04,buy,0.1534,1,0,0,1
+WAT,Waters Corporation,2020-08,sell,-0.886,1,0,1,0
+WAT,Waters Corporation,2020-10,buy,0.279,1,0,0,1
+WAT,Waters Corporation,2021-02,hold,-0.0817,1,0,0,1
+WAT,Waters Corporation,2022-02,hold,0.0117,1,0,0,1
+WAT,Waters Corporation,2022-03,sell,-0.5916,1,0,1,0
+WBA,Walgreens Boots Alliance,2022-11,buy,0.9166,1,1,0,0
+WBA,Walgreens Boots Alliance,2023-02,buy,0.9059,1,1,0,0
+WBA,Walgreens Boots Alliance,2023-06,sell,-0.9523,1,0,1,0
+WBA,Walgreens Boots Alliance,2024-02,buy,0.7087,2,2,0,0
+WBD,Warner Bros. Discovery,2023-04,sell,-0.3908,2,0,1,1
+WBD,Warner Bros. Discovery,2023-05,buy,0.1892,1,1,0,0
+WBD,Warner Bros. Discovery,2023-08,hold,0.051,2,1,1,0
+WBD,Warner Bros. Discovery,2023-09,buy,0.3155,1,1,0,0
+WBD,Warner Bros. Discovery,2023-11,sell,-0.877,2,0,2,0
+WBD,Warner Bros. Discovery,2024-02,sell,-0.9497,1,0,1,0
+WBD,Warner Bros. Discovery,2024-03,buy,0.9265,1,1,0,0
+WDC,Western Digital,2020-12,buy,0.9012,1,1,0,0
+WDC,Western Digital,2021-03,buy,0.8744,1,1,0,0
+WDC,Western Digital,2021-04,buy,0.8633,1,1,0,0
+WEC,WEC Energy Group,2021-04,sell,-0.4622,1,0,1,0
+WFC,Wells Fargo,2024-01,sell,-0.873,1,0,1,0
+WFC,Wells Fargo,2024-02,hold,0.0176,3,0,0,3
+WFC,Wells Fargo,2024-03,hold,0.0698,1,0,0,1
+WFC,Wells Fargo,2024-04,buy,0.3544,5,4,1,0
+WM,Waste Management,2024-01,buy,0.9194,1,1,0,0
+WMB,Williams Companies,2022-03,hold,-0.0832,3,0,1,2
+WMB,Williams Companies,2022-08,buy,0.9048,1,1,0,0
+WMB,Williams Companies,2022-10,sell,-0.1286,1,0,0,1
+WMB,Williams Companies,2023-01,hold,0.0253,1,0,0,1
+WMB,Williams Companies,2024-01,buy,0.8802,2,2,0,0
+WMB,Williams Companies,2024-02,sell,-0.5727,1,0,1,0
+WMT,Walmart,2023-10,buy,0.4523,2,1,0,1
+WMT,Walmart,2023-11,sell,-0.4935,4,1,3,0
+WMT,Walmart,2023-12,hold,-0.0878,2,1,1,0
+WMT,Walmart,2024-02,buy,0.8921,2,2,0,0
+WRB,Berkley,2020-04,hold,0.0145,2,0,0,2
+WRB,Berkley,2020-07,hold,-0.013,1,0,0,1
+WRB,Berkley,2021-01,hold,0.0256,2,0,0,2
+WRK,WestRock,2020-10,buy,0.1228,1,0,0,1
+WRK,WestRock,2021-03,buy,0.8822,1,1,0,0
+WRK,WestRock,2021-10,sell,-0.9237,2,0,2,0
+WRK,WestRock,2022-01,sell,-0.5418,1,0,1,0
+WST,West Pharmaceutical Services,2024-01,buy,0.1173,1,0,0,1
+WST,West Pharmaceutical Services,2024-04,hold,-0.0132,1,0,0,1
+WTW,Willis Towers Watson,2020-10,hold,0.0015,1,0,0,1
+WTW,Willis Towers Watson,2020-11,buy,0.3566,1,1,0,0
+WTW,Willis Towers Watson,2021-04,buy,0.2163,1,0,0,1
+WTW,Willis Towers Watson,2021-05,hold,-0.0222,1,0,0,1
+WTW,Willis Towers Watson,2021-06,buy,0.8644,1,1,0,0
+WTW,Willis Towers Watson,2022-03,sell,-0.9262,1,0,1,0
+WTW,Willis Towers Watson,2022-05,sell,-0.885,1,0,1,0
+WTW,Willis Towers Watson,2022-06,sell,-0.8172,1,0,1,0
+WY,Weyerhaeuser,2022-06,sell,-0.2646,1,0,1,0
+WY,Weyerhaeuser,2022-09,buy,0.8184,2,2,0,0
+WY,Weyerhaeuser,2022-10,sell,-0.7339,1,0,1,0
+WY,Weyerhaeuser,2022-11,buy,0.8855,1,1,0,0
+WY,Weyerhaeuser,2023-01,hold,0.0513,1,0,0,1
+WY,Weyerhaeuser,2023-02,sell,-0.922,1,0,1,0
+WY,Weyerhaeuser,2023-04,buy,0.9052,1,1,0,0
+WYNN,Wynn Resorts,2021-11,sell,-0.5573,2,0,1,1
+WYNN,Wynn Resorts,2022-01,sell,-0.9603,1,0,1,0
+WYNN,Wynn Resorts,2022-02,sell,-0.966,1,0,1,0
+WYNN,Wynn Resorts,2022-04,sell,-0.7076,1,0,1,0
+WYNN,Wynn Resorts,2022-05,sell,-0.9555,1,0,1,0
+WYNN,Wynn Resorts,2022-07,sell,-0.9617,1,0,1,0
+WYNN,Wynn Resorts,2022-09,sell,-0.4051,1,0,1,0
+WYNN,Wynn Resorts,2023-11,buy,0.7703,1,1,0,0
+WYNN,Wynn Resorts,2024-01,buy,0.8391,1,1,0,0
+XEL,Xcel Energy,2021-03,hold,0.0489,1,0,0,1
+XEL,Xcel Energy,2021-06,sell,-0.3997,1,0,0,1
+XEL,Xcel Energy,2021-10,buy,0.3054,2,1,1,0
+XEL,Xcel Energy,2022-01,hold,-0.0021,1,0,0,1
+XEL,Xcel Energy,2022-04,hold,0.0582,1,0,0,1
+XEL,Xcel Energy,2022-07,sell,-0.1038,1,0,0,1
+XEL,Xcel Energy,2024-04,hold,0.0231,1,0,0,1
+XYL,Xylem Inc.,2021-05,sell,-0.9597,1,0,1,0
+XYL,Xylem Inc.,2021-09,buy,0.1142,1,0,0,1
+XYL,Xylem Inc.,2024-03,hold,-0.0491,1,0,0,1
+YUM,Yum! Brands,2020-02,sell,-0.9529,1,0,1,0
+YUM,Yum! Brands,2020-03,sell,-0.6476,2,0,2,0
+YUM,Yum! Brands,2020-07,sell,-0.9658,1,0,1,0
+ZBH,Zimmer Biomet,2020-06,hold,0.0346,1,0,0,1
+ZBH,Zimmer Biomet,2020-12,sell,-0.9549,1,0,1,0
+ZBRA,Zebra Technologies,2022-03,sell,-0.4608,1,0,1,0
+ZTS,Zoetis,2020-03,hold,-0.0048,1,0,0,1
+ZTS,Zoetis,2023-10,buy,0.66,1,1,0,0
+ZTS,Zoetis,2024-02,buy,0.133,3,0,0,3
+ZTS,Zoetis,2024-03,hold,0.0872,1,1,0,0
