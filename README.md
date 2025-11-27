@@ -1,28 +1,13 @@
-<h1 align="center">Agentics</h1>
-<h2 align="center">Transduction is all you need</h1>
-<p align="center">
-    <img src="https://raw.githubusercontent.com/IBM/Agentics/refs/heads/main/image.png" height="128">
-    <img src="https://raw.githubusercontent.com/IBM/Agentics/refs/heads/main/image.png" height="128">
-</p>
+<h1 align="center">AI Agents for Portfolio Construction</h1>
 
 
-Agentics is a Python framework that provides structured, scalable, and semantically grounded agentic computation. It enables developers to build AI-powered pipelines where all operations are based on typed data transformations, combining the power of Pydantic models and LLMs with the flexibility of asynchronous execution.
-
-## Getting started
-
-Learn how to install Agentic, set up your environment, and run your first logical transduction. [Getting Started](docs/getting_started.md)
+Our project aims to provide a stock screening agent that can provide buy/hold/sell signals based on historical data, and use these signals to construct a portfolio with better performance in terms of sharpe ratio.
 
 
 ## Authors
 
-- **Principal Investigator**
-    - *Alfio Massimiliano Gliozzo*, IBM Research, gliozzo@us.ibm.com
-- **Core Contributors**:
-    - *Junkyu Lee*, IBM Research, Junkyu.Lee@ibm.com
-    - *Naweed Aghmad Khan*, IBM Research, naweed.khan@ibm.com
-    - *Nahuel Defosse*, IBM Research, nahuel.defosse@ibm.com
-    - *Christodoulos Constantinides*, IBM Watson, Christodoulos.Constantinides@ibm.com
-    - *Mustafa Eyceoz*, RedHat, Mustafa.Eyceoz@partner.ibm.com
+- *Nathan Sun*, Columbia IEOR, ns3903@columbia.edu
+- *Jonathan Tan*, Columbia IEOR, jyt2123@columbia.edu
 
 
 
