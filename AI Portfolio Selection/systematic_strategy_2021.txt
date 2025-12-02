@@ -1,0 +1,27 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The data includes standardized book-to-market (bm), 12-month momentum (mom12m), and log market equity (mve) for S&P 500 firms as of December 31, 2020.
+- All features are z-scores (standard deviations from the mean).
+- Explored extreme values of bm, mom12m and mve to get a better understanding of the data.
+
+BUY RULE:
+if bm > 0.75 AND mom12m > 0.75 AND mve > -0.5:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.0 OR mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: The buy rule targets undervalued companies (high bm) with strong recent performance (high mom12m) that are not too small (mve > -0.5). This combines value and momentum factors, favoring larger, more liquid stocks.
+- SELL Rule: The sell rule aims to sell overvalued companies (low bm) or companies with poor recent performance (low mom12m). This is a defensive rule to cut losses and avoid holding onto underperforming or expensive stocks.
+- Expected signal distribution: Based on the test conditions, the BUY rule is expected to generate signals for around 1-2% of the firms. The SELL rule should generate a larger number of signals, around 5-10%, as it targets both value and momentum underperformance. The majority of stocks will be in the HOLD category.
+```

@@ -36,3 +36,12 @@ report.html
 
 # local folders
 __*__/
+green cleaned.csv
+AI Portfolio Selection/firm_data.db
+examples/green_cleaned_pre_2020.csv
+examples/green_cleaned_pre_2020.csv
+examples/finbert model/config.json
+examples/finbert model/pytorch_model.bin
+examples/finbert model/special_tokens_map.json
+examples/finbert model/tokenizer_config.json
+examples/finbert model/vocab.txt

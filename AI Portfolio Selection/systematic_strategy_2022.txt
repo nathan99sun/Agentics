@@ -1,0 +1,26 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The dataset contains standardized book-to-market (bm), 12-month momentum (mom12m), and log market value of equity (mve) data for S&P 500 firms as of December 31, 2021. All features are standardized to have a mean of 0 and a standard deviation of 1.
+- Extreme values were explored for each characteristic to inform the development of trading rules.
+
+BUY RULE:
+if bm < -0.65 AND mom12m > 0.65 AND mve > -0.5:
+    signal = BUY
+
+SELL RULE:
+if bm > 0.65 AND mom12m < -0.65:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: This rule combines value and momentum factors, selecting firms that are relatively undervalued (bm < -0.65) and have exhibited strong recent performance (mom12m > 0.65). The size constraint (mve > -0.5) aims to filter out the smallest firms, which may be more volatile. This approach is based on the economic intuition that undervalued stocks with positive momentum may be poised for future gains.
+- SELL Rule: This rule identifies firms that are relatively overvalued (bm > 0.65) and have exhibited poor recent performance (mom12m < -0.65). This is based on the economic intuition that these firms are likely to underperform the market in the future.
+- Expected signal distribution: The BUY and SELL rules are designed to generate a relatively balanced number of signals (around 6-8% of the total firms), providing a diversified portfolio. The majority of firms will be assigned a HOLD signal.
+```
