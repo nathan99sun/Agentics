@@ -1,0 +1,27 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The features are standardized, making it easy to compare values across different characteristics using z-scores.
+- Extreme values (above 2 or below -2) are relatively rare, representing the tails of the distributions.
+- Combining value (bm), momentum (mom12m), and size (mve) can identify specific investment opportunities.
+
+BUY RULE:
+if (bm > 0.85 AND mom12m > 0.35) OR (bm > 1.25 AND mve < -0.25):
+    signal = BUY
+
+SELL RULE:
+if (bm < -0.75 AND mom12m < -0.35) OR (mom12m < -1.5):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: The BUY rule targets undervalued stocks (high bm) with positive momentum (high mom12m), indicating potential for future growth. The first condition captures companies that are showing signs of recovery. The second condition captures smaller companies (mve < -0.25) that are extremely undervalued (bm > 1.25). These companies may be temporarily out of favor, but represent deep value opportunities. The specific thresholds (0.85 and 0.35 for the first condition, and 1.25 and -0.25 for the second) are chosen to provide a balance between capturing enough opportunities and avoiding overly broad criteria.
+- SELL Rule: The SELL rule aims to cut losses and protect profits. The first condition sells stocks that are overvalued (low bm) and have negative momentum (low mom12m), suggesting a downward trend. The second condition sells stocks with extremely negative momentum (mom12m < -1.5), irrespective of their value or size. These stocks are likely experiencing significant negative news or events, and selling them helps avoid further losses. The thresholds are set to be reasonably conservative.
+- Expected signal distribution: The rules are designed to generate a relatively small number of BUY and SELL signals, with the majority of stocks being held. This reflects a focus on high-conviction trades based on a combination of value and momentum factors.
+```

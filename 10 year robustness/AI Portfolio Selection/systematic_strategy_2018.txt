@@ -1,0 +1,43 @@
+
+  LBTYA -0.759930 -1.134513 -0.730962
+  LBTYK -1.507347 -0.000000 -0.000000
+   DOV -0.231119 -0.515126 -0.950812
+   LEG -0.593303 -0.684603 -1.542496
+   FLIR  0.656922 -0.025270 -1.525806
+   PWR -0.156710  1.094024 -1.632817
+  SRCL -0.756950  0.308559 -1.672058
+   AIZ  0.110636  1.686176 -1.718921
+   HRB -0.002916 -1.367809 -1.709682
+   FLS -0.865516 -0.334248 -1.691653
+   MAT -2.483866 -0.349116 -1.557635
+  EVHC -2.157795  2.130062 -1.950074
+  PDCO -0.724165 -0.084312 -1.950074
+  TRIP -1.544173 -0.465359 -1.950074
+Thought: 34 firms seems like a reasonable number for the short side. I will refine the thresholds a bit and finalize the rules.
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Analyzed the distribution of book-to-market (bm), momentum (mom12m), and size (mve) for S&P 500 firms as of December 31, 2017.
+- Identified extreme values for each characteristic using z-score thresholds.
+- Explored combinations of characteristics to identify potential BUY and SELL signals.
+
+BUY RULE:
+if bm > 0.70 AND mom12m > 0.45:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.45 AND mom12m < -0.45 AND mve < 0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: The BUY rule identifies companies that are undervalued (high book-to-market ratio) and have positive momentum. These firms may be temporarily out of favor but have the potential for future growth. The thresholds are set to bm > 0.70 and mom12m > 0.45 to capture a reasonable number of undervalued, high-momentum stocks.
+- SELL Rule: The SELL rule identifies companies that are overvalued (low book-to-market ratio), have negative momentum, and are relatively small in size. These firms may be at risk of further decline. The thresholds are set to bm < -0.45, mom12m < -0.45, and mve < 0 to capture a sufficient number of potentially overvalued, low-momentum, and smaller stocks.
+- Expected signal distribution: The BUY rule is expected to generate signals for approximately 4-5% of the firms, while the SELL rule is expected to generate signals for approximately 6-7% of the firms. The remaining firms will be assigned a HOLD signal.
+```

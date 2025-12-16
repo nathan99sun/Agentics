@@ -1,0 +1,26 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Data is standardized with mean 0 and standard deviation 1 for all characteristics (mve, bm, mom12m).
+- Explored combinations of value (bm), momentum (mom12m), and size (mve) to develop buy and sell signals.
+
+BUY RULE:
+if bm > 0.75 AND mom12m > 0.75 AND mve > -0.5:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.75 AND mom12m < -0.75:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: This rule targets undervalued companies (high bm) with positive momentum (high mom12m), while excluding very small companies (mve > -0.5). The economic intuition is to buy companies that the market may be undervaluing but are gaining positive attention. The size filter helps to focus on more established firms.
+- SELL Rule: This rule targets overvalued companies (low bm) with negative momentum (low mom12m). The economic intuition is to sell or short companies that the market may be overvaluing and are losing momentum.
+- Expected signal distribution: Based on backtesting, the BUY rule should generate signals for approximately 3% of firms, and the SELL rule should generate signals for approximately 4.6% of firms. The remaining firms are assigned a HOLD signal.
+```

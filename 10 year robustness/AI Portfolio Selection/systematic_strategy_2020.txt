@@ -1,0 +1,34 @@
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The dataset contains standardized values (z-scores) for book-to-market (bm), 12-month momentum (mom12m), and log market value of equity (mve) for S&P 500 firms as of December 2019.
+- Extreme values were explored for each characteristic to understand the data distribution and identify potential thresholds.
+- Momentum values above an absolute value of 2.0 were rare, so a lower threshold of 1.5 was used for exploration.
+
+BUY RULE:
+if (bm > 0.85 AND mom12m > -0.4 AND mve > -0.75):
+    signal = BUY
+
+SELL RULE:
+if (bm < -0.75 AND mom12m < -0.55 AND mve < 0.0):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule:
+    - Economic Reasoning: This rule targets undervalued stocks (high book-to-market) with at least slightly positive momentum and filters out the smallest firms. The rationale is to identify companies that are fundamentally cheap and showing some signs of recovery or continued positive performance. By setting the bm threshold above 0.85, we are selecting for firms that are statistically more undervalued than the average firm. A momentum filter greater than -0.4 helps avoid firms with strong negative trends. A size filter greater than -0.75 aims to avoid extremely small companies.
+    - Expected Signal Distribution: This rule is expected to generate a moderate number of buy signals, focusing on fundamentally sound companies with some positive momentum.
+- SELL Rule:
+    - Economic Reasoning: This rule targets overvalued (low book-to-market), smaller companies with negative momentum. The rationale is to identify companies that are statistically overvalued and exhibiting poor performance. The bm threshold is set to less than -0.75, meaning firms that are considered relatively expensive. A momentum filter of less than -0.55 helps select firms with poor recent performance and the size filter less than 0.0 aims to select for small firms.
+    - Expected Signal Distribution: This rule is expected to generate a smaller number of sell signals, focusing on specific companies exhibiting strong negative characteristics.
+- HOLD Rule:
+    - Economic Reasoning: The HOLD rule applies to all other cases not meeting the BUY or SELL criteria. This provides a neutral stance on companies that do not present a clear investment opportunity based on the defined value and momentum factors.
+
+```
+===========================================
+```

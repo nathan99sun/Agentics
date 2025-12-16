@@ -45,3 +45,4 @@ examples/finbert model/pytorch_model.bin
 examples/finbert model/special_tokens_map.json
 examples/finbert model/tokenizer_config.json
 examples/finbert model/vocab.txt
+*.bin

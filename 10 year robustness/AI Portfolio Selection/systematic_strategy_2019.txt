@@ -1,0 +1,32 @@
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The dataset contains standardized values (z-scores) for market value of equity (mve), book-to-market ratio (bm), and 12-month momentum (mom12m) for S&P 500 firms as of December 31, 2018.
+- Extreme values were explored for each characteristic using a threshold of 1.5 standard deviations from the mean.
+- Different combinations of characteristics were tested using AND/OR logic to identify potential trading rules.
+
+BUY RULE:
+if (bm > 0.85 AND mom12m > -0.50) OR (bm > -0.25 AND mve > 1.25):
+    signal = BUY
+
+SELL RULE:
+if (bm < -0.70 AND mom12m < 0.50) OR (mom12m < -1.05 AND mve < 0.50):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule:
+    - (bm > 0.85 AND mom12m > -0.50): This condition identifies undervalued stocks (high book-to-market ratio) that have at least some positive momentum. The bm threshold of 0.85 aims to capture relatively undervalued firms, while the mom12m threshold of -0.5 filters out firms with strongly negative recent performance.
+    - (bm > -0.25 AND mve > 1.25): This condition identifies larger companies (high market cap) that are not extremely overvalued. This rule is intended to capture more stable, larger companies that may be temporarily undervalued.
+- SELL Rule:
+    - (bm < -0.70 AND mom12m < 0.50): This condition identifies overvalued stocks (low book-to-market ratio) that don't have strong positive momentum. The bm threshold of -0.70 aims to capture relatively overvalued firms.
+    - (mom12m < -1.05 AND mve < 0.50): This condition identifies smaller companies with strong negative momentum. The mom12m threshold of -1.05 aims to capture firms with severely negative recent performance.
+- Expected signal distribution:
+    - The BUY rule is expected to generate signals for a smaller subset of firms that exhibit value characteristics or a combination of size and value.
+    - The SELL rule is expected to generate signals for a different subset of firms that are overvalued or have poor momentum, particularly among smaller companies.
+    - The HOLD rule will apply to the majority of firms that do not meet the criteria for either BUY or SELL signals, reflecting a neutral outlook on these stocks.
