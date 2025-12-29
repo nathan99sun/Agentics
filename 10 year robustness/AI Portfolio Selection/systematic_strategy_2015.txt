@@ -1,19 +1,27 @@
+
+   JOY -1.117961  0.350208 -1.633852
+   AVY -0.893917 -0.334285 -1.707139
+  URBN -2.038366 -0.289748 -1.750513
+Thought: 23 firms seems like a reasonable amount for a sell signal. I'll finalize the SELL rule with these thresholds.
+
+Now, I will define the HOLD rule as the default case when neither the BUY nor the SELL conditions are met.
 ```
 ===========================================
 SYSTEMATIC TRADING RULES
 ===========================================
 
 Data Exploration Summary:
-- Explored extreme values for book-to-market (bm), momentum (mom12m), and market value of equity (mve) at the end of December 2014.
-- Observed that extreme values for momentum were less frequent than for bm and mve.
-- Tested combinations of value, momentum, and size to identify effective buy and sell signals.
+- The data includes standardized book-to-market (bm), 12-month momentum (mom12m), and log market capitalization (mve) for S&P 500 firms as of December 31, 2014.
+- All features are standardized to have a mean of 0 and a standard deviation of 1. Values are z-scores.
+- Explored extreme values for each characteristic using a threshold of 1.5 standard deviations.
+- Aimed to create a strategy that buys undervalued stocks with positive momentum and sells overvalued stocks with negative momentum.
 
 BUY RULE:
-if (bm > 0.65 AND mom12m > 0.75) OR (mve > 1.5 AND mom12m > 0.5):
+if (bm > 0.7 AND mom12m > 0.7) OR (mve > 1.0 AND bm > 0.5):
     signal = BUY
 
 SELL RULE:
-if (bm < -0.65 AND mom12m < -0.65) OR (mve < -1.5 AND mom12m < 0):
+if bm < -0.7 AND mom12m < -0.7 AND mve < 0:
     signal = SELL
 
 HOLD RULE:
@@ -21,14 +29,7 @@ else:
     signal = HOLD
 
 Rationale:
-- BUY Rule:
-    - Economic Reasoning: Buy undervalued stocks with positive momentum, or large-cap stocks with positive momentum. This combines value and momentum factors, potentially capturing stocks that are both cheap and trending upwards, or stocks that are large with a positive trend.
-    - Thresholds: bm > 0.65 represents stocks that are more undervalued than average. mom12m > 0.75 represents stocks with significant positive momentum. mve > 1.5 represents larger companies.
-- SELL Rule:
-    - Economic Reasoning: Sell overvalued stocks with negative momentum, or small-cap stocks with negative momentum. This aims to avoid stocks that are both expensive and trending downwards, or stocks that are small with negative trend.
-    - Thresholds: bm < -0.65 represents stocks that are more overvalued than average. mom12m < -0.65 represents stocks with significant negative momentum. mve < -1.5 represents smaller companies.
-- Expected Signal Distribution:
-    - The BUY rule is expected to generate signals for approximately 5% of the firms.
-    - The SELL rule is expected to generate signals for approximately 12% of the firms.
-    - The HOLD rule will apply to the remaining firms.
+- BUY Rule: This rule combines value and momentum factors. It buys stocks that are either undervalued with positive momentum (bm > 0.7 AND mom12m > 0.7) or larger companies (mve > 1.0) that have at least some value characteristics (bm > 0.5). This aims to capture companies that are potentially mispriced by the market and have a good chance of future appreciation.
+- SELL Rule: This rule sells stocks that are overvalued and have poor momentum. It focuses on smaller companies (mve < 0) that are potentially in decline, as indicated by their low book-to-market ratios (bm < -0.7) and negative momentum (mom12m < -0.7).
+- Expected signal distribution: The BUY rule is expected to generate signals for approximately 7% of the firms, and the SELL rule is expected to generate signals for approximately 4.6% of the firms. The remaining firms will be assigned a HOLD signal.
 ```

@@ -1,18 +1,22 @@
+
+
+```
 ===========================================
 SYSTEMATIC TRADING RULES
 ===========================================
 
 Data Exploration Summary:
-- The dataset contains standardized values (z-scores) for market value of equity (mve), book-to-market ratio (bm), and 12-month momentum (mom12m) for S&P 500 firms as of December 31, 2018.
-- Extreme values were explored for each characteristic using a threshold of 1.5 standard deviations from the mean.
-- Different combinations of characteristics were tested using AND/OR logic to identify potential trading rules.
+- The average values of bm, mom12m, and mve are close to zero, as expected due to standardization.
+- Extreme values for bm range from approximately -1.7 to 3.3.
+- Momentum values tend to cluster around the extreme positive value of 1.913758.
+- Market capitalization (mve) ranges from approximately -2.2 to 2.8.
 
 BUY RULE:
-if (bm > 0.85 AND mom12m > -0.50) OR (bm > -0.25 AND mve > 1.25):
+if bm > 1.0 AND mom12m > 0.7 AND mve > 0.0:
     signal = BUY
 
 SELL RULE:
-if (bm < -0.70 AND mom12m < 0.50) OR (mom12m < -1.05 AND mve < 0.50):
+if bm < -0.5 OR mom12m < -0.7 OR mve < -1.0:
     signal = SELL
 
 HOLD RULE:
@@ -21,12 +25,19 @@ else:
 
 Rationale:
 - BUY Rule:
-    - (bm > 0.85 AND mom12m > -0.50): This condition identifies undervalued stocks (high book-to-market ratio) that have at least some positive momentum. The bm threshold of 0.85 aims to capture relatively undervalued firms, while the mom12m threshold of -0.5 filters out firms with strongly negative recent performance.
-    - (bm > -0.25 AND mve > 1.25): This condition identifies larger companies (high market cap) that are not extremely overvalued. This rule is intended to capture more stable, larger companies that may be temporarily undervalued.
+    - Economic Reasoning: This rule identifies undervalued companies (high bm) with strong recent performance (high mom12m) and a reasonable market capitalization (mve above 0). This aligns with a value-momentum strategy, seeking to capitalize on undervalued stocks that are currently in favor with the market. The size filter helps avoid micro-cap stocks.
+    - Thresholds:
+        - bm > 1.0: Selects firms that are significantly undervalued compared to the market average.
+        - mom12m > 0.7: Selects firms with strong positive momentum, indicating recent market favor.
+        - mve > 0.0: Excludes the smallest firms, focusing on companies with a reasonable market presence.
 - SELL Rule:
-    - (bm < -0.70 AND mom12m < 0.50): This condition identifies overvalued stocks (low book-to-market ratio) that don't have strong positive momentum. The bm threshold of -0.70 aims to capture relatively overvalued firms.
-    - (mom12m < -1.05 AND mve < 0.50): This condition identifies smaller companies with strong negative momentum. The mom12m threshold of -1.05 aims to capture firms with severely negative recent performance.
-- Expected signal distribution:
-    - The BUY rule is expected to generate signals for a smaller subset of firms that exhibit value characteristics or a combination of size and value.
-    - The SELL rule is expected to generate signals for a different subset of firms that are overvalued or have poor momentum, particularly among smaller companies.
-    - The HOLD rule will apply to the majority of firms that do not meet the criteria for either BUY or SELL signals, reflecting a neutral outlook on these stocks.
+    - Economic Reasoning: This rule identifies overvalued companies (low bm), with weak recent performance (low mom12m) or very small market capitalization (mve below -1.0). These stocks are more likely to underperform in the future.
+    - Thresholds:
+        - bm < -0.5: Identifies firms that are relatively overvalued compared to the market.
+        - mom12m < -0.7: Identifies firms with significant negative momentum, indicating poor recent performance.
+        - mve < -1.0: Focuses on the smallest firms.
+- Expected Signal Distribution:
+    - I expect that the BUY rule will generate a small number of signals, focusing on high-conviction value-momentum opportunities.
+    - The SELL rule is expected to generate a larger number of signals, reflecting the higher prevalence of overvalued or poorly performing stocks.
+    - The HOLD rule will apply to the majority of stocks, representing the core of the market.
+```
