@@ -1,0 +1,37 @@
+
+  QCOM -0.158199 -1.152417 -2.047624  1.373525  1.515900
+  NFLX  0.338151 -1.047534 1.486674  1.776927 -0.469153
+  SIVB -0.379366 -1.138412 0.452754  0.629337  0.770528
+  NOW  0.423304 -1.083632 0.949495  0.777997  1.265736
+  ODFL  0.102761 -0.933729 0.553744  0.419979  1.068290
+Thought: 25 is a good number. Let's finalize the rules.
+
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Data is standardized with mean 0 and standard deviation 1.
+- Explored extreme values for bm, mom12m, mve, roe, and agr to inform threshold selection.
+- Averages for all characteristics are close to zero, as expected.
+
+BUY RULE:
+if bm > 0.8 AND mom12m < -0.4:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.8 AND mom12m > 0.4:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: This rule identifies potentially undervalued companies (high bm) that have recently experienced negative momentum. The economic intuition is that these companies may be temporarily out of favor and poised for a rebound.
+- SELL Rule: This rule identifies potentially overvalued companies (low bm) that have recently experienced positive momentum. The economic intuition is that these companies may be overhyped and due for a correction.
+- Expected signal distribution: Roughly 5% of firms will be bought, 5% will be sold, and 90% will be held. This provides a diversified portfolio with exposure to both value and momentum factors.
+
+```
+===========================================
+```

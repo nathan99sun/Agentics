@@ -1,0 +1,27 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Firms at December 2019: 905
+- Features explored: Book-to-market (bm), 12-month momentum (mom12m), log market cap (mve), all standardized.
+- Extreme value exploration revealed the distribution of each characteristic.
+
+BUY RULE:
+if bm > 0.78 AND mom12m > 0.68 AND mve < 0.22:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.63 OR mom12m < -0.53:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY rule: This combines value and momentum factors, selecting smaller companies. We buy stocks that are undervalued (high book-to-market), have shown positive recent performance (high momentum), and are relatively small in size. This is based on the economic intuition that undervalued small-cap stocks with positive momentum may be poised for future growth.
+- SELL rule: This sells stocks that are potentially overvalued (low book-to-market) or have negative momentum. This is based on the economic intuition that overvalued stocks or those with negative recent performance are likely to underperform in the future.
+- Expected signal distribution: The BUY rule is expected to generate a relatively small number of signals, focusing on high-conviction opportunities. The SELL rule is expected to generate a larger number of signals, as it identifies a broader range of potentially underperforming stocks. The HOLD rule applies to the majority of stocks that do not meet the BUY or SELL criteria.
+```

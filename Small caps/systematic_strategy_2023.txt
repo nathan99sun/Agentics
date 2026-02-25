@@ -1,0 +1,29 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Explored extreme values for bm, mom12m, and mve at December 31, 2022.
+- Found that value stocks (high bm) were prevalent.
+- Momentum was less extreme, requiring a lower threshold to identify firms.
+- Size (mve) varied widely.
+- Tested combinations of value, momentum, and size to identify potential buy and sell candidates.
+
+BUY RULE:
+if bm > 1.25 AND mom12m > 0.75 AND mve < 0.5:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.25 AND mom12m < -0.75 AND mve > 0.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: This rule targets smaller companies (mve < 0.5) that are undervalued (bm > 1.25) and have positive momentum (mom12m > 0.75). The economic intuition is to buy companies that the market may be overlooking but are starting to show signs of improvement. The size constraint adds a small-cap tilt, potentially increasing returns. The thresholds were chosen to balance signal strength and the number of firms that met the criteria.
+- SELL Rule: This rule targets larger companies (mve > 0.0) that are overvalued (bm < -1.25) and have negative momentum (mom12m < -0.75). The economic intuition is to sell companies that the market may be overvaluing and are showing signs of deterioration. The thresholds were chosen to balance signal strength and the number of firms that met the criteria.
+- Expected Signal Distribution: I expect a relatively small number of BUY and SELL signals, with the majority of firms being classified as HOLD. This reflects the relatively strict thresholds chosen to identify high-conviction trades.
+```

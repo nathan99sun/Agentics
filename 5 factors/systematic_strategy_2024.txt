@@ -1,0 +1,34 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Averages of characteristics are close to 0, except for mve which is slightly positive.
+- Explored extreme values for bm, mom12m, mve, roe, and agr using a threshold of 2.
+
+BUY RULE:
+if bm > 0.45 AND mom12m > -0.25 AND mve > -0.55 AND agr < 1.25 AND roe > -0.75:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.5 AND mom12m < -0.5:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule:
+    - Economic Reasoning: Buy undervalued companies (high book-to-market) that have at least some recent positive momentum, are not too small (avoiding illiquidity), have reasonable asset growth, and are not deeply unprofitable.
+    - Thresholds: The specific thresholds (bm > 0.45, mom12m > -0.25, mve > -0.55, agr < 1.25, roe > -0.75) were chosen to provide a balance between the number of firms that meet the criteria (approximately 30) and the strength of the signal.
+- SELL Rule:
+    - Economic Reasoning: Sell overvalued companies (low book-to-market) with negative momentum.
+    - Thresholds: The specific thresholds (bm < -0.5, mom12m < -0.5) were chosen to identify firms that are both expensive and performing poorly.
+- Expected Signal Distribution:
+    - BUY: Approximately 30 firms (6.7% of the total)
+    - SELL: Approximately 26 firms (5.8% of the total)
+    - HOLD: The remaining firms.
+
+```

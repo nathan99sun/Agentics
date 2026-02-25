@@ -1,0 +1,27 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- At December 2021, there are many firms with extreme book-to-market ratios (bm > 2.0).
+- No firms have extreme momentum values (mom12m > 2.0 or mom12m < -2.0).
+- The features are standardized, so values represent z-scores.
+
+BUY RULE:
+if bm > 1.65 AND mom12m > 0.75 AND mve < 0.85:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.95 OR mom12m < -1.15:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: This rule buys undervalued (high bm) stocks with positive momentum (high mom12m) that are relatively smaller in size (low mve). The thresholds are chosen to select firms that exhibit a strong combination of value and momentum characteristics, while focusing on smaller companies. The specific thresholds are chosen to be strict, but not too restrictive, to allow for a reasonable number of buy signals.
+- SELL Rule: This rule sells overvalued (low bm) stocks or stocks with negative momentum (low mom12m). The thresholds are chosen to identify firms that are likely to underperform.
+- Expected signal distribution: The BUY rule is expected to generate a relatively small number of signals, focusing on high-conviction opportunities. The SELL rule is expected to generate a larger number of signals, as it is designed to filter out potentially underperforming stocks. The HOLD rule will apply to the majority of firms, representing the baseline portfolio.
+```

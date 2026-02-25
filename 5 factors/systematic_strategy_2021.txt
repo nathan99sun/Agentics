@@ -1,0 +1,37 @@
+
+
+Thought: I have explored the data, tested various combinations of characteristics, and developed rules for BUY and SELL signals. Now I will present the systematic trading rules.
+
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Data is standardized to mean 0 and standard deviation 1.
+- Explored extreme values for bm, mom12m, mve, roe, and agr at December 31, 2020.
+- Tested combinations of characteristics to identify potential trading signals.
+
+BUY RULE:
+if bm < -0.75 AND mve > 0.75 AND roe > 0.25:
+    signal = BUY
+
+SELL RULE:
+if bm > 1.0 AND mom12m < -0.5 AND roe < 0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: This rule targets large, growth-oriented firms that also exhibit reasonable profitability. The economic intuition is that these firms are likely to outperform the market due to their strong growth potential and solid financial performance.
+    - bm < -0.75: Identifies growth stocks (low book-to-market).
+    - mve > 0.75: Selects large-cap firms, providing stability and liquidity.
+    - roe > 0.25: Ensures the firms are profitable, indicating financial health.
+- SELL Rule: This rule targets firms that are expensive (high book-to-market) and have poor momentum and profitability. The economic intuition is that these firms are likely to underperform the market due to their overvaluation and weak financial performance.
+    - bm > 1.0: Identifies value traps or overvalued firms (high book-to-market).
+    - mom12m < -0.5: Selects firms with negative momentum, indicating recent underperformance.
+    - roe < 0: Ensures the firms are unprofitable, indicating financial distress.
+- Expected signal distribution: The BUY rule is expected to generate signals for a smaller subset of firms (approximately 2% based on testing), focusing on high-quality growth stocks. The SELL rule is expected to generate signals for a somewhat larger subset (approximately 4% based on testing), targeting distressed or overvalued firms. The majority of firms will be classified as HOLD.
+```

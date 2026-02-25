@@ -1,0 +1,28 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The data includes standardized book-to-market (bm), momentum (mom12m), and size (mve) characteristics for a set of firms.
+- All characteristics are z-scores (standard deviations from the mean).
+- Extreme values (above 2 or below -2) exist for all characteristics.
+- I observed that many firms have simultaneously extreme values across multiple characteristics.
+
+BUY RULE:
+if bm > 0.75 AND mom12m > 0.5 AND mve > 0:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.75 AND mom12m < -0.5:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: This rule targets undervalued companies (high bm) with positive momentum (high mom12m) and a preference for larger firms (mve > 0). The economic rationale is that undervalued stocks tend to revert to their mean, and positive momentum suggests continued outperformance. The size filter adds a safety net.
+- SELL Rule: This rule targets overvalued companies (low bm) with negative momentum (low mom12m). The economic rationale is that overvalued stocks are likely to correct downwards, and negative momentum suggests continued underperformance.
+- Expected Signal Distribution: I expect the BUY and SELL signals to be relatively infrequent, targeting only the most extreme cases. The majority of firms will likely be assigned a HOLD signal.
+```

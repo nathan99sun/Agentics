@@ -1,0 +1,28 @@
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The data includes standardized values (z-scores) for book-to-market (bm), momentum (mom12m), market value of equity (mve), return on equity (roe) and asset growth (agr) for S&P 500 firms as of December 2022.
+- Extreme values were explored for each characteristic using a threshold of |1.5|.
+- A value-momentum strategy was initially explored, but the number of firms meeting the criteria was too small.
+- A focus on undervalued, smaller firms was also explored, but the number of firms was also too small.
+- Finally, an overvalued, poor momentum strategy was explored, which provided more firms.
+
+BUY RULE:
+if bm > 1.0 AND mve < 0.0 AND mom12m > 0.1 AND roe > -0.5 AND agr < 1.0:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.6 AND mom12m < -0.4 AND roe < 1.0 AND agr > -0.5:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: The BUY rule targets undervalued (high bm), smaller (low mve) firms with some positive momentum (mom12m), reasonable profitability (roe), and conservative investment (agr). The economic intuition is that these firms may be temporarily out of favor but have the potential for future growth. The thresholds were chosen to balance signal strength and diversification, identifying a reasonable number of firms for a portfolio.
+- SELL Rule: The SELL rule identifies overvalued (low bm) firms with negative momentum (mom12m), and reasonable profitability (roe) and investment (agr). The economic intuition is that these firms may be overhyped and likely to underperform. The thresholds were chosen to identify firms with significant negative signals.
+- Expected signal distribution: The BUY rule is expected to generate fewer signals than the HOLD rule, focusing on a select group of undervalued firms. The SELL rule is expected to generate a moderate number of signals. The HOLD rule will be the default case for the majority of firms.
+===========================================

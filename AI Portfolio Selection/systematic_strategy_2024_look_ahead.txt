@@ -1,0 +1,32 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Examined extreme values for book-to-market (bm), momentum (mom12m), and market value of equity (mve) as of July 2024.
+- Observed that momentum values were not as extreme as bm or mve.
+- Aimed to create a strategy that buys undervalued stocks with positive momentum and sells overvalued stocks with negative momentum, while considering size.
+
+BUY RULE:
+if bm > 0.85 AND mom12m > 0.35 AND mve > 0.1:
+    signal = BUY
+
+SELL RULE:
+if bm < -0.75 AND mom12m < -0.25 AND mve < 0.1:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule:
+    - Economic Reasoning: Buy undervalued stocks (high book-to-market) with positive momentum. The size constraint (mve > 0.1) filters out the smallest, potentially most illiquid stocks.
+    - Thresholds: The thresholds were chosen based on empirical testing to balance the number of signals and the strength of the signal.
+- SELL Rule:
+    - Economic Reasoning: Sell overvalued stocks (low book-to-market) with negative momentum. The size constraint (mve < 0.1) makes selling smaller stocks more likely, as they may be more sensitive to negative signals.
+    - Thresholds: The thresholds were chosen based on empirical testing to balance the number of signals and the strength of the signal.
+- Expected Signal Distribution:
+    - The strategy is expected to generate BUY and SELL signals for a small percentage of the S&P 500 firms (around 3-4% each), with the majority of stocks being held.
+```
