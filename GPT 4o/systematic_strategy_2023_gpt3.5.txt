@@ -1,0 +1,29 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The average z-scores for the characteristics at December 2022 are close to zero: AVG(bm) = -8.179969e-18, AVG(mom12m) = 1.615376e-15, AVG(mve) = -5.879461e-18.
+- Firms with extreme mve values (|z-score| > 2.0) at December 2022 include MRO, HES, OXY, VLO, DVN, XOM, MPC, COP, SLB, MCK, and others.
+
+BUY RULE:
+if bm > 2.0 AND mom12m > 1.0:
+    signal = BUY
+
+SELL RULE:
+if mve < -2.0 AND (bm < -1.5 OR mom12m < -1.0):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: The rule to BUY when bm is significantly high (undervalued) and there is strong momentum (mom12m) aims to capture potential undervalued stocks with positive momentum.
+- SELL Rule: The SELL rule targets firms with extremely low mve values and either low bm or mom12m to potentially avoid overvalued or underperforming stocks.
+- The thresholds were chosen to focus on extreme values to capture potentially significant market movements and deviations from average.
+
+Expected signal distribution: Based on initial tests, the BUY rule captured a small percentage of firms meeting the condition, indicating a more selective approach. The SELL rule may also target a small percentage of firms based on extreme conditions.
+
+```

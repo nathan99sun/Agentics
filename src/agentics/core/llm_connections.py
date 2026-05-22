@@ -72,7 +72,6 @@ openai_llm = (
         ),  # call model by provider/model_name
         temperature=0.8,
         top_p=0.9,
-        stop=["END"],
         api_key=os.getenv("OPENAI_API_KEY"),
         seed=42,
     )

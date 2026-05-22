@@ -1,0 +1,30 @@
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The data for December 2020 consists of 497 firms with standardized characteristics: mve, bm, and mom12m.
+- Extreme values for mve, bm, and mom12m were identified, with some firms exhibiting very high or very low z-scores.
+- Testing different conditions showed limited overlap in extreme values for bm and mom12m.
+
+BUY RULE:
+if bm > 0.5 AND mom12m > 0.5 AND mve > 0.5:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.5 OR mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: The BUY rule focuses on selecting firms with relatively higher values of bm, mom12m, and mve. This combination may indicate undervalued firms with positive momentum and size.
+- SELL Rule: The SELL rule targets firms with very low bm or poor momentum, suggesting overvalued or weak-performing stocks.
+- HOLD Rule: The HOLD rule serves as the default option for firms that do not meet the specific BUY or SELL conditions.
+
+Expected signal distribution:
+- Based on the tested conditions, the expected distribution would result in a relatively small percentage of firms meeting the BUY or SELL criteria, with the majority falling into the HOLD category.
+
+===========================================

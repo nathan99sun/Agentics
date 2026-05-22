@@ -1,0 +1,30 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The average z-scores for bm, mom12m, and mve at December 2021 were approximately 0 for all characteristics.
+
+BUY RULE:
+if bm > 1.5 AND mom12m > 1.5:
+    signal = BUY
+
+SELL RULE:
+if mve < -2.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Firms with high z-scores for both book-to-market ratio (bm) and 12-month momentum (mom12m) are identified as potentially undervalued with strong performance, indicating a good buying opportunity.
+- SELL Rule: Firms with extremely low z-scores for log market value of equity (mve) are considered for selling as they may indicate potential overvaluation.
+- The thresholds for the BUY and SELL rules were chosen based on extreme values to capture outlier firms that could present trading opportunities at December 2021.
+
+Expected signal distribution:
+- Based on the tests, a small percentage of firms (0.6%) met the criteria for the BUY rule, indicating a selective approach. The SELL rule targeted extreme cases with low mve z-scores.
+
+===========================================
+```
