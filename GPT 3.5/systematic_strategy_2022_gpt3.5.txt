@@ -20,11 +20,13 @@ else:
 
 Rationale:
 - BUY Rule: Firms with high z-scores for both book-to-market ratio (bm) and 12-month momentum (mom12m) are identified as potentially undervalued with strong performance, indicating a good buying opportunity.
-- SELL Rule: Firms with extremely low z-scores for log market value of equity (mve) are considered for selling as they may indicate potential overvaluation.
-- The thresholds for the BUY and SELL rules were chosen based on extreme values to capture outlier firms that could present trading opportunities at December 2021.
+- SELL Rule: Firms with extremely low z-scores for log market value of equity (mve) are considered for selling as they may be significantly undervalued.
+- The thresholds are set to capture extreme values in each characteristic and act as signals for potential buying or selling opportunities.
 
 Expected signal distribution:
-- Based on the tests, a small percentage of firms (0.6%) met the criteria for the BUY rule, indicating a selective approach. The SELL rule targeted extreme cases with low mve z-scores.
+- Based on the conditions:
+    - BUY: Approximately 0.6% of firms are expected to be identified as potential BUY signals.
+    - SELL: Firms with extremely low mve z-scores are expected to trigger SELL signals.
+    - HOLD: The default rule for firms not meeting the BUY or SELL conditions.
 
-===========================================
 ```
