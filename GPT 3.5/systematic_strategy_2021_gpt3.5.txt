@@ -4,15 +4,16 @@ SYSTEMATIC TRADING RULES
 ===========================================
 
 Data Exploration Summary:
-- Explored extreme values for mve, bm, and mom12m.
-- Tested various complex conditions to understand the data distribution.
+- Firms have z-score standardized characteristics for mve, bm, and mom12m.
+- Extreme values for mve and bm were identified, showing both high and low values.
+- Some firms exhibit extreme values in multiple characteristics.
 
 BUY RULE:
-if (bm > 1.0 OR mom12m > 1.0) AND mve > 1.0:
+if (bm > 1.0 AND mom12m > 0.5) OR mve > 2.0:
     signal = BUY
 
 SELL RULE:
-if bm < -1.5 AND mom12m < -1.5:
+if (bm < -1.0 AND mom12m < -0.5) OR mve < -2.0:
     signal = SELL
 
 HOLD RULE:
@@ -20,13 +21,8 @@ else:
     signal = HOLD
 
 Rationale:
-- BUY Rule: Identifying firms with both high book-to-market ratio or strong momentum and large market value of equity indicates potential opportunities for growth.
-- SELL Rule: Firms with very low book-to-market ratio and weak momentum are considered overvalued and underperforming, hence suitable for selling.
-- HOLD Rule: All other cases where the conditions for buying or selling are not met, maintain the current holdings.
-
-Expected signal distribution:
-- BUY: 4.4% of firms
-- SELL: 0% of firms
-- HOLD: 95.6% of firms
+- BUY Rule: Focusing on undervalued firms (high bm) with positive momentum (mom12m) or firms with extremely high market value of equity (mve) indicates potential growth opportunities.
+- SELL Rule: Identifying overvalued firms (low bm) with negative momentum (mom12m) or firms with extremely low market value of equity (mve) suggests potential downside risks.
+- Expected Signal Distribution: BUY rule may be less frequent but aims for high growth potential, SELL rule to capture potential downside risks, HOLD rule for default and balanced approach.
 
 ```

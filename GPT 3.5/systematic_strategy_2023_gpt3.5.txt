@@ -1,19 +1,17 @@
-```
 ===========================================
 SYSTEMATIC TRADING RULES
 ===========================================
 
 Data Exploration Summary:
-- The database contains standardized data for S&P 500 firms as of December 2022, including log firm size (mve), log book-to-market ratio (bm), and 12-month momentum (mom12m).
-- All features are z-scored with a mean of 0 and standard deviation of 1.
-- The dataset covers a wide date range from 1980-01-31 to 2024-12-31.
+- The data for December 2022 shows z-score averages of bm: -8.179969e-18, mom12m: 1.615376e-15, mve: -5.879461e-18.
+- Extreme firms with mve z-score > 2.0 include MRO, HES, OXY, VLO, DVN, XOM, MPC, COP, SLB, MCK, and more.
 
 BUY RULE:
-if bm > 1.15 AND mom12m > 0.75:
+if (bm > 0.5 AND mom12m > 0.5) OR mve > 0.5:
     signal = BUY
 
 SELL RULE:
-if bm < -1.25 OR mom12m < -1.0:
+if bm < -1.5 OR mom12m < -1.5:
     signal = SELL
 
 HOLD RULE:
@@ -21,9 +19,6 @@ else:
     signal = HOLD
 
 Rationale:
-- BUY Rule: A high book-to-market ratio (bm) indicates undervalued firms, while strong 12-month momentum (mom12m) suggests positive performance trends. Buying when both conditions are met aims to capture potential value and positive momentum.
-- SELL Rule: A low book-to-market ratio (bm) represents overvalued firms, and negative 12-month momentum (mom12m) indicates weakening performance. Selling when either condition is triggered helps avoid potential downside risks.
-- Expected Signal Distribution: The rules aim to identify undervalued firms with positive momentum for buying opportunities and overvalued firms with negative momentum for selling opportunities, leading to a balanced distribution of signals across the S&P 500 firms.
-
-===========================================
-```
+- BUY Rule: Targets firms with positive z-scores in both bm and mom12m, or high mve, indicating potential undervaluation or momentum.
+- SELL Rule: Identifies firms with very low z-scores in bm or mom12m, suggesting overvaluation or poor momentum.
+- Expected Signal Distribution: The BUY rule captures firms showing positive signals in value and momentum, while the SELL rule focuses on weak signals in these aspects, aiming for a balanced strategy.

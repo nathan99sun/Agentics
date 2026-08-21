@@ -1,0 +1,29 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The database contains standardized data for S&P 500 firms as of December 2022, including log firm size (mve), log book-to-market ratio (bm), and 12-month momentum (mom12m).
+- All features are z-scored with a mean of 0 and standard deviation of 1.
+- The dataset covers a wide date range from 1980-01-31 to 2024-12-31.
+
+BUY RULE:
+if bm > 1.15 AND mom12m > 0.75:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.25 OR mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: A high book-to-market ratio (bm) indicates undervalued firms, while strong 12-month momentum (mom12m) suggests positive performance trends. Buying when both conditions are met aims to capture potential value and positive momentum.
+- SELL Rule: A low book-to-market ratio (bm) represents overvalued firms, and negative 12-month momentum (mom12m) indicates weakening performance. Selling when either condition is triggered helps avoid potential downside risks.
+- Expected Signal Distribution: The rules aim to identify undervalued firms with positive momentum for buying opportunities and overvalued firms with negative momentum for selling opportunities, leading to a balanced distribution of signals across the S&P 500 firms.
+
+===========================================
+```

@@ -1,0 +1,28 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Identified extreme values for 'mve' with firms having very high and very low log market values of equity.
+- Tested rule combinations to understand the impact of 'bm', 'mom12m', and 'mve' on trading signals.
+
+BUY RULE:
+if bm > 1.0 AND mom12m > 1.0 AND mve > 1.0:
+    signal = BUY
+
+SELL RULE:
+if (bm < -1.0 OR mom12m < -1.0) AND mve < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Identifies firms with high book-to-market ratio, strong momentum, and large market value of equity which could indicate undervalued, high-performing, large-cap stocks.
+- SELL Rule: Flags firms with low book-to-market ratio, weak momentum, and low market value of equity suggesting overvalued, poor-performing, small-cap stocks.
+- Expected Signal Distribution: BUY signal might be less frequent but could provide high potential returns, while SELL signal might be more common for risk management purposes.
+
+===========================================
+```

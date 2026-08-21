@@ -1,0 +1,32 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The data for December 2021 includes three main standardized characteristics:
+  - mve: log firm size
+  - bm: log book-to-market ratio (value factor)
+  - mom12m: 12-month momentum
+- Extreme values for each characteristic will be explored to identify potential thresholds.
+- Correlations between characteristics will be considered for rule development.
+
+BUY RULE:
+if bm > 1.45 AND mom12m > 1.25:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.35 OR mom12m < -1.15:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: We aim to BUY stocks with high book-to-market ratio (indicating undervaluation) and strong 12-month momentum. This strategy targets potentially undervalued stocks with positive momentum for potential future gains.
+- SELL Rule: Stocks with very low book-to-market ratio or weak 12-month momentum are considered for SELL signals. This strategy helps in cutting losses or taking profits from stocks showing signs of overvaluation or weak performance.
+- Expected Signal Distribution: The BUY rule is expected to identify value stocks with positive momentum, while the SELL rule aims to capture stocks showing signs of overvaluation or weak momentum.
+
+===========================================
+```
