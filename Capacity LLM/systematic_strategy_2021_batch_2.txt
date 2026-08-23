@@ -1,0 +1,31 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The database contains 249 rows of S&P 500 firm characteristics for December 2020.
+- Characteristics available: log firm size (mve), log book-to-market (bm), and 12-month momentum (mom12m).
+- Values are standardized as z-scores relative to the full market.
+
+BUY RULE:
+if bm > 1.25 AND mom12m > 1.0:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.0 AND mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: A high book-to-market value (undervalued) combined with strong 12-month momentum may indicate potential for future outperformance.
+- SELL Rule: Extremely low book-to-market value (overvalued) and weak 12-month momentum may suggest a decline in performance.
+- HOLD Rule: All other cases where the conditions for BUY or SELL are not met.
+
+Expected signal distribution: The rules are designed to capture opportunities based on value and momentum factors while providing a balance between potential upside and downside risks.
+
+===========================================
+```

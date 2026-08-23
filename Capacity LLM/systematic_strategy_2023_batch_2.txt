@@ -1,0 +1,29 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The database contains 250 firms with characteristics standardized to z-scores for mve (log firm size), bm (log book-to-market), and mom12m (12-month momentum) for December 2022.
+
+BUY RULE:
+if bm > 1.25 AND mom12m > 0.75:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.0 OR mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: A high book-to-market ratio (bm > 1.25) indicates undervalued stocks, while a strong 12-month momentum (mom12m > 0.75) suggests positive performance. Buying stocks with these characteristics aims to capture potential value and growth.
+- SELL Rule: A low book-to-market ratio (bm < -1.0) signifies overvalued stocks, while weak 12-month momentum (mom12m < -1.0) indicates negative performance. Selling stocks with these characteristics aims to avoid potential losses.
+- Expected Signal Distribution: These rules aim to capitalize on undervalued stocks with positive momentum while avoiding overvalued stocks with negative momentum.
+
+===========================================
+```
+
+Thought: I now know the final answer

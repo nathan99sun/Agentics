@@ -1,0 +1,30 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- At December 2022, the average z-scores for bm, mom12m, and mve were close to zero.
+- Extreme values for bm and mom12m were limited, with no firms having z-scores below -2.0.
+
+BUY RULE:
+if bm > 1.5 AND mom12m > 1.0:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.0 OR mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Focus on strong value (high bm) and positive momentum (high mom12m) to identify potentially undervalued stocks with positive price trends.
+- SELL Rule: Avoid stocks with very low book-to-market ratios (bm) or poor momentum (mom12m) to minimize potential downside risks.
+- The thresholds were chosen to balance the desire for value and momentum with the need for risk management, aiming to reduce severe drawdowns while maintaining some level of return potential.
+
+Expected signal distribution:
+- Based on the thresholds, it is expected that a moderate number of BUY signals will be generated, while SELL signals will be less frequent, reflecting a focus on quality and momentum.
+
+```

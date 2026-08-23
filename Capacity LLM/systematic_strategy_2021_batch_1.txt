@@ -1,0 +1,28 @@
+```
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The database contains 248 rows for December 2020 with z-score standardized values for 'mve' (log market value of equity), 'bm' (book-to-market ratio), and 'mom12m' (12-month momentum).
+- Extreme values for each characteristic will be explored to identify potential breakpoints and patterns in the data.
+
+BUY RULE:
+if bm > 1.25 AND mom12m > 1.35:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.0 OR mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: The threshold for buying is set at z-scores above 1.25 for 'bm' and 1.35 for 'mom12m' to capture undervalued stocks with strong momentum, indicating potential future price appreciation.
+- SELL Rule: Stocks with z-scores below -1.0 for 'bm' or 'mom12m' are considered overvalued or with weak momentum, prompting a sell signal to avoid potential downside risk.
+- The rules aim to capitalize on value and momentum effects while balancing the risk-reward trade-off in the portfolio.
+- Expected signal distribution: The rules are designed to provide a mix of buy, sell, and hold signals based on the z-score thresholds, promoting diversification and active management.
+
+===========================================
+```

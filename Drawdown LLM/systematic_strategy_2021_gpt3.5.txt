@@ -1,0 +1,38 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The database schema provides information on the firms data, including characteristics such as log firm size (mve), log book-to-market ratio (bm), and 12-month momentum (mom12m) for December 2020.
+- All features are standardized to mean = 0, standard deviation = 1.
+
+BUY RULE:
+if (bm > 1.35 AND mom12m > 1.15) OR (bm > 1.1 AND mom12m > 0.85 AND mve > 0.25):
+    signal = BUY
+
+SELL RULE:
+if bm < -1.25 OR (mom12m < -1.1 AND mve < -0.2):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule:
+    - High values of bm and mom12m indicate potentially undervalued stocks with positive momentum, which could offer good upside potential.
+    - Adding the condition for mve helps filter out smaller firms with potentially higher volatility.
+- SELL Rule:
+    - Low bm values suggest overvalued stocks, while negative mom12m and mve values indicate potential momentum reversals and downside risk.
+    - The combined condition aims to capture stocks with potentially severe drawdowns.
+- HOLD Rule:
+    - The default case is to hold for all other scenarios, providing a conservative approach in uncertain situations.
+
+Expected signal distribution:
+- The BUY rule is expected to identify stocks with positive momentum and potential undervaluation.
+- The SELL rule is designed to filter out stocks with high downside risk.
+- The HOLD rule covers all other cases, prioritizing risk management over aggressive returns.
+
+===========================================
+```

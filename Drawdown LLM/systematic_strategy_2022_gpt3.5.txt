@@ -1,0 +1,33 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Analyzed firm characteristics (mve, bm, mom12m) for S&P 500 firms in December 2021.
+- Identified extreme values for mve.
+- Tested various complex conditions to understand the distribution of firms based on z-score thresholds.
+
+BUY RULE:
+if bm > 1.0 AND mom12m > 1.0 AND mve > 1.0:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.0 AND mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Focus on firms with strong positive values for all characteristics (bm, mom12m, mve) to capture potential undervalued, high momentum, and large-cap opportunities.
+- SELL Rule: Identify firms with very negative values for both bm and mom12m to potentially avoid value traps and momentum reversal candidates.
+- HOLD Rule: Default action for firms that do not meet the specific BUY or SELL criteria, providing a conservative approach to avoid unnecessary trading.
+
+Expected Signal Distribution:
+- BUY: 1.2% of firms
+- SELL: 0.8% of firms
+- HOLD: Remaining firms
+
+```

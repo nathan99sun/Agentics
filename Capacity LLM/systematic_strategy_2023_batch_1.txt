@@ -1,0 +1,31 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- For 'bm': No extreme values found with |z-score| > 2.0
+- For 'mom12m': No extreme values found with |z-score| > 2.0
+- For 'mve': Found 14 firms with extreme values (|z-score| > 2.0) at 2022-12-31
+
+BUY RULE:
+if mve > 2.0:
+    signal = BUY
+
+SELL RULE:
+if mve < -2.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY rule based on firms with extremely high market value of equity (mve z-score > 2.0), indicating potential strong growth or market recognition.
+- SELL rule based on firms with extremely low market value of equity (mve z-score < -2.0), suggesting potential weaknesses or market concerns.
+- No extreme values for 'bm' or 'mom12m' were found, so the focus is on 'mve' for this strategy.
+
+Expected signal distribution:
+- Expected to have a limited number of BUY and SELL signals due to the extreme threshold of |z-score| > 2.0 for 'mve'.
+
+```

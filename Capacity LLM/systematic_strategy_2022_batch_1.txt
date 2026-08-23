@@ -1,0 +1,30 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The database contains 248 rows of S&P 500 firm characteristics data for December 2021.
+- Characteristics available: log(market value of equity) (mve), log(book-to-market ratio) (bm), 12-month momentum (mom12m).
+- Features were standardized to mean=0, std=1 across the full market before batching.
+- Values represent z-scores relative to the full market, even if the local batch mean isn't exactly 0.
+
+BUY RULE:
+if bm > 1.25 AND mom12m > 1.0:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.0 AND mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Buying when the book-to-market ratio is more than 1.25 standard deviations above the market average and the 12-month momentum is more than 1.0 standard deviations above the market average. This strategy aims to capture undervalued stocks with positive momentum.
+- SELL Rule: Selling when the book-to-market ratio is more than 1.0 standard deviations below the market average and the 12-month momentum is more than 1.0 standard deviations below the market average. This strategy aims to avoid overvalued stocks with negative momentum.
+- Expected signal distribution: The rules are designed to provide clear buy and sell signals based on deviations from the market average, promoting a disciplined approach to trading.
+
+===========================================
+```

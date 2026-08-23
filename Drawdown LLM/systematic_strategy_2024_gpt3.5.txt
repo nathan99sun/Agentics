@@ -1,0 +1,33 @@
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The database schema reveals that the available data for December 2023 includes standardized columns for firm characteristics: mve (log firm size), bm (log book-to-market ratio - value factor), and mom12m (12-month momentum).
+
+Extreme Values Exploration:
+- Extreme values for each characteristic will be identified to understand the distribution and potential outliers in the data.
+- Patterns and correlations will be explored to inform the development of systematic rules.
+
+BUY RULE:
+if (mom12m > 1.8 AND bm > 1.1) OR (mve > 1.2):
+    signal = BUY
+
+SELL RULE:
+if (mom12m < -1.5) OR (bm < -1.2 AND mve < -1):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Stocks with strong momentum (mom12m > 1.8) and undervalued characteristics (high bm > 1.1) are potential candidates for purchase. Additionally, larger firms (mve > 1.2) may provide stability.
+- SELL Rule: To mitigate downside risk, stocks with significant negative momentum (mom12m < -1.5) are flagged for potential divestment. Also, firms with both low book-to-market ratios (bm < -1.2) and small sizes (mve < -1) are considered for selling to avoid potential crashes.
+- Expected Signal Distribution: The rules aim to balance risk management by filtering out high-crash-risk stocks while considering value, momentum, and size effects.
+
+===========================================
+```
+
+Thought: I now know the final answer

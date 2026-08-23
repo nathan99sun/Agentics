@@ -1,0 +1,31 @@
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The average z-scores for bm, mom12m, and mve at December 2023 are approximately -0.05, -0.02, and -0.09 respectively.
+- Extreme values for bm were found in firms with z-scores greater than 2.0.
+- A test of complex conditions revealed that 39 out of 250 total firms met the condition of (bm > 2.0) OR (mom12m < -1.0).
+
+BUY RULE:
+if (bm > 2.0) OR (mom12m < -1.0):
+    signal = BUY
+
+SELL RULE:
+if (bm < -2.0) OR (mom12m > 1.0):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Firms with extremely high book-to-market values (undervalued) or very low 12-month momentum (poor performance) are considered potential buying opportunities.
+- SELL Rule: Firms with extremely low book-to-market values (overvalued) or very high 12-month momentum (strong performance) are considered potential selling opportunities.
+- These rules aim to capture opportunities based on value and momentum factors while maintaining a balanced approach with the HOLD rule.
+
+Expected signal distribution:
+- BUY: ~15.6% of firms
+- SELL: To be determined based on the threshold for extreme values
+
+===========================================

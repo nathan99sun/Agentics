@@ -1,0 +1,30 @@
+```
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The database contains 250 firms with characteristics standardized to z-scores relative to the full market.
+- Key characteristics: mve (log firm size), bm (log book-to-market), mom12m (12-month momentum).
+- Values represent standard deviations from the mean, with higher values indicating more extreme positive and lower values indicating more extreme negative.
+
+BUY RULE:
+if bm > 1.28 AND mom12m > 1.12:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.08 OR mom12m < -1.06:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: A high bm (undervalued) combined with strong positive momentum (mom12m) suggests a good buying opportunity as undervalued stocks with positive momentum may be poised for further growth.
+- SELL Rule: A low bm (overvalued) or weak momentum indicates a potential downside, making it a good time to sell these stocks.
+- Expected Signal Distribution: The rules aim to capture opportunities in undervalued stocks with positive momentum while avoiding overvalued or weak-performing stocks.
+
+===========================================
+``` 
+
+Thought: I now know the final answer.
