@@ -1,0 +1,29 @@
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The average z-scores for December 2023 are approximately 0 for bm, -2.62 for mom12m, and 0 for mve.
+- Firms with extreme values for bm (|z-score| > 2.0) include GM, VTRS, WRK, WBD, C, COF, MHK, TAP, CFG, HPE, and more.
+
+BUY RULE:
+if bm > 1.5 AND mom12m > 1.5:
+    signal = BUY
+
+SELL RULE:
+if bm < -2.0 OR mom12m < -2.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Firms with z-scores above 1.5 for both bm and mom12m are considered strong candidates for buy signals, indicating undervalued and strong momentum characteristics.
+- SELL Rule: Firms with z-scores below -2.0 for either bm or mom12m are considered for sell signals, indicating extreme overvaluation or weak momentum.
+- The thresholds are based on extreme values and aim to capture significant deviations from the mean z-scores.
+
+Expected signal distribution:
+- BUY: 0.6% of firms
+- SELL: Variable based on extreme z-score values
+- HOLD: Remaining firms
