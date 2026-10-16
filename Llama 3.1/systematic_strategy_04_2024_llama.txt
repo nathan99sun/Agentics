@@ -1,0 +1,7 @@
+Since the original problem was about finding firms with extreme values for 'bm' (|z-score| > -1.5) at 2024-03-31 and the correct tool to use is get_extreme_firms, I can now provide the final answer.
+
+The final answer is: 
+```
+Thought: you should always think about what to do
+Action: get_extreme_firms
+Action Input: {'characteristic': 'bm', 'threshold': 1.5, 'date': '2024-03-31'}

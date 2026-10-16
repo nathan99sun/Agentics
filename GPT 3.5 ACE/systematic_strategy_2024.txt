@@ -1,0 +1,52 @@
+--- OPTIMIZED ACE RULEBOOK ---
+MASTER RULEBOOK v2.2:
+- Focus on finding z-score combinations for value, momentum, and size.
+- Avoid z-scores beyond +/- 2.0 to ensure the portfolio is not empty.
+- Adjust the threshold values for book-to-market ratio (bm), momentum (mom12m), and log firm size (mve) to be less extreme, considering a broader range of values around the mean to capture more firms while still targeting significant deviations.
+- Introduce a rule that combines different factors to generate trading signals, such as considering the interaction between bm, mom12m, and mve to capture more nuanced patterns in the data.
+- Implement a dynamic threshold adjustment mechanism that adapts to changes in market conditions or data distribution over time, ensuring the rules remain effective and adaptive.
+- Consider adding additional fundamental or technical factors to the rule to enhance its predictive capabilities.
+- Explore additional features or data sources to complement the existing factors (bm, mom12m, mve) and enhance the predictive power of the trading signals.
+- Conduct sensitivity analysis on the threshold values to identify the optimal balance between capturing extreme values and maximizing the number of firms captured for trading signals.
+- Implement a validation process to assess the robustness of the rule across different market conditions or time periods.
+- Consider incorporating risk management principles into the rulebook to account for potential downside risks associated with extreme value trading strategies.
+- Explore machine learning techniques or advanced analytics to identify nonlinear relationships or interactions among variables that may impact stock performance.
+
+Trading Signal Rules:
+- BUY if: bm > 1.5 AND mom12m > 1.8
+- SELL if: bm < -1.5 OR mom12m < -1.8
+- HOLD: all other cases
+
+Additional Rule:
+- Allocate portfolio or adjust risk management strategies for stocks with 'mve' z-scores > 2.0 to address the presence of very large companies based on market value of equity.
+
+These updates aim to refine the rulebook by adjusting specific thresholds for trading signals based on z-scores for 'bm' and 'mom12m', ensuring a more inclusive approach while still managing risks associated with extreme values. The introduction of a new rule for 'mve' z-scores enhances portfolio allocation strategies for very large companies. The overall goal remains to capture trading opportunities effectively while maintaining a balanced and adaptive trading strategy.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The data on December 31, 2023, shows that there are extreme values in all characteristics (mve, bm, mom12m) but avoiding z-scores beyond +/- 2.0 ensures a decent number of firms for trading signals.
+
+BUY RULE:
+if bm > 1.5 AND mom12m > 1.8:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.5 OR mom12m < -1.8:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- The BUY rule focuses on identifying stocks with high undervaluation (bm > 1.5) and strong positive momentum (mom12m > 1.8), indicating potential for future price appreciation.
+- The SELL rule targets overvalued stocks (bm < -1.5) or those with weak momentum (mom12m < -1.8), aiming to capture downside potential or profit-taking opportunities.
+- The HOLD rule covers all other cases, providing a default stance when neither strong buy nor sell signals are present.
+
+Expected signal distribution:
+- Based on the provided rules, we expect a balanced distribution of BUY, SELL, and HOLD signals, capturing opportunities across various market conditions while managing risks associated with extreme values.
+===========================================

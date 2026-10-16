@@ -1,0 +1,43 @@
+--- OPTIMIZED ACE RULEBOOK ---
+MASTER RULEBOOK v1.3:
+- Focus on finding z-score combinations for value, momentum, and size.
+- Avoid z-scores beyond +/- 1.5 to capture a reasonable number of firms for evaluation.
+- Utilize the following thresholds for 'mve', 'bm', and 'mom12m':
+    - 'mve': Adjust threshold to > 1.0 to capture more firms with potential upside while focusing on undervalued firms.
+    - 'bm': Set thresholds within the range of -1.5 to +1.5 to maintain balance between growth and value stocks. Consider adding a secondary condition for buying based on 'bm' values to refine the undervalued aspect of identified firms.
+    - 'mom12m': Adjust thresholds dynamically based on market conditions to adapt to varying momentum strengths.
+- Implement a dynamic threshold adjustment mechanism based on data distribution for balanced firm selection.
+- Conduct sensitivity analysis to optimize threshold values for maximizing captured firms while maintaining economic edge. Experiment with different combinations of threshold values for 'mve' and 'mom12m' to optimize the balance between capturing firms and maintaining the economic edge.
+- Consider incorporating additional factors or criteria to enhance signal generation robustness.
+- Explore machine learning algorithms for optimizing rule parameters and improving firm selection accuracy based on historical data patterns.
+- Implement a mechanism to track the number of firms captured under each rule to ensure a balanced distribution between buy, sell, and hold signals.
+- Explore incorporating sector-specific thresholds for 'mve', 'bm', and 'mom12m' to account for industry variations in valuation and momentum trends.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Extreme values for 'mve': > 1.5
+- Extreme values for 'bm': < -1.5
+- Extreme values for 'mom12m': > 1.5
+
+BUY RULE:
+if mve > 1.0 AND (bm < -1.0 OR mom12m > 1.0):
+    signal = BUY
+
+SELL RULE:
+if bm < -1.5 OR mom12m > 1.5:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY RULE:
+    - Economic reasoning: Focus on potentially undervalued firms with positive momentum.
+- SELL RULE:
+    - Economic reasoning: Identify firms with extremely low book-to-market ratios or very high momentum for potential overvaluation or unsustainable momentum.
+- Expected signal distribution: The rules aim to capture firms with potential upside based on undervaluation and strong momentum while avoiding firms that may be overvalued or experiencing excessive momentum.

@@ -1,0 +1,19 @@
+```
+NON-LINEAR PROBABILITY MODEL
+===========================================
+
+Data Exploration Summary:
+- The scoring function incorporates non-linear transformations and interactions between mve, bm, and mom12m. The formula used is: score = mve*mve + 2*bm*mom12m - 0.5*bm*bm
+
+PROBABILITY FUNCTION (Python/Pseudo-code):
+def calculate_buy_probability(mve, bm, mom12m):
+    score = mve*mve + 2*bm*mom12m - 0.5*bm*bm
+    return score
+
+Rationale:
+- The squared term of mve indicates a non-linear effect of firm size on the score. Larger firms may have a disproportionately positive impact.
+- The interaction term 2*bm*mom12m shows that momentum is more beneficial for stocks with higher book-to-market ratios, potentially indicating a value-driven momentum effect.
+- The negative interaction term -0.5*bm*bm implies a diminishing return of the book-to-market ratio on the score, reflecting a possible saturation effect for undervalued stocks.
+
+FINAL ANSWER: The scoring function is based on the formula score = mve*mve + 2*bm*mom12m - 0.5*bm*bm, incorporating non-linear transformations and interactions between log firm size, book-to-market ratio, and 12-month momentum.
+```

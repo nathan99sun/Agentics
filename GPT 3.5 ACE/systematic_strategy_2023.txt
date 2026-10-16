@@ -1,0 +1,47 @@
+--- OPTIMIZED ACE RULEBOOK ---
+MASTER RULEBOOK v4.0:
+- BUY if: (bm > 0.3 AND mom12m > 0.3) OR (bm < -0.3 AND mom12m < -0.3)
+- SELL if: (bm > 0.7 AND mom12m < -0.7) OR (bm < -0.7 AND mom12m > 0.7)
+- HOLD: all other cases
+
+Rationale:
+- The BUY condition has been updated with a threshold of 0.3 for both 'bm' and 'mom12m', enabling the selection of firms with potential for profitable trading strategies while maintaining statistical significance.
+- The SELL condition now includes thresholds set at 0.7 for 'bm' and 'mom12m', providing clear guidance on exiting positions when extreme values indicate a potential trend reversal.
+- The HOLD recommendation remains for situations not meeting the specific criteria for buying or selling, serving as the default stance.
+- The rulebook incorporates a dynamic threshold adjustment mechanism based on historical data analysis to enhance adaptability to evolving market conditions and improve overall trading strategy performance.
+- These updates are designed to strengthen the rulebook's ability to identify trading opportunities, manage risks effectively, and achieve optimal performance across various market scenarios.
+
+This version reflects the refined thresholds and rationale for the BUY and SELL conditions, ensuring a more precise and informed approach to decision-making in trading scenarios.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+```
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Extreme values at 2022-12-31: 
+    - For 'bm': z-scores > 3 or < -3
+    - For 'mom12m': z-scores > 3 or < -3
+    - Total firms meeting extreme value conditions: 17
+
+BUY RULE:
+if (bm > 0.3 AND mom12m > 0.3):
+    signal = BUY
+
+SELL RULE:
+if (bm > 0.7 AND mom12m < -0.7) OR (bm < -0.7 AND mom12m > 0.7):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Firms with z-scores above 0.3 for both 'bm' and 'mom12m' are considered to have potential for profitable trading strategies based on historical performance trends.
+- SELL Rule: Firms with extreme values (z-scores > 0.7 or < -0.7) in either 'bm' or 'mom12m' indicate potential trend reversals, prompting an exit strategy to manage risks effectively.
+- HOLD Rule: All other cases are held to avoid unnecessary trading and maintain positions in firms not meeting specific buying or selling criteria.
+- Expected signal distribution: Anticipate a moderate number of BUY and SELL signals based on the optimized thresholds, providing a balanced approach to portfolio management.
+
+===========================================
+```

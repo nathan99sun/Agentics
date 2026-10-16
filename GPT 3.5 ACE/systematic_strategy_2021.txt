@@ -1,0 +1,56 @@
+--- OPTIMIZED ACE RULEBOOK ---
+**Master Rulebook:**
+
+1. Key Performance Indicators (KPIs) Thresholds:
+   - Revenue Growth: Adjusted based on historical data and industry benchmarks to ensure attainable yet challenging targets.
+   - Profitability: Updated to reflect realistic levels that align with industry standards.
+   - Market Share: Revised to capture a broader range of firms while maintaining competitiveness.
+
+2. Threshold Flexibility:
+   - Thresholds now incorporate ranges or tiers instead of fixed values to accommodate varying levels of performance.
+   - For example, revenue growth thresholds now allow for a range of growth rates indicating strong performance.
+
+3. Dynamic Thresholds:
+   - Utilize statistical methods like standard deviations or percentiles to set thresholds based on the dataset's characteristics.
+   - Thresholds are now more reflective of firms' actual performance, adapting to the distribution of data.
+
+4. Qualitative Factors:
+   - Quantitative metrics are supplemented with qualitative factors to consider unique circumstances not captured by numerical thresholds.
+   - Factors like industry-specific conditions, market nuances, and qualitative assessments are now integral to the evaluation process.
+
+5. Threshold Review and Recalibration:
+   - Regularly review and adjust thresholds based on ongoing performance data.
+   - Ensures that thresholds remain relevant, effective, and aligned with the evolving market landscape.
+
+These strategic updates enhance the rulebook's effectiveness by capturing a wider range of firms while maintaining the economic rationale and competitiveness essential for investment decisions.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- For the characteristics at the date '2020-12-31':
+  - Minimum mve: -1.933384, Maximum mve: 1.88831
+  - Minimum bm: -1.438513, Maximum bm: 3.559504
+  - Minimum mom12m: -2.243468, Maximum mom12m: 2.575048
+
+BUY RULE:
+if bm > 1.5 AND mom12m > 1.5:
+    signal = BUY
+
+SELL RULE:
+if bm < -1.0 OR mom12m < -1.0:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY Rule: Buying stocks with high book-to-market ratio (bm) and strong 12-month momentum (mom12m) indicates undervalued and strong performing stocks which might continue to outperform.
+- SELL Rule: Selling stocks with low book-to-market ratio or weak momentum helps in avoiding potential underperforming stocks.
+- Expected signal distribution: The rules aim to capture undervalued stocks with strong momentum for buying while avoiding overvalued or weak momentum stocks for selling.
+
+This systematic trading strategy leverages the characteristics of firms at the date '2020-12-31' to generate explicit BUY, SELL, and HOLD signals based on specific z-score thresholds.
+===========================================

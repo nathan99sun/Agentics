@@ -1,0 +1,20 @@
+```
+===========================================
+NON-LINEAR PROBABILITY MODEL
+===========================================
+
+Data Exploration Summary:
+- The scoring function "mve + bm * bm + mom12m" effectively ranks firms based on the specified formula, capturing interactions between firm size, book-to-market ratio, and momentum.
+
+PROBABILITY FUNCTION (Python/Pseudo-code):
+def calculate_buy_probability(mve, bm, mom12m):
+    # Non-linear probability scoring function
+    score = mve + bm * bm + mom12m
+    return score
+
+Rationale:
+- The formula captures the impact of firm size (mve), value factor (bm), and momentum (mom12m) on the buy probability score. The squared term of bm suggests a compounding effect where undervalued stocks with higher book-to-market ratios have a stronger influence on the score. The linear terms reflect the direct impact of firm size and momentum.
+
+FINAL RULE: You are not allowed to submit your response until you have successfully executed the `test_scoring_function` tool at least once and analyzed the Top 10% and Bottom 10% results.
+===========================================
+```

@@ -1,0 +1,23 @@
+```
+===========================================
+NON-LINEAR PROBABILITY MODEL
+===========================================
+
+Data Exploration Summary:
+- The scoring function formula "mve * bm + bm * mom12m + mom12m * mom12m" was tested on S&P 500 firms data for December 2020, revealing significant differences in scores between the top and bottom deciles.
+
+PROBABILITY FUNCTION (Python/Pseudo-code):
+def calculate_buy_probability(mve, bm, mom12m):
+    # Non-linear scoring function
+    score = mve * bm + bm * mom12m + mom12m * mom12m
+    return score
+
+Rationale:
+- The scoring function incorporates interactions between firm size (mve), book-to-market ratio (bm), and 12-month momentum (mom12m). 
+- The term mve * bm captures the combined effect of firm size and value factor, indicating potentially undervalued larger firms.
+- The term bm * mom12m considers the interaction between value and momentum, suggesting momentum effects on undervalued stocks.
+- The term mom12m * mom12m introduces non-linearity by emphasizing the momentum effect squared, reflecting potential momentum compounding.
+
+FINAL RULE: The trading desk will buy the top decile and sell the bottom decile of S&P 500 stocks based on the calculated buy probability scores from the non-linear scoring function.
+===========================================
+```

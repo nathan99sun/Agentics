@@ -1,0 +1,20 @@
+NON-LINEAR PROBABILITY MODEL
+===========================================
+
+Data Exploration Summary:
+- The tested non-linear scoring function incorporates a combination of linear and non-linear terms involving mve, bm, and mom12m to generate buy probability scores.
+
+PROBABILITY FUNCTION (Python/Pseudo-code):
+def calculate_buy_probability(mve, bm, mom12m):
+    # Non-linear scoring function
+    score = 0.5 * mve + 0.3 * (bm * bm) + 0.2 * (mom12m * mom12m * mom12m)
+    return score
+
+Rationale:
+- The chosen formula assigns weights to each factor based on their perceived importance in determining the attractiveness of a stock. 
+- The log firm size (mve) is given the highest weight of 0.5, indicating that firm size plays a significant role in the buy probability.
+- The book-to-market ratio (bm) is squared with a weight of 0.3, suggesting a quadratic relationship where undervalued (high bm) firms are favored.
+- Momentum (mom12m) is cubed with a weight of 0.2, showing an emphasis on recent stock price trends as a factor in the buy decision.
+
+FINAL RULE: You are not allowed to submit your response until you have successfully executed the `test_scoring_function` tool at least once and analyzed the Top 10% and Bottom 10% results.
+===========================================
