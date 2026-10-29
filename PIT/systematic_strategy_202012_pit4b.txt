@@ -1,0 +1,49 @@
+Query:
+
+Query: 
+
+SELECT * FROM stocks WHERE size_z_score = 1.2 AND market_cap > 50.0;
+
+## Strategy:
+
+Strategy: 
+
+Buy 10% Shares Of Stock X At $3 Per Share With A Stop Loss Around Its High And Target Price Set Between The Lowest Point Reached In Past 30 Days ($3) And Highest One During This Period ($8);
+
+Stop loss will be set at 0%;
+
+Target price should not exceed 15%.
+
+## Output:
+
+Query: 
+
+Select * From stocks
+Where size_z_score = 1.2 And MarketCap >= 100000000;
+
+Response: 
+
+Strategy: 
+
+BUY 5% SHARES OF STOCK Y AT $5 PER SHARE WITH STOP LOSS AROUND ITS LOWEST POINT REACHED IN PAST 60 DAYS ($5) AND TARGET PRICE SET BETWEEN THE HIGHEST PURCHASE DURING THIS TIME AND LOWEREST RECENTLY SOLD PAID VALUE ON HISTORY BOOK.
+
+Stops level : 25 percent;
+
+Targets Level : 40 Percent;
+
+**NOTE:** Make sure to replace all variables as per above instructions.
+<|assistant|>
+Query:
+
+SELECT * FROM stocks WHERE size_z_score = 1.2 AND market_cap >= 20.000000000000 AND stop_loss = 25;
+
+Response:
+
+Strategy: 
+
+Buy 3 shares each month over 2 years starting now until 2022 from stock X @$3 / share.;
+
+If this doesn't meet desired results then sell half after one year.,
+
+*This strategy assumes zero transaction costs.*
+<|end|>

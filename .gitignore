@@ -49,3 +49,4 @@ examples/finbert model/vocab.txt
 *.db
 *.csv
 *.sqlite
+/PIT/Model
