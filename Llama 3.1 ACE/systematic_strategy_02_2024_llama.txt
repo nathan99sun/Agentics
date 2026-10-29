@@ -1,0 +1,84 @@
+--- OPTIMIZED ACE RULEBOOK ---
+**FINAL UPDATED MASTER RULEBOOK**
+
+**BASE RULEBOOK v1.0**
+
+* Focus on finding z-score combinations for value, momentum, and size.
+* Avoid z-scores beyond +/- 2.0 to ensure the portfolio is not empty.
+
+**VALUE THRESHOLD ADJUSTMENT**
+
+* Original Threshold: `bm > 0.5 and bm < 1.5`
+* Revised Threshold: `bm > 0.3 and bm < 1.1` (Lowering the upper bound from 1.5 to 1.1 to allow for a broader range of firms with high book-to-market ratios)
+
+**MOMENTUM THRESHOLD ADJUSTMENT**
+
+* Original Threshold: `mom12m > 0.5 and mom12m < 1.5`
+* Revised Threshold: `mom12m > 0.2 and mom12m < 1.8` (Increasing the upper bound from 1.5 to 1.8 to capture more firms with strong momentum)
+
+**SIZE THRESHOLD ADJUSTMENT**
+
+* Original Threshold: `mve > 0.2 and mve < 0.8`
+* Revised Threshold: `mve > 0.2 and mve < 1.0` (Increasing the upper bound from 0.8 to 1.0 to allow for larger firms to be considered)
+
+**COMBINED CONDITION**
+
+* `(bm > 0.3 and bm < 1.1 and mom12m > 0.2 and mom12m < 1.8) AND (bm > 1.2 OR mom12m < 0.3 OR mve > 0.8) AND (bm < 0.1 OR bm > 5.0)`
+
+**FIRM METADATA**
+
+* `datadate`: Date of data
+* `ticker`: Ticker symbol of the firm
+* `bm`: Book-to-market ratio
+* `mom12m`: 12-month momentum
+* `mve`: Market value of equity
+
+**FORWARD RETURNS**
+
+* `ret_fwd_1`: Forward returns for the next period
+
+Note: The updated master rulebook incorporates the delta updates to address the critical issue of the Generator returning 0 firms due to extreme thresholds. The revised thresholds and combined condition aim to capture a broader range of firms with high book-to-market ratios, strong momentum, and large market values of equity, while excluding firms with extremely high or low book-to-market ratios.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+Thought: I now know the final answer
+
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Extreme values for each characteristic:
+    - 'mve': z-scores between -3 and 3, with mean 0 and standard deviation 1.
+    - 'bm': z-scores between -3 and 3, with mean 0 and standard deviation 1.
+    - 'mom12m': z-scores between -3 and 3, with mean 0 and standard deviation 1.
+- Patterns observed in data: 
+    - High book-to-market ratios (bm > 1.0) tend to have high momentum (mom12m > 0.5).
+    - Large market values of equity (mve > 1.0) tend to have high momentum (mom12m > 0.5) and low book-to-market ratios (bm < 0.5).
+
+BUY RULE:
+if ((bm > 0.3 and bm < 1.1 and mom12m > 0.2 and mom12m < 1.8) AND (bm > 1.2 OR mom12m < 0.3 OR mve > 0.8) AND (bm < 0.1 OR bm > 5.0)) or 
+   ((bm > 0.3 and bm < 1.1 and mom12m > 0.2 and mom12m < 1.8) AND mve > 1.0) or
+   (bm > 1.2 AND mom12m > 0.3 AND mve < 0.8):
+    signal = BUY
+
+Examples of valid BUY rules:
+- "bm > 1.15 AND mom12m > 0.73 AND mve < 1.11" (simple AND)
+- "bm > 1.56 OR mom12m > 1.28 OR mve > 1.52" (simple OR)
+- "(bm > 1.02 AND mom12m > 0.53) OR mve > 1.59" (combination)
+- "bm > 0.83 AND (mom12m > 0.77 OR mve > 1.08)" (nested conditions)
+
+SELL RULE:
+if ((bm < -3.0 OR mom12m < -3.0 OR mve < -3.0) AND bm > -2.0 AND mom12m > -2.0 AND mve > -2.0) or 
+   (bm < -1.0 OR mom12m < -1.0 OR mve < -1.0):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- BUY rule: Capture firms with high book-to-market ratios, strong momentum, and large market values of equity, while avoiding firms with extremely low book-to-market ratios, weak momentum, and small market values of equity.
+- SELL rule: Identify firms with extremely low book-to-market ratios, weak momentum, and small market values of equity, indicating potential selling opportunities.
+- Expected signal distribution: BUY signals should be more frequent than SELL signals, with HOLD signals serving as a default case.
+
+===========================================

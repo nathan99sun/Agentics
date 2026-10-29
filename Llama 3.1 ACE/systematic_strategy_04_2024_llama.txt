@@ -1,0 +1,29 @@
+--- OPTIMIZED ACE RULEBOOK ---
+This is the updated master rulebook with the proposed delta updates and additional factors incorporated.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Extreme values for mve: > 1.5 or < -1.5
+- Extreme values for bm: > 1.2 or < -1.2
+- Extreme values for mom12m: > 1.1 or < -1.1
+
+BUY RULE:
+if (bm > 1.2 AND mom12m > 1.1 AND mve < 1.0) OR (bm < -1.2 AND mom12m < -1.1 AND mve > -1.0):
+    signal = BUY
+
+SELL RULE:
+if (bm < -1.2 OR mom12m < -1.1 OR mve > 1.5) AND (bm > 1.2 OR mom12m > 1.1 OR mve < -1.5):
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- Buy rule: Value stocks with high momentum and low size (cheap/undervalued and strong performance)
+- Sell rule: Value stocks with low momentum and high size (expensive and weak performance) or undervalued stocks with high momentum and large size (value trap)
+- Expected signal distribution: Buy signals for value stocks with high momentum and low size, sell signals for value stocks with low momentum and high size or undervalued stocks with high momentum and large size.

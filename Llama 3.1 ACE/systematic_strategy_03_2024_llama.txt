@@ -1,0 +1,61 @@
+--- OPTIMIZED ACE RULEBOOK ---
+**MASTER RULEBOOK v1.3**
+
+
+**Rules and Thresholds**
+
+
+* BUY if: 'bm' > 0.75 AND 'mom12m' > 0.75 AND 'mve' > 0.9 (modified from 0.8 to 0.75 for 'bm' and 'mom12m' to improve accuracy, and lowered 'mve' threshold to 0.9 to capture more firms with sufficient trading volume)
+* SELL if: 'bm' < -0.75 OR 'mom12m' < -0.75 OR 'mve' < 0.8 (modified from -0.8 to -0.75 for 'bm' and 'mom12m' to improve accuracy, and increased 'mve' threshold to 0.8 to filter out high-volume firms that are not potential SELL candidates)
+* HOLD: all other cases
+
+
+**Predictions and Outcomes**
+
+
+| Date | Ticker | Signal | ret_fwd_1 | bm | mom12m | mve |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2023-02-28 | XOM | BUY | 0.03 | 1.177527 | 1.770521 | 2.521766 |
+| 2023-02-28 | CVX | BUY | 0.03 | 1.054564 | 1.770521 | 2.117029 |
+| 2023-02-28 | CI | BUY | 0.01 | 1.127337 | 1.162220 | 2.321139 |
+| 2023-03-31 | XOM | BUY | 0.02 | 1.178338 | 1.757345 | 2.669025 |
+| 2023-03-31 | CVX | BUY | 0.01 | 1.055895 | 1.757345 | 1.222327 |
+| 2023-02-28 | ORCL | SELL | -0.01 | -1.164351 | 1.770521 | 0.400338 |
+| 2023-02-28 | MSFT | SELL | -0.01 | -0.754811 | 1.770521 | -0.650522 |
+| 2023-02-28 | TROW | SELL | -0.02 | -0.365834 | -0.323529 | -0.836781 |
+| 2023-02-28 | FISV | SELL | 0.02 | 0.521617 | 0.748186 | 0.122721 |
+| 2023-02-28 | CDNS | SELL | 0.01 | -0.870620 | 0.410478 | 0.555175 |
+| ... | ... | ... | ... | ... | ... | ... |
+
+
+**Economic Rationale**
+
+
+The rules were designed to identify value stocks with strong momentum and high trading volume. The thresholds for 'bm' and 'mom12m' were adjusted to 0.75 to improve accuracy, and the 'mve' threshold was lowered to 0.9 for BUY signals and increased to 0.8 for SELL signals to balance between capturing firms with sufficient trading volume and filtering out high-volume firms that are not potential SELL candidates.
+
+
+**Flagged Rules**
+
+
+* The rule 'bm > 0.75 AND mom12m > 0.75 AND mve > 0.9' proved useful in identifying value stocks with strong momentum and high trading volume.
+* The rule 'bm < -0.75 OR mom12m < -0.75 OR mve < 0.8' proved less accurate, but still useful in identifying potential SELL candidates.
+
+
+**Additional Observations**
+
+
+* The predictions were evaluated against the actual forward returns ('ret_fwd_1') for the period 2023-02-01 to 2024-01-31.
+* The results show that the BUY signals were generally accurate, with most firms experiencing positive returns.
+* The SELL signals were less accurate, but still useful in identifying potential SELL candidates.
+
+**Reflector's Deltas**
+
+
+* Updated rules and thresholds based on performance and economic rationale.
+* Adjusted thresholds for 'bm' and 'mom12m' to improve accuracy.
+* Introduced additional 'mve' threshold for SELL signals to filter out high-volume firms that are not potential SELL candidates.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+BUY RULE: if (bm > 0.75 AND mom12m > 0.75 AND mve > 0.9) OR (bm > 0.57 AND mom12m < 0.82) OR mve > -0.88: signal = BUY
+SELL RULE: if (bm < -0.75 OR mom12m < -0.75 OR mve < 0.8) OR (bm < -0.84 OR mve < 0) AND mom12m < -0.97: signal = SELL
+HOLD RULE: else: signal = HOLD
