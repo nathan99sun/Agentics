@@ -1,61 +1,87 @@
 --- OPTIMIZED ACE RULEBOOK ---
-**MASTER RULEBOOK v1.3**
+### Updated Master Rulebook
 
 
-**Rules and Thresholds**
+**Trading Rulebook v1.3**
 
+1.  **Value Stocks**: Buy if `bm > 0.5 AND mom12m > 0.8 AND mve > 0.2`. Sell if `bm < -1.2 OR mom12m < -0.9`.
+2.  **Momentum Stocks**: Buy if `mom12m > 0.7 AND mve > 0.2`. Sell if `mom12m < -0.9`.
+3.  **Size-Neutral Stocks**: Buy if `mve > 0.1`. Sell if `mve < -0.9`.
+4.  **Combination Rules**:
+    *   Buy if `bm > 0.6 AND mom12m > 0.8`. Sell if `bm < -1.2 OR mom12m < -0.9`.
+    *   Buy if `mom12m > 0.7 AND mve > 0.2`. Sell if `mom12m < -0.9`.
+    *   Buy if `mve > 0.1`. Sell if `mve < -0.9`.
+5.  **Combination Value-Momentum Rule**: Buy if `bm > 0.6 AND mom12m > 0.8 AND mve > 0.1`.
+6.  **New Combination Rule**: Buy if `bm > 0.5 AND mve > 0.2`.
+7.  **Holding Period Rule**: Hold all other cases not covered by the above rules.
 
-* BUY if: 'bm' > 0.75 AND 'mom12m' > 0.75 AND 'mve' > 0.9 (modified from 0.8 to 0.75 for 'bm' and 'mom12m' to improve accuracy, and lowered 'mve' threshold to 0.9 to capture more firms with sufficient trading volume)
-* SELL if: 'bm' < -0.75 OR 'mom12m' < -0.75 OR 'mve' < 0.8 (modified from -0.8 to -0.75 for 'bm' and 'mom12m' to improve accuracy, and increased 'mve' threshold to 0.8 to filter out high-volume firms that are not potential SELL candidates)
-* HOLD: all other cases
+**Rationale:**
 
+*   The rulebook focuses on finding z-score combinations for value, momentum, and size.
+*   The thresholds are chosen to capture reasonable tails and avoid excessively large z-scores.
+*   The combination rules are designed to capture the interaction between value, momentum, and size.
 
-**Predictions and Outcomes**
+**Test Results:**
 
+*   The test results suggest that the rules are somewhat effective in capturing the desired characteristics.
+*   The condition test at 2023-02-01 to 2024-01-31 returned 75 firms meeting the condition for the value-momentum-size rule and 1,250 firms meeting the condition for the value-momentum rule.
 
-| Date | Ticker | Signal | ret_fwd_1 | bm | mom12m | mve |
-| --- | --- | --- | --- | --- | --- | --- |
-| 2023-02-28 | XOM | BUY | 0.03 | 1.177527 | 1.770521 | 2.521766 |
-| 2023-02-28 | CVX | BUY | 0.03 | 1.054564 | 1.770521 | 2.117029 |
-| 2023-02-28 | CI | BUY | 0.01 | 1.127337 | 1.162220 | 2.321139 |
-| 2023-03-31 | XOM | BUY | 0.02 | 1.178338 | 1.757345 | 2.669025 |
-| 2023-03-31 | CVX | BUY | 0.01 | 1.055895 | 1.757345 | 1.222327 |
-| 2023-02-28 | ORCL | SELL | -0.01 | -1.164351 | 1.770521 | 0.400338 |
-| 2023-02-28 | MSFT | SELL | -0.01 | -0.754811 | 1.770521 | -0.650522 |
-| 2023-02-28 | TROW | SELL | -0.02 | -0.365834 | -0.323529 | -0.836781 |
-| 2023-02-28 | FISV | SELL | 0.02 | 0.521617 | 0.748186 | 0.122721 |
-| 2023-02-28 | CDNS | SELL | 0.01 | -0.870620 | 0.410478 | 0.555175 |
-| ... | ... | ... | ... | ... | ... | ... |
+**Conclusion:**
 
+The trading rulebook v1.3 provides a systematic approach to generating trading signals based on z-score combinations for value, momentum, and size. The combination rules are designed to capture the interaction between these characteristics. The test results suggest that the rules are somewhat effective in capturing the desired characteristics. However, further refinement and testing are necessary to improve the performance of the rulebook.
 
-**Economic Rationale**
+**Economic Rationale:**
 
+*   The thresholds for `bm` and `mom12m` are lowered to capture more value and momentum stocks.
+*   The combination rules are designed to capture the interaction between value, momentum, and size.
 
-The rules were designed to identify value stocks with strong momentum and high trading volume. The thresholds for 'bm' and 'mom12m' were adjusted to 0.75 to improve accuracy, and the 'mve' threshold was lowered to 0.9 for BUY signals and increased to 0.8 for SELL signals to balance between capturing firms with sufficient trading volume and filtering out high-volume firms that are not potential SELL candidates.
+**Flagged Rules:**
 
+*   **Useful**: Value Stocks, Momentum Stocks, Size-Neutral Stocks, Combination Rules, Combination Value-Momentum Rule, New Combination Rule.
+*   **Misleading**: Holding Period Rule (not necessary with the combination rules).
 
-**Flagged Rules**
+**Predictions:**
 
+*   The rulebook will perform well in capturing value and momentum stocks.
+*   The combination rules will be effective in capturing the interaction between value, momentum, and size.
+*   Further refinement and testing are necessary to improve the performance of the rulebook.
 
-* The rule 'bm > 0.75 AND mom12m > 0.75 AND mve > 0.9' proved useful in identifying value stocks with strong momentum and high trading volume.
-* The rule 'bm < -0.75 OR mom12m < -0.75 OR mve < 0.8' proved less accurate, but still useful in identifying potential SELL candidates.
+**Actual 'ret_fwd_1' Outcomes:**
 
+*   The actual outcomes will be evaluated based on the performance of the rulebook in capturing value, momentum, and size-neutral stocks.
 
-**Additional Observations**
+**Recommendations:**
 
-
-* The predictions were evaluated against the actual forward returns ('ret_fwd_1') for the period 2023-02-01 to 2024-01-31.
-* The results show that the BUY signals were generally accurate, with most firms experiencing positive returns.
-* The SELL signals were less accurate, but still useful in identifying potential SELL candidates.
-
-**Reflector's Deltas**
-
-
-* Updated rules and thresholds based on performance and economic rationale.
-* Adjusted thresholds for 'bm' and 'mom12m' to improve accuracy.
-* Introduced additional 'mve' threshold for SELL signals to filter out high-volume firms that are not potential SELL candidates.
+*   Refine the rulebook to improve its performance in capturing value, momentum, and size-neutral stocks.
+*   Test the rulebook on a larger dataset to evaluate its performance.
+*   Consider adding more combination rules to capture the interaction between value, momentum, and size.
 
 --- FINAL ZERO-SHOT STRATEGY ---
-BUY RULE: if (bm > 0.75 AND mom12m > 0.75 AND mve > 0.9) OR (bm > 0.57 AND mom12m < 0.82) OR mve > -0.88: signal = BUY
-SELL RULE: if (bm < -0.75 OR mom12m < -0.75 OR mve < 0.8) OR (bm < -0.84 OR mve < 0) AND mom12m < -0.97: signal = SELL
-HOLD RULE: else: signal = HOLD
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- The data exploration revealed that the extreme values for each characteristic at the specified date are:
+  - bm: -1.386490, 0.785852, 0.182765, -1.263662, 0.179189
+  - mom12m: -0.215330, -1.774147, -0.982218, 0.890707, -1.382751
+  - mve: 0.000000, -0.426636, 0.007378, -0.029271, 0.566073
+
+BUY RULE:
+if (bm > 0.5 AND mom12m > 0.8 AND mve > 0.2) OR (bm > 0.6 AND mom12m > 0.8) OR (mom12m > 0.7 AND mve > 0.2) OR (bm > 0.5 AND mve > 0.2):
+    signal = BUY
+
+SELL RULE:
+if bm < -1.2 OR mom12m < -0.9:
+    signal = SELL
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- The BUY rule focuses on capturing value, momentum, and size-neutral stocks.
+- The thresholds for `bm` and `mom12m` are chosen to capture reasonable tails and avoid excessively large z-scores.
+- The combination rules are designed to capture the interaction between value, momentum, and size.
+
+Note: The above rules are based on the optimized rulebook provided and are applied to the data at the specified date. The thresholds and conditions are chosen to capture the desired characteristics and are based on the economic rationale provided.
