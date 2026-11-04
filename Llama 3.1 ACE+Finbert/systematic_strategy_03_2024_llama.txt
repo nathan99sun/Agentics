@@ -1,0 +1,93 @@
+--- OPTIMIZED ACE RULEBOOK ---
+**MASTER RULEBOOK v1.3**
+
+#### BASE RULEBOOK v1.0
+
+- Identify z-score combinations for value (bm), momentum (mom12m), and size (mve).
+- Discover how continuous textual sentiment ('finbert_score') dynamically interacts with these factors.
+- DIRECTION: Higher 'finbert_score' (greater than 0) means better/positive news. Negative 'finbert_score' (less than 0) means bad/negative news.
+- CRITICAL: 'finbert_score' operates on a micro-scale. Keep sentiment thresholds small (e.g., +/- 0.02 to +/- 0.1) to avoid empty portfolios.
+- Avoid extreme conditions that yield empty portfolios.
+
+#### RULES:
+
+1. BUY if: 
+   - 'finbert_score' is positive (greater than 0.05):
+     (bm > 1.2 AND finbert_score > 0.05) OR (mom12m > 0.85 AND finbert_score > 0.0)
+   - 'finbert_score' is negative (less than 0.05):
+     (bm > 1.2 AND finbert_score < 0.05 AND mve > 0.5)
+2. SELL if: 
+   - (bm < -1.25 OR finbert_score < -0.15)
+3. HOLD: all other cases
+
+#### CRITICAL REMINDER:
+
+If the Generator proposes a rule that returns 0 firms, flag it as a FAILURE due to extreme thresholds.
+
+#### RULE EVALUATION:
+
+- Rule 1: This rule identifies stocks with high value (bm > 1.2) and positive sentiment ('finbert_score' > 0.05), or stocks with strong momentum (mom12m > 0.85) and any sentiment, or stocks with high value (bm > 1.2) and negative sentiment ('finbert_score' < 0.05) and market value (mve > 0.5). This rule aims to capture undervalued stocks with improving sentiment.
+- Rule 2: This rule identifies stocks with low value (bm < -1.25) or negative sentiment ('finbert_score' < -0.15). This rule aims to capture overvalued stocks with deteriorating sentiment.
+
+#### ECONOMIC RATIONALE:
+
+1. Rule 1: This rule captures undervalued stocks with improving sentiment by adjusting the sentiment threshold to 0.05. The rule also identifies stocks with strong momentum and any sentiment, and stocks with high value and negative sentiment.
+2. Rule 2: This rule captures overvalued stocks with deteriorating sentiment by maintaining a low value threshold and adjusting the sentiment threshold to -0.15.
+
+#### PREDICTIONS:
+
+| datadate | ticker |  ret_fwd_1 | BUY/SELL/HOLD |
+| --- | --- | --- | --- |
+| 2023-02-28   ORCL |  0.059558 | HOLD |
+| 2023-02-28   MSFT |  0.152282 | HOLD |
+| 2023-02-28   TROW |  0.012788 | HOLD |
+| 2023-02-28    HON | -0.005480 | HOLD |
+| 2023-02-28    ADM | -0.002846 | HOLD |
+
+#### RULE EVALUATION & UPDATE:
+
+- Regularly evaluate the performance of the rules and update the sentiment thresholds as needed to ensure the Generator continues to adapt to changing market conditions.
+
+**ADDITIONAL NOTES:**
+
+The Master Rulebook v1.3 has been updated to incorporate the proposed joint rules and thresholds, ensuring adaptability to changing market conditions. Regular evaluation and update of the rules will ensure continued performance improvement.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+===========================================
+SYSTEMATIC TRADING RULES
+===========================================
+
+Data Exploration Summary:
+- Key statistics and patterns observed:
+  - The distribution of finbert_score is highly concentrated, with a majority of firms having a score of 0.0 (no news).
+  - Extreme values for the quantitative factors (bm, mom12m, mve) are observed, with some firms having very high or very low values.
+  - The interaction between sentiment (finbert_score) and the quantitative factors (bm, mom12m, mve) is critical in determining the trading signals.
+
+BUY RULE:
+if (bm > 1.2 AND finbert_score > 0.05) OR (mom12m > 0.85 AND finbert_score > 0.0):
+    signal = BUY
+
+Examples of valid BUY rules:
+- "bm > 1.15 AND finbert_score > 0.04" (Value with positive news)
+- "mom12m > 0.8 OR finbert_score > 0.09" (Momentum OR strong news)
+- "(bm > 1.02 AND mom12m > 0.53) AND finbert_score != 0.0" (Multi-factor requiring news coverage)
+
+SELL RULE:
+if (bm < -1.25 OR finbert_score < -0.15):
+    signal = SELL
+
+Examples of valid SELL rules:
+- "bm < -1.2 AND finbert_score < -0.03" (Overvalued stock with negative news)
+- "mom12m < -0.8 OR finbert_score < -0.08" (Poor momentum OR severe negative news)
+- "bm > 1.0 AND finbert_score < -0.06" (Value trap: cheap stock but significant negative sentiment)
+- "(mom12m < -0.5 AND mve > 1.0) AND finbert_score < -0.04" (Large cap losing momentum with bad news)
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- The BUY rule captures undervalued stocks with improving sentiment by adjusting the sentiment threshold to 0.05.
+- The SELL rule captures overvalued stocks with deteriorating sentiment by maintaining a low value threshold and adjusting the sentiment threshold to -0.15.
+
+===========================================

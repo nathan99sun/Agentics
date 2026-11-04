@@ -1,0 +1,66 @@
+--- OPTIMIZED ACE RULEBOOK ---
+**Master Rulebook:**
+
+**Optimized Rules and Thresholds:**
+
+1.  **Rule 1:** If the book-to-market ratio (bm) is greater than 1.2 and the momentum over the past 12 months (mom12m) is less than 0.5, then check for firms with a FinBERT sentiment score greater than or equal to -0.02 (finbert_score >= -0.02).
+2.  **Rule 2:** If the book-to-market ratio (bm) is greater than 1.2 and the momentum over the past 12 months (mom12m) is greater than 0.5, then check for firms with a FinBERT sentiment score greater than 0.0 and a momentum over the past 12 months greater than 0.7 (finbert_score > 0.0 AND mom12m > 0.7).
+3.  **Rule 3:** If the FinBERT sentiment score is equal to 0.0 (finbert_score = 0.0) and the book-to-market ratio (bm) is greater than 1.2, then check for firms with a momentum over the past 12 months less than 0.5 and a momentum over the past 12 months greater than 0.2 (mom12m < 0.5 AND mom12m > 0.2).
+
+**Targeted Delta Updates:**
+
+*   Relax the condition of negative FinBERT sentiment score (finbert\_score < 0.0) to (finbert\_score >= -0.02).
+*   Combine a positive FinBERT sentiment score (finbert\_score > 0.0) with a momentum over the past 12 months greater than 0.5 (mom12m > 0.5) and a book-to-market ratio greater than 1.2 (bm > 1.2).
+*   Combine a FinBERT sentiment score equal to 0.0 (finbert\_score = 0.0) with a momentum over the past 12 months less than 0.5 (mom12m < 0.5) and a book-to-market ratio greater than 1.2 (bm > 1.2).
+
+**Economic Rationale:**
+
+The optimized rules and thresholds are designed to capture quantitative anomalies in the presence of FinBERT sentiment scores. The rules are based on the idea that firms with high book-to-market ratios and low momentum over the past 12 months are more likely to have high FinBERT sentiment scores. The rules also take into account the momentum over the past 12 months and the book-to-market ratio to improve the performance.
+
+**Useful Rules:**
+
+*   Rule 1: If the book-to-market ratio (bm) is greater than 1.2 and the momentum over the past 12 months (mom12m) is less than 0.5, then check for firms with a FinBERT sentiment score between -0.02 and 0.0 (finbert_score >= -0.02 AND finbert_score < 0.0).
+*   Rule 2: If the book-to-market ratio (bm) is greater than 1.2 and the momentum over the past 12 months (mom12m) is greater than 0.5, then check for firms with a FinBERT sentiment score greater than 0.0 and a momentum over the past 12 months greater than 0.7 (finbert_score > 0.0 AND mom12m > 0.7).
+*   Rule 3: If the FinBERT sentiment score is equal to 0.0 (finbert_score = 0.0) and the book-to-market ratio (bm) is greater than 1.2, then check for firms with a momentum over the past 12 months less than 0.5 and a momentum over the past 12 months greater than 0.2 (mom12m < 0.5 AND mom12m > 0.2).
+
+**Misleading Rules:**
+
+*   The initial condition of negative FinBERT sentiment score (finbert_score < 0.0) was relaxed to (finbert_score >= -0.02), which improved the performance.
+*   The combination of a positive FinBERT sentiment score (finbert_score > 0.0) with a momentum over the past 12 months greater than 0.5 (mom12m > 0.5) and a book-to-market ratio greater than 1.2 (bm > 1.2) did not improve the performance.
+*   The combination of a FinBERT sentiment score equal to 0.0 (finbert_score = 0.0) with a momentum over the past 12 months less than 0.5 (mom12m < 0.5) and a book-to-market ratio greater than 1.2 (bm > 1.2) did not improve the performance.
+
+--- FINAL ZERO-SHOT STRATEGY ---
+SYSTEMATIC TRADING RULES
+
+Data Exploration Summary:
+- The distribution of finbert_score is highly concentrated, with most firms having a score around 0.0, indicating no news or minimal news coverage.
+- The majority of firms have a negative finbert_score, indicating negative news coverage.
+- The highest finbert_score observed is around -0.67, indicating some positive news coverage.
+
+BUY RULE:
+if (bm > 1.2 AND mom12m < 0.5) OR (bm > 1.2 AND mom12m > 0.5 AND finbert_score > 0.0 AND mom12m > 0.7) OR (finbert_score = 0.0 AND bm > 1.2 AND mom12m < 0.5 AND mom12m > 0.2):
+    signal = BUY
+
+Examples of valid BUY rules:
+- "bm > 1.15 AND finbert_score > 0.04" (Value with positive news)
+- "mom12m > 0.8 OR finbert_score > 0.09" (Momentum OR strong news)
+- "(bm > 1.02 AND mom12m > 0.53) AND finbert_score != 0.0" (Multi-factor requiring news coverage)
+
+SELL RULE:
+if bm < -1.2 OR finbert_score < -0.03 OR (bm > 1.0 AND finbert_score < -0.06) OR (mom12m < -0.5 AND mve > 1.0 AND finbert_score < -0.04):
+    signal = SELL
+
+Examples of valid SELL rules:
+- "bm < -1.2 AND finbert_score < -0.03" (Overvalued stock with negative news)
+- "mom12m < -0.8 OR finbert_score < -0.08" (Poor momentum OR severe negative news)
+- "bm > 1.0 AND finbert_score < -0.06" (Value trap: cheap stock but significant negative sentiment)
+- "(mom12m < -0.5 AND mve > 1.0) AND finbert_score < -0.04" (Large cap losing momentum with bad news)
+
+HOLD RULE:
+else:
+    signal = HOLD
+
+Rationale:
+- The BUY rule is designed to capture value stocks with positive news coverage, as well as momentum stocks with strong news coverage.
+- The SELL rule is designed to capture overvalued stocks with negative news coverage, as well as poor momentum stocks with severe negative news coverage.
+- The HOLD rule is designed to capture stocks with neutral news coverage, indicating no significant news or minimal news coverage.
