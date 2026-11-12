@@ -1,0 +1,28 @@
+--- OPTIMIZED ACE RULEBOOK ---
+BASE RULEBOOK v2.1:
+IF ((mve > 1.5 AND mom12m > 0.7 AND avg_sentiment > 0.85 AND news_count >= 5) OR (mve < -1.5 AND mom12m < -0.7 AND avg_sentiment < -0.7 AND news_count < 5) OR (bm > 1.2 AND mom12m > 0.8 AND avg_sentiment > 0.7 AND news_count >= 10) OR (bm < -1.2 AND mom12m < -0.8 AND avg_sentiment < -0.7 AND news_count < 5) OR (avg_sentiment > 0.85 AND news_count >= 5) OR (avg_sentiment > 0.7 AND news_count > 10)) THEN
+    signal = BUY
+ELSE IF ((mve < -2.0 OR bm < -1.5) AND (avg_sentiment < -0.7 OR news_count < 5)) THEN
+    signal = SELL
+ELSE
+    signal = HOLD
+
+--- FINAL ZERO-SHOT STRATEGY ---
+**FINAL INTEGRATED TRADING STRATEGY**
+
+1. FUNDAMENTAL RULES (mve, bm, mom12m as z-scores):
+- BUY if: mve > 1.5 AND mom12m > 0.7 AND news_count >= 5
+- SELL if: mve < -1.5 AND mom12m < -0.7 AND news_count <= 0
+
+2. SENTIMENT RULES (avg_sentiment):
+- BUY if: avg_sentiment > 0.85
+- SELL if: avg_sentiment < -0.85
+
+**COMBINED RULES**
+
+- If both fundamental and sentiment rules are met, BUY
+- If neither fundamental nor sentiment rules are met, SELL
+
+**FINAL ANSWER**
+
+Based on the optimized rulebook, the final answer for the given date '2023-05-31' is: BUY

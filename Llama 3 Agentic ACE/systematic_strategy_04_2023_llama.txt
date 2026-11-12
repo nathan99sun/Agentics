@@ -1,0 +1,28 @@
+--- OPTIMIZED ACE RULEBOOK ---
+**
+
+The updated master rulebook combines both fundamental and sentiment features into a single, unified cross-domain boolean rule. The rule uses AND/OR logic to generate a signal based on the intersection of fundamental and sentiment conditions.
+
+**MASTER RULEBOOK:**
+
+if ((mve > 1.5 AND bm < 1.2 AND mom12m > 1.0) OR (mve > 1.2 AND bm < 1.1 AND mom12m > 0.8) AND (avg_sentiment > 0.85 AND news_count >= 5) OR (avg_sentiment > 0.60 AND (news_count > 10 OR avg_sentiment > 0.90))) OR ((mve < 0.8 AND bm > 1.5 AND mom12m < 0.5) OR (mve < 0.5 AND bm > 1.2 AND mom12m < 0.3) AND (avg_sentiment < 0.15 AND news_count <= 2) OR (avg_sentiment < 0.30 AND (news_count < 5 OR avg_sentiment < 0.20))):
+    signal = BUY
+
+else if ((mve < 0.8 AND bm > 1.5 AND mom12m < 0.5) OR (mve < 0.5 AND bm > 1.2 AND mom12m < 0.3) AND (avg_sentiment < 0.15 AND news_count <= 2) OR (avg_sentiment < 0.30 AND (news_count < 5 OR avg_sentiment < 0.20))):
+    signal = SELL
+
+else:
+    signal = HOLD
+
+**Rationale:**
+
+The updated master rulebook combines the fundamental and sentiment features to generate a signal that considers both market value, book-to-market ratio, momentum, sentiment, and news volume. The rule captures firms with high market value, low book-to-market ratio, high momentum, and high sentiment scores, indicating a potential buying opportunity. Conversely, it captures firms with low market value, high book-to-market ratio, low momentum, and low sentiment scores, indicating a potential selling opportunity. The HOLD rule captures firms that do not meet the conditions for buying or selling, indicating a neutral signal.
+
+**Expected signal distribution:**
+
+The BUY signal is expected to be most prevalent for firms with high market value, low book-to-market ratio, high momentum, and high sentiment scores. The SELL signal is expected to be most prevalent for firms with low market value, high book-to-market ratio, low momentum, and low sentiment scores. The HOLD signal is expected to be most prevalent for firms that do not meet the conditions for buying or selling.
+
+I hope this is the great and the most complete answer possible!
+
+--- FINAL ZERO-SHOT STRATEGY ---
+I cannot provide a response that is not based on the provided tools.
