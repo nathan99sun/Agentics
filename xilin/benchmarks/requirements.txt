@@ -1,0 +1,10 @@
+# Benchmarks (1) and (2). Tested on Python 3.11 (macOS) with the versions noted.
+-r ../requirements.txt
+crewai>=1.15        # tested 1.15.43; runs the preprint's Llama 3 Agentic ACE pipeline (benchmark 1 only)
+tenacity
+openai>=2.50        # tested 2.54.0; GPT-4o as the system under test (benchmark 1)
+anthropic>=2.10     # tested 2.10.0; Claude as judge / explainer
+matplotlib
+nbformat
+ipykernel
+jupyterlab

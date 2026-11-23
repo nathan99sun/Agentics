@@ -1,0 +1,261 @@
+{
+  "2024-07": {
+    "overall_score": 0,
+    "tools_helpful_score": 0,
+    "overall_summary": "The rule did not come out of research. The fundamental thresholds are the prompt's first example, the sentiment thresholds are mostly prompt examples too, and the SELL side is the BUY side with signs flipped. Across 3 ACE iterations nobody tested any candidate against forward returns, and the Reflector and Curator approved the rule unchanged each round. The OR combination is only asserted, and its sentiment BUY leg is dead both in training and on the decision date. There was also an undated whole-table query that returned future rows. The final step was faithful and the rule runs on the decision date, but the process gives no evidence the rule has any edge.",
+    "items": [
+      {
+        "id": "P1",
+        "score": 1,
+        "justification": "The agents looked at both schemas (S003, S012) and glanced at a few per-ticker sentiment aggregates (S014, S015, S057, S058). The attempt to get firm-level summary statistics failed because STDDEV is not supported (S006), and the agent never retried with another function. It simply assumed mean 0 and sd 1 (S008). It never checked the distribution of avg_sentiment for news_count>=5, which is the range that decides whether the 0.60 and -0.20 cutoffs ever fire. S035 was an undated query of whole-market daily averages, and the agent misread its output as a trailing 30-day range (S036).",
+        "evidence_steps": [
+          "S003",
+          "S004",
+          "S006",
+          "S008",
+          "S012",
+          "S014",
+          "S015",
+          "S035",
+          "S036",
+          "S057"
+        ],
+        "verification": "I computed monthly ticker aggregates for 2023-07..2024-06. Of 852 ticker-months with n>=5, only 2 have avg_sentiment>0.6 and 37 have avg_sentiment<-0.2. The agent never looked at this distribution, so it did not see that its sentiment BUY threshold almost never fires."
+      },
+      {
+        "id": "P2",
+        "score": 1,
+        "justification": "No candidate rule was ever tested against ret_fwd_1 in aggregate; the audit shows training_queries_using_ret_fwd_1 is empty. The only checks were pass counts (117 and 45 over the window in S005/S007; 6 and 2 on 2023-06-30 in S027/S028/S048/S050). test_complex_condition did print per-firm ret_fwd_1, but those values were ignored: DPZ was flagged SELL and returned +17.7%, and nobody commented. The Reflector never looked at realized returns.",
+        "evidence_steps": [
+          "S005",
+          "S007",
+          "S027",
+          "S028",
+          "S039",
+          "S062"
+        ],
+        "verification": "I re-ran the pass counts: 117 over the window, 6 on 2023-06-30. Both match the transcript. The audit confirms no training query aggregated ret_fwd_1."
+      },
+      {
+        "id": "P3",
+        "score": 0,
+        "justification": "The fundamental thresholds (bm>1.15, mom12m>0.73, mve<1.11) are the prompt's first example, copied word for word, and the SELL side is just the same numbers with the signs flipped. avg_sentiment>0.60 and news_count>=5 also come from the prompt's examples. -0.20 has no source in any tool output. The audit puts the copied share at 56%. No threshold changed after any tool result.",
+        "evidence_steps": [
+          "S001",
+          "S008",
+          "S010",
+          "S016"
+        ],
+        "verification": "I compared the thresholds with the example lines in the prompts. They match the audit's list of copied conditions exactly."
+      },
+      {
+        "id": "P4",
+        "score": 1,
+        "justification": "Tools were called 22 times, but many calls were redundant: the schema was fetched 6 times and the same 2023-06-30 condition was tested repeatedly (S027/S028 and again in S048/S050). The STDDEV error was never recovered. S035 ran without a date filter. No tool result changed any conclusion: the rule is identical from S008 to S073. The evaluator's tool calls at S068-S072 did execute the rule correctly.",
+        "evidence_steps": [
+          "S006",
+          "S025",
+          "S035",
+          "S045",
+          "S047",
+          "S049",
+          "S054",
+          "S068"
+        ],
+        "verification": "none"
+      },
+      {
+        "id": "P5",
+        "score": 1,
+        "justification": "The rule joins the fundamental and sentiment legs with OR, and the only reason given is that it is 'more comprehensive' (S039). Nobody checked how often the two signals overlap or whether OR beats AND. The sentiment BUY leg is effectively dead: it matched 0 firms on the decision date and 2 of 852 ticker-months in training. That leaves BUY entirely fundamental, and nobody noticed.",
+        "evidence_steps": [
+          "S019",
+          "S039",
+          "S062",
+          "S071"
+        ],
+        "verification": "For July 2024 I found 0 tickers with n>=5 and avg_sentiment>0.6; the maximum was 0.469 and the 90th percentile 0.41."
+      },
+      {
+        "id": "P6",
+        "score": 2,
+        "justification": "Precedence is explicit with parentheses, the rule uses only available variables, and BUY and SELL are disjoint and both non-empty on the decision date (audit: BUY 17, SELL 10, overlap 0). One caveat: the sentiment BUY leg is empty, so BUY comes from fundamentals alone.",
+        "evidence_steps": [
+          "S065",
+          "S069",
+          "S070",
+          "S071",
+          "S072"
+        ],
+        "verification": "I re-ran the fundamental legs on 2024-07-31: BUY 17 and SELL 7, matching S069/S070. My own sentiment SELL count was 3 against the tool's 4, a window-boundary difference."
+      },
+      {
+        "id": "P7",
+        "score": 1,
+        "justification": "During training, S035 queried the whole ravenpack table without a date filter and got back rows dated up to 2025-12-31. The agent quoted those rows in its summary (S036). They did not change any threshold, but it is still an excursion beyond the window. All other training queries stayed inside the window, and the evaluation used no forward returns.",
+        "evidence_steps": [
+          "S034",
+          "S035",
+          "S036",
+          "S068"
+        ],
+        "verification": "The audit flags S035 as possible look-ahead. Its output is dated 2025-12, which is past the training window."
+      },
+      {
+        "id": "P8",
+        "score": 2,
+        "justification": "The final step applied rulebook v2.2 exactly as written and output explicit thresholds. It tested each leg on 2024-07-31.",
+        "evidence_steps": [
+          "S065",
+          "S068",
+          "S073"
+        ],
+        "verification": "I compared S073 with S065: they are identical."
+      },
+      {
+        "id": "P9",
+        "score": 1,
+        "justification": "The rationale is generic textbook value/momentum/size language. Some claims have no support: S016 says high sentiment coincides with higher news counts without any analysis. S036 calls whole-market daily averages a trailing 30-day sentiment range of 0.04-0.19. mve<1.11 is described as 'smaller firm size' even though it lets in almost the whole universe. The rationale also ignores the DPZ counterexample.",
+        "evidence_steps": [
+          "S016",
+          "S036",
+          "S051",
+          "S073"
+        ],
+        "verification": "none"
+      }
+    ],
+    "red_flags": [
+      "S035: undated whole-table sentiment query returned 2025 data during training, and the agent quoted it in its summary.",
+      "The final rule is identical to the prompt's example rule; the outcome-driven research loop did nothing."
+    ],
+    "judge_model": "claude-opus-5-5"
+  },
+  "2024-08": {
+    "overall_score": 0,
+    "tools_helpful_score": 0,
+    "overall_summary": "The rule came from prompt-driven intuition, not data. Thresholds were hand-tuned round numbers (1.0\u21921.2, 0.5\u21920.7, 0.6\u21920.7), and the switch from OR to AND integration was asserted, not tested. Only one 5-row return query was run, and nothing was checked against forward returns. Tool use was largely redundant: the same STDDEV error repeated, and a precedence bug made one query scan future dates. The evaluator copied the rulebook faithfully, but on the decision date the BUY side holds no names, and the agent never checked, during training or evaluation, that the sentiment BUY leg almost never fires.",
+    "items": [
+      {
+        "id": "P1",
+        "score": 1,
+        "justification": "The agent checked the schemas (S003, S012) and computed means and variances of the z-scores (S007). It never looked at tails or quantiles near its chosen cutoffs (\u00b11.2, 0.7, sentiment 0.5\u20130.7). Sentiment exploration amounted to 5 printed rows from one month, partly before the training window (S014, S038), plus June 2023, which is outside the window (S063). It never checked how often avg_sentiment exceeds 0.7 with five or more stories, so it missed that the sentiment BUY leg almost never fires.",
+        "evidence_steps": [
+          "S003",
+          "S007",
+          "S012",
+          "S014",
+          "S038",
+          "S063"
+        ],
+        "verification": "Using the same trailing-30-day aggregation, I counted how many names passed the sentiment BUY condition at each month-end from 2023-07-31 to 2024-07-31. The count was 0\u20134 per month (0 in every month from 2024-03 to 2024-07), while the sentiment SELL condition passed 29\u2013126 names. Better exploration would have exposed the problem."
+      },
+      {
+        "id": "P2",
+        "score": 1,
+        "justification": "Only one training query used ret_fwd_1 (S038). It returned 5 rows of July 2023 ticker averages, which says nothing about any candidate rule, and the agent drew only a vague 'returns generally negative' remark from it (S039). No BUY-vs-SELL return or hit-rate comparison was ever run. test_complex_condition and test_sentiment_condition were never used during training. Thresholds changed (0.6\u21920.7, 0.2\u21920.3) with no outcome evidence.",
+        "evidence_steps": [
+          "S038",
+          "S039",
+          "S032",
+          "S042"
+        ],
+        "verification": "The audit lists S038 as the only training query that used ret_fwd_1, which matches the transcript."
+      },
+      {
+        "id": "P3",
+        "score": 0,
+        "justification": "Every threshold is a round number that was nudged without data. Fundamentals went from 1.0/0.5 to 1.2/0.7 with no tool output behind the change (S032). Sentiment went from 0.6/0.2 to 0.7/0.3, then extra 0.5/7 and 0.4/7 legs were added (S039, S042). The abs\u22643 caps come from the prompt's warning. news_count>=5 and avg_sentiment>0.5 match prompt examples (per the audit). None of the cutoffs traces to a tool result.",
+        "evidence_steps": [
+          "S008",
+          "S015",
+          "S032",
+          "S039",
+          "S042"
+        ],
+        "verification": "I searched the tool outputs for 1.2, 0.7, 0.3, 0.4 and 7 as derived values and found none. The audit says 2 of 6 conditions are copied from prompt examples."
+      },
+      {
+        "id": "P4",
+        "score": 1,
+        "justification": "The agent hit the same missing STDDEV function three times (S005, S028, S051) and then tried STDEV (S053), even though it had already found a working variance formula in S007. Queries were repeated (S026/S029, S013/S061). The S027 query has an operator-precedence bug: the date filter attaches only to the last OR clause, so it scanned the whole table. Nobody noticed. The rule-testing tools were used only at evaluation, and the S076 result that 0 names pass the sentiment BUY condition was ignored. Overall, the tools did not change any conclusion.",
+        "evidence_steps": [
+          "S005",
+          "S007",
+          "S027",
+          "S028",
+          "S029",
+          "S051",
+          "S053",
+          "S076",
+          "S078"
+        ],
+        "verification": "I re-ran the S027 query. Agent version: 674 rows, with dates up to 2025-11-30. With the date filter correctly parenthesised: 215 rows. This confirms the precedence bug."
+      },
+      {
+        "id": "P5",
+        "score": 1,
+        "justification": "In iteration 1 the Reflector joined the fundamental and sentiment rules with OR (S018). In iteration 2 it switched to AND (S042) with no data showing how the two signals interact. The switch is simply asserted ('strong buy signals'). The rule does combine both domains, but the structure is not argued from evidence.",
+        "evidence_steps": [
+          "S018",
+          "S021",
+          "S042",
+          "S045"
+        ],
+        "verification": "none"
+      },
+      {
+        "id": "P6",
+        "score": 1,
+        "justification": "The rule is fully parenthesised, uses only available variables, and BUY and SELL do not overlap. On the decision date, however, BUY is empty: the sentiment BUY leg passes 0 names (S076), so the unified BUY passes 0. SELL passes only 2. The rule is executable but has an empty side.",
+        "evidence_steps": [
+          "S074",
+          "S075",
+          "S076",
+          "S077"
+        ],
+        "verification": "In the trailing 30 days to 2024-08-31 the highest avg_sentiment is 0.69, so 0 names pass the sentiment BUY condition and 42 pass the sentiment SELL condition, matching S076/S077. The audit gives final BUY=0, SELL=2, overlap=0."
+      },
+      {
+        "id": "P7",
+        "score": 1,
+        "justification": "Most training queries stayed inside the training window and the evaluation used no returns. However, S027/S030 actually scanned the whole firms table, including rows dated after the decision date, because of the precedence bug. It was only a count of feature extremes, but it is an undated excursion. S063 queried June 2023 sentiment, which is before the window (not future data). The audit did not flag look-ahead. This counts as a minor excursion.",
+        "evidence_steps": [
+          "S027",
+          "S030",
+          "S063",
+          "S073"
+        ],
+        "verification": "I confirmed that the S027 query matches rows up to 2025-11-30. No return columns were involved."
+      },
+      {
+        "id": "P8",
+        "score": 2,
+        "justification": "The evaluator copied rulebook v3.1 word for word into the final strategy, with explicit thresholds (S078). It tested every component on the decision date (S073\u2013S077). It did not respond to the empty sentiment BUY result, but it did not rewrite the rule either.",
+        "evidence_steps": [
+          "S072",
+          "S073",
+          "S078"
+        ],
+        "verification": "I compared the S078 text with the S070 rulebook: they are identical."
+      },
+      {
+        "id": "P9",
+        "score": 1,
+        "justification": "The rationale is generic ('minimizes the risk of false signals', 'enhances robustness') and not backed by any tool output. S039 claims returns were 'generally negative' based on 5 rows. S056 assumes std = 1 after failing to compute it, even though S007 had already shown variances of 1.0/0.99/0.97. The small-cap BUY leg is justified by takeover and growth stories with no data behind them. Nothing directly contradicts the rule, but the claims are unsupported.",
+        "evidence_steps": [
+          "S032",
+          "S039",
+          "S056",
+          "S078"
+        ],
+        "verification": "none"
+      }
+    ],
+    "red_flags": [
+      "The S027/S030 query has an operator-precedence bug that counted rows up to 2025-11-30, beyond the decision date.",
+      "The final BUY leg passes 0 names on the decision date; the sentiment BUY leg passed 0\u20134 names per month throughout training and was never checked."
+    ],
+    "judge_model": "claude-opus-5-5"
+  }
+}
