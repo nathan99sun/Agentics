@@ -1,5 +1,7 @@
 # Benchmarks (1) and (2). Tested on Python 3.11 (macOS) with the versions noted.
--r ../requirements.txt
+pandas>=2.2
+numpy>=1.26
+duckdb>=1.1
 crewai>=1.15        # tested 1.15.43; runs the preprint's Llama 3 Agentic ACE pipeline (benchmark 1 only)
 tenacity
 openai>=2.50        # tested 2.54.0; GPT-4o as the system under test (benchmark 1)

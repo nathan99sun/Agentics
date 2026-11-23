@@ -20,19 +20,19 @@ from typing import Any, Callable
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parents[1]                    # the Agentics repo root (code/Agentics in Xilin's layout)
-PROJECT = REPO.parents[1]                 # agentic_screening/ in Xilin's layout (key files live here, never in the repo)
+REPO = HERE.parent                        # the Agentics repo root
+PROJECT = REPO.parents[1]                 # optional folder two levels up, for key files / data kept outside the repo
 LOCAL = REPO / "data_local" / "benchmarks"  # git-ignored: raw transcripts contain licensed data
 RESULTS = HERE / "results"                # small, shareable outputs (scores, claims)
 
 JUDGE_MODEL = "claude-opus-5-5"
 
 # Folders searched for the licensed CSVs, in order. Set AGENTIC_DATA_DIR to override.
-#   <project>/data   Xilin's layout (code/Agentics sits two levels below the project folder)
-#   ../Data          the layout the preprint notebook assumes ("../Data/green cleaned new.csv")
-#   <repo root>      where `green cleaned.csv` goes
+#   <repo>/Data              where the pipeline notebooks look ("../Data/green cleaned new.csv")
+#   <repo root>              where `green cleaned.csv` goes
+#   ../Data, <project>/data  data kept outside the repo
 DATA_DIRS = [Path(p) for p in [os.environ.get("AGENTIC_DATA_DIR")] if p] + [
-    PROJECT / "data", REPO.parent / "Data", REPO.parent / "data", REPO]
+    REPO / "Data", REPO, REPO.parent / "Data", PROJECT / "data"]
 
 
 def data_file(name: str) -> Path:

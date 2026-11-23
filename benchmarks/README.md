@@ -9,10 +9,10 @@ These benchmarks implement the two-stage benchmark plan of Nov 2026 (stages from
 | LLM | Claude Opus 5.5 as **judge** (a different family from GPT-4o); blind to outcomes | Claude Opus 5.5 as **explainer**, with a read-only SQL tool |
 | Checked by | Deterministic audit + 2 human reviewers per rubric item | Automatic recomputation of every typed claim + fact sheet + human score |
 | Runs | 2 (Jul and Aug 2024 decision dates) | 1 |
-| Notebook | `xilin/notebooks/benchmark1_process_scoring.ipynb` | `xilin/notebooks/benchmark2_performance_explanation.ipynb` |
+| Notebook | `benchmarks/benchmark1_process_scoring.ipynb` | `benchmarks/benchmark2_performance_explanation.ipynb` |
 
 ## Files
-- `common.py`: paths and keys (read from `<project>/<provider>_api_key.txt`, never committed), a read-only SQL tool, and `run_claude`, a logged tool loop with a JSON-schema final answer.
+- `common.py`: paths, data-file lookup, API keys (from `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` or a key file outside the repo, never committed), a read-only SQL tool, and `run_claude`, a logged tool loop with a JSON-schema final answer.
 - `b1_ace_pipeline.py`: executes the preprint pipeline's notebook code (`paper_preprint_source()`) with three asserted edits (the LLM, the base URL, the rate limit) and records CrewAI's event bus (every LLM call, tool call and task) to JSONL.
 - `b1_judge.py`: rubric P1–P9 (0/1/2 anchors), transcript renderer, deterministic audit (tool errors, look-ahead, use of forward returns, thresholds copied from prompt examples, whether the rule executes), the judge, and `outcome()`, which reveals returns only after scoring.
 - `b2_attribution.py`: data assembly, the fact sheet (Sharpe decomposition, by year, leave-one-quarter-out, CAPM, stock / leg / industry contributions, exposures), the typed-claim schema, and `verify_claims`.
@@ -30,14 +30,14 @@ python3.11 -m venv .venv-bench && source .venv-bench/bin/activate
 # Windows (PowerShell)
 py -3.11 -m venv .venv-bench; .venv-bench\Scripts\Activate.ps1
 
-pip install -r xilin/benchmarks/requirements.txt
+pip install -r benchmarks/requirements.txt
 python -m ipykernel install --user --name agentic-screen --display-name "agentic-screen (Python 3.11)"
 ```
 In VS Code, open the Agentics folder, install the Python and Jupyter extensions, open a notebook, and pick the
 `agentic-screen` kernel (or the `.venv-bench` interpreter).
 
-**2. Data (licensed, not in git).** Searched in this order: `$AGENTIC_DATA_DIR`, `<project>/data`, `../Data`
-(the folder the preprint notebook uses), `../data`, then the repo root.
+**2. Data (licensed, not in git).** Searched in this order: `$AGENTIC_DATA_DIR`, the repo's `Data/` folder (where the
+pipeline notebooks look), the repo root, then `../Data` and `<project>/data` outside the repo.
 
 | File | Needed for |
 |---|---|
@@ -58,8 +58,6 @@ as a zip, not through git. Unzip `benchmark_runs_2026-11-19.zip` into `data_loca
 key is needed and nothing is charged. For new runs, set `OPENAI_API_KEY` (GPT-4o, benchmark 1) and
 `ANTHROPIC_API_KEY` (Claude judge / explainer), or put `openai_api_key.txt` / `claude_api_key.txt` in the folder that
 contains the repo. Approximate cost per run: GPT-4o ≈ $0.20 per month, judge ≈ $0.15–0.35 per month, explainer ≈ $0.35.
-
-Xilin's Mac uses `.venv-mac` (created with `uv`) and keeps the data in `<project>/data`; nothing else differs.
 
 ## Data conventions (benchmark 2), verified against the preprint's output files
 - A weight dated T earns the stock's excess return over month T+1. Σ w·r reproduces `Returns/LLM-S ACE 3.5.csv` (corr 0.9998); the gap is the 10 bp × turnover cost.
