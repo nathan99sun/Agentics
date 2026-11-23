@@ -1,0 +1,3 @@
+# Local outputs that contain licensed data (CRSP/Compustat, RavenPack). Never commit anything here.
+*
+!.gitignore
